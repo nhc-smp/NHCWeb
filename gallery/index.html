@@ -17,13 +17,13 @@
     <nav class="desktop_navbar">
         <a href="../index.html"><img class="desktop_navbar_logo_img" src="../media/logo_small.png" alt="logo"></a>
         <!--       <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a> -->
-        <a href="../index.html" class="desktop_navbar_link">Community</a>
-        <a href="../about/index.html" class="desktop_navbar_link scroll">About Us</a>
-        <a href="#" class="desktop_navbar_link scroll">Getting Started</a>
-        <a href="../rules/index.html" class="desktop_navbar_link scroll">Server Rules</a>
-        <a href="#" class="desktop_navbar_link scroll">Gallery</a>
+        <a href="../index.html#discord" class="desktop_navbar_link">Community</a>
+        <a href="../about/index.html" class="desktop_navbar_link">About Us</a>
+        <a href="../gettingstarted/index.html" class="desktop_navbar_link">Getting Started</a>
+        <a href="../rules/index.html" class="desktop_navbar_link">Server Rules</a>
+        <a href="#" class="desktop_navbar_link current">Gallery</a>
         <div class="desktop_navbar_link2_div">
-            <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
+            <a href="../index.html#join" class="desktop_navbar_link2">Join Us!</a>
         </div>
     </nav>
     <div class="mobile_navbar">
@@ -36,10 +36,10 @@
             <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="../about/index.html">About
                 Us</a>
             <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()"
-                href="#">Getting Started</a>
+                href="../gettingstarted/index.html">Getting Started</a>
             <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="../rules/index.html">Server
                 Rules</a>
-            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="../gallery/index.html">Gallery</a>
+            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="#">Gallery</a>
         </div>
         <div class="icon" onclick="mobile_navbar_link_hider()">
             <i class="fa fa-bars"></i>
@@ -55,135 +55,298 @@
             } 
         </script>
     </div>
-    <div class="mainflex">
-        <div class="main1 maingallery">
-            <div class="main1_description">
+    <!-- Gallery Header -->
+    <div class="gallery-header">
+        <h1 class="gallery-title">Server Gallery</h1>
+        <p class="gallery-subtitle">Explore screenshots from our Minecraft server</p>
+    </div>
+
+    <!-- Main Gallery Container -->
+    <div class="gallery-main">
+        <!-- Main Image Display -->
+        <div class="gallery-viewer">
+            <div class="gallery-image-container">
+                <img id="gallery-image" src="images/hogwarts.png" alt="Server Screenshot" class="gallery-main-image">
+                <div class="gallery-loading" id="gallery-loading">Loading...</div>
+                
+                <!-- Navigation Arrows -->
+                <button class="gallery-nav gallery-nav-prev" onclick="prevImage()" aria-label="Previous Image">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="gallery-nav gallery-nav-next" onclick="nextImage()" aria-label="Next Image">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+                
+                <!-- Image Counter -->
+                <div class="gallery-counter">
+                    <span id="current-index">1</span> / <span id="total-images">4</span>
+                </div>
             </div>
-            <div class="main5">
-                <div class="mainflex">
-                    <div class="main1 maingallery">
-                      <div class="main1_description"></div>
-                      <div class="main5">
-                        <div class="gallery">
-                          <div class="gallery-container">
-                            <img id="gallery-image" src="images/hogwarts.jpg" alt="hogwarts" class="gallery-image" />
-                          </div>
-                        </div>
-                        <div class="gallery-controls">
-                          <button class="gallery-button" onclick="prevImage()">Previous</button>
-                          <button class="gallery-button" onclick="pauseGallery()">Pause</button>
-                          <button class="gallery-button" onclick="toggleFullscreen()">Fullscreen</button>
-                          <button class="gallery-button" onclick="downloadImage()">Download</button>
-                          <button class="gallery-button" onclick="nextImage()">Next</button>
-                        </div>
-                        <!-- Thumbnails section -->
-                        <div class="gallery-thumbnails" id="gallery-thumbnails"></div>
-                      </div>
-                    </div>
-                  </div>
-                
-                  <script>
-                    // Gallery configuration
-                    const galleryPath = 'images/';
-                    const images = [
-                      'hogwarts.png',
-                      'rules.jpg',
-                      'shopping.jpg',
-                      'spawn.jpg'
-                    ];
-                    let currentIndex = 0;
-                    let isPaused = false;
-                    let intervalId = setInterval(rotateGallery, 3000); // Auto-rotation every 3 seconds
-                
-                    // Update the main gallery image
-                    function updateGalleryImage() {
-                      const galleryImage = document.getElementById('gallery-image');
-                      galleryImage.src = `${galleryPath}${images[currentIndex]}`;
-                      galleryImage.alt = images[currentIndex];
-                    }
-                
-                    // Rotate to the next image automatically
-                    function rotateGallery() {
-                      currentIndex = (currentIndex + 1) % images.length;
-                      updateGalleryImage();
-                    }
-                
-                    // Show previous image
-                    function prevImage() {
-                      currentIndex = (currentIndex - 1 + images.length) % images.length;
-                      updateGalleryImage();
-                    }
-                
-                    // Show next image
-                    function nextImage() {
-                      currentIndex = (currentIndex + 1) % images.length;
-                      updateGalleryImage();
-                    }
-                
-                    // Pause or resume gallery rotation
-                    function pauseGallery() {
-                      const pauseButton = document.querySelector('.gallery-button[onclick="pauseGallery()"]');
-                      if (isPaused) {
-                        intervalId = setInterval(rotateGallery, 3000);
-                        isPaused = false;
-                        pauseButton.textContent = "Pause";
-                      } else {
-                        clearInterval(intervalId);
-                        isPaused = true;
-                        pauseButton.textContent = "Resume";
-                      }
-                    }
-                
-                    // Toggle fullscreen for the gallery container
-                    function toggleFullscreen() {
-                      const galleryContainer = document.querySelector('.gallery-container');
-                      if (!document.fullscreenElement) {
-                        galleryContainer.requestFullscreen();
-                      } else {
-                        document.exitFullscreen();
-                      }
-                    }
-                
-                    // Download the current image
-                    function downloadImage() {
-                      const galleryImage = document.getElementById('gallery-image');
-                      const link = document.createElement('a');
-                      link.href = galleryImage.src;
-                      link.download = galleryImage.alt;
-                      link.click();
-                    }
-                
-                    // Jump to a specific image from the thumbnails
-                    function jumpToImage(index) {
-                      currentIndex = index;
-                      updateGalleryImage();
-                      // Optional: Reset the auto-rotation interval if not paused
-                      if (!isPaused) {
-                        clearInterval(intervalId);
-                        intervalId = setInterval(rotateGallery, 3000);
-                      }
-                    }
-                
-                    // Dynamically create thumbnails based on the images array
-                    function createThumbnails() {
-                      const thumbnailsContainer = document.getElementById('gallery-thumbnails');
-                      images.forEach((image, index) => {
-                        const thumb = document.createElement('img');
-                        thumb.src = `${galleryPath}${image}`;
-                        thumb.alt = image;
-                        thumb.classList.add('thumbnail');
-                        thumb.onclick = () => jumpToImage(index);
-                        thumbnailsContainer.appendChild(thumb);
-                      });
-                    }
-                
-                    // Initialize thumbnails on page load
-                    window.onload = createThumbnails;
-                  </script>
+            
+            <!-- Image Info -->
+            <div class="gallery-info">
+                <h3 id="image-title" class="gallery-image-title">Hogwarts Castle</h3>
+                <p id="image-description" class="gallery-image-description">Our magnificent Hogwarts castle build</p>
             </div>
+        </div>
+
+        <!-- Gallery Controls -->
+        <div class="gallery-controls">
+            <button class="gallery-btn" onclick="pauseGallery()" id="pause-btn">
+                <i class="fa fa-pause"></i> Pause
+            </button>
+            <button class="gallery-btn" onclick="toggleFullscreen()">
+                <i class="fa fa-expand"></i> Fullscreen
+            </button>
+            <button class="gallery-btn" onclick="downloadImage()">
+                <i class="fa fa-download"></i> Download
+            </button>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="gallery-thumbnails">
+            <h4 class="thumbnails-title">All Images</h4>
+            <div class="thumbnails-grid" id="thumbnails-container">
+                <!-- Thumbnails will be generated here -->
             </div>
         </div>
     </div>
+
+    <script>
+        // Enhanced Gallery Configuration
+        const galleryConfig = {
+            path: 'images/',
+            autoRotateSpeed: 5000, // 5 seconds
+            images: [
+                { 
+                    file: 'hogwarts.png', 
+                    title: 'Hogwarts Castle', 
+                    description: 'Our magnificent Hogwarts castle build showcasing magical architecture' 
+                },
+                { 
+                    file: 'rules.jpg', 
+                    title: 'Server Rules', 
+                    description: 'Important server rules and guidelines for all players' 
+                },
+                { 
+                    file: 'shopping.jpg', 
+                    title: 'Shopping District', 
+                    description: 'The bustling shopping district where players trade and build shops' 
+                },
+                { 
+                    file: 'spawn.jpg', 
+                    title: 'Spawn Area', 
+                    description: 'The server spawn point where new players begin their journey' 
+                }
+            ]
+        };
+
+        let currentIndex = 0;
+        let isPaused = false;
+        let autoRotateInterval = null;
+        let isFullscreen = false;
+
+        // Initialize gallery
+        function initGallery() {
+            createThumbnails();
+            updateDisplay();
+            startAutoRotate();
+            
+            // Update total images counter
+            document.getElementById('total-images').textContent = galleryConfig.images.length;
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', handleKeyNavigation);
+            
+            // Add fullscreen change listener
+            document.addEventListener('fullscreenchange', handleFullscreenChange);
+        }
+
+        // Update main image and info
+        function updateDisplay() {
+            const currentImage = galleryConfig.images[currentIndex];
+            const galleryImage = document.getElementById('gallery-image');
+            const loading = document.getElementById('gallery-loading');
+            
+            // Show loading
+            loading.style.display = 'flex';
+            
+            // Create new image to preload
+            const newImg = new Image();
+            newImg.onload = function() {
+                galleryImage.src = `${galleryConfig.path}${currentImage.file}`;
+                galleryImage.alt = currentImage.title;
+                loading.style.display = 'none';
+                
+                // Update image info
+                document.getElementById('image-title').textContent = currentImage.title;
+                document.getElementById('image-description').textContent = currentImage.description;
+                document.getElementById('current-index').textContent = currentIndex + 1;
+                
+                // Update active thumbnail
+                updateActiveThumbnail();
+            };
+            newImg.src = `${galleryConfig.path}${currentImage.file}`;
+        }
+
+        // Navigate to previous image
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryConfig.images.length) % galleryConfig.images.length;
+            updateDisplay();
+            resetAutoRotate();
+        }
+
+        // Navigate to next image
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryConfig.images.length;
+            updateDisplay();
+            resetAutoRotate();
+        }
+
+        // Jump to specific image
+        function jumpToImage(index) {
+            currentIndex = index;
+            updateDisplay();
+            resetAutoRotate();
+        }
+
+        // Pause/resume auto rotation
+        function pauseGallery() {
+            const pauseBtn = document.getElementById('pause-btn');
+            const icon = pauseBtn.querySelector('i');
+            
+            if (isPaused) {
+                startAutoRotate();
+                isPaused = false;
+                icon.className = 'fa fa-pause';
+                pauseBtn.innerHTML = '<i class="fa fa-pause"></i> Pause';
+            } else {
+                stopAutoRotate();
+                isPaused = true;
+                icon.className = 'fa fa-play';
+                pauseBtn.innerHTML = '<i class="fa fa-play"></i> Resume';
+            }
+        }
+
+        // Auto rotation functions
+        function startAutoRotate() {
+            if (!isPaused) {
+                autoRotateInterval = setInterval(() => {
+                    nextImage();
+                }, galleryConfig.autoRotateSpeed);
+            }
+        }
+
+        function stopAutoRotate() {
+            if (autoRotateInterval) {
+                clearInterval(autoRotateInterval);
+                autoRotateInterval = null;
+            }
+        }
+
+        function resetAutoRotate() {
+            if (!isPaused) {
+                stopAutoRotate();
+                startAutoRotate();
+            }
+        }
+
+        // Fullscreen functionality
+        function toggleFullscreen() {
+            const container = document.querySelector('.gallery-image-container');
+            
+            if (!document.fullscreenElement) {
+                container.requestFullscreen().catch(err => {
+                    console.log('Fullscreen failed:', err);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        function handleFullscreenChange() {
+            isFullscreen = !!document.fullscreenElement;
+            const container = document.querySelector('.gallery-image-container');
+            container.classList.toggle('fullscreen-active', isFullscreen);
+        }
+
+        // Download current image
+        function downloadImage() {
+            const currentImage = galleryConfig.images[currentIndex];
+            const link = document.createElement('a');
+            link.href = `${galleryConfig.path}${currentImage.file}`;
+            link.download = currentImage.file;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Create thumbnail grid
+        function createThumbnails() {
+            const container = document.getElementById('thumbnails-container');
+            container.innerHTML = '';
+            
+            galleryConfig.images.forEach((image, index) => {
+                const thumbContainer = document.createElement('div');
+                thumbContainer.className = 'thumbnail-item';
+                thumbContainer.onclick = () => jumpToImage(index);
+                
+                const thumb = document.createElement('img');
+                thumb.src = `${galleryConfig.path}${image.file}`;
+                thumb.alt = image.title;
+                thumb.className = 'thumbnail-image';
+                
+                const title = document.createElement('div');
+                title.className = 'thumbnail-title';
+                title.textContent = image.title;
+                
+                thumbContainer.appendChild(thumb);
+                thumbContainer.appendChild(title);
+                container.appendChild(thumbContainer);
+            });
+        }
+
+        // Update active thumbnail highlighting
+        function updateActiveThumbnail() {
+            const thumbnails = document.querySelectorAll('.thumbnail-item');
+            thumbnails.forEach((thumb, index) => {
+                thumb.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Keyboard navigation
+        function handleKeyNavigation(event) {
+            switch(event.key) {
+                case 'ArrowLeft':
+                    prevImage();
+                    break;
+                case 'ArrowRight':
+                    nextImage();
+                    break;
+                case ' ':
+                    event.preventDefault();
+                    pauseGallery();
+                    break;
+                case 'Escape':
+                    if (document.fullscreenElement) {
+                        document.exitFullscreen();
+                    }
+                    break;
+            }
+        }
+
+        // Initialize when page loads
+        window.addEventListener('load', initGallery);
+        
+        // Pause auto-rotation when page is not visible
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                stopAutoRotate();
+            } else if (!isPaused) {
+                startAutoRotate();
+            }
+        });
+    </script>
     <footer class="copyright_div">
         <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by Dakota -
             HeruEdhel 2025</a>
