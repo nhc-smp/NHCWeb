@@ -12,45 +12,11 @@
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <nav class="desktop_navbar">
-      <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
-<!--       <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a> -->
-      <a href="#discord" class="desktop_navbar_link scroll">Discord</a>
-      <a href="community/index.html" class="desktop_navbar_link">Community</a>
-      <a href="about/index.html" class="desktop_navbar_link">About Us</a>
-      <a href="gettingstarted/index.html" class="desktop_navbar_link">Getting Started</a>
-      <a href="rules/index.html" class="desktop_navbar_link">Server Rules</a>
-      <a href="gallery/index.html" class="desktop_navbar_link">Gallery</a>
-      <div class="desktop_navbar_link2_div">
-          <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
-      </div>
-    </nav>
-    <div class="mobile_navbar">
-      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
-      <div id="mobile_navbar_links">
-<!--           <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a> -->
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="#discord">Discord</a>
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="community/index.html">Community</a>
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="about/index.html">About Us</a>
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="gettingstarted/index.html">Getting Started</a>
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="rules/index.html">Server Rules</a>
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="gallery/index.html">Gallery</a>
-
-        </div>
-        <div class="icon" onclick="mobile_navbar_link_hider()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <script>
-            function mobile_navbar_link_hider() {
-            var x = document.getElementById("mobile_navbar_links");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-            } 
-        </script>
-    </div>
+    <script src="media/navigation.js"></script>
+    
+    <!-- Navigation containers - content will be dynamically generated -->
+    <div id="desktop-nav-container"></div>
+    <div id="mobile-nav-container"></div>
     <div class="mainflex">
       <div class="main1">
         <a class="main1_logo_a" href="#">
