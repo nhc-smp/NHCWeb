@@ -888,6 +888,205 @@ body {
 /* Enhanced Gallery Styles */
 
 /* Mod Pack Download Links */
+
+/* Rules Page Responsive Styling */
+.rules .main5_admins_description_div {
+    max-width: none;
+    padding: 2rem;
+}
+
+.rules .main5_admins_description_div h1 {
+    font-size: 2.5rem;
+    color: var(--accent1);
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.rules .main5_admins_description_div h2 {
+    font-size: 1.8rem;
+    color: var(--accent1);
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent1);
+    padding-bottom: 0.5rem;
+}
+
+.rules .main5_admins_description_div ol {
+    counter-reset: rule-counter;
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.rules .main5_admins_description_div ol > li {
+    counter-increment: rule-counter;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--background2);
+    border-radius: var(--roundness);
+    border-left: 4px solid var(--accent1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.rules .main5_admins_description_div ol > li::before {
+    content: counter(rule-counter);
+    position: absolute;
+    top: -10px;
+    left: 1rem;
+    background: var(--accent1);
+    color: var(--background1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(2, 219, 2, 0.3);
+}
+
+.rules .main5_admins_description_div ol > li > strong {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--accent1);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.rules .main5_admins_description_div ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.rules .main5_admins_description_div ul li {
+    margin: 0.8rem 0;
+    padding: 0.5rem 0;
+    line-height: 1.6;
+    position: relative;
+}
+
+.rules .main5_admins_description_div ul li::before {
+    content: '▸';
+    color: var(--accent1);
+    font-weight: 600;
+    position: absolute;
+    left: -1rem;
+}
+
+.rules .main5_admins_description_div p {
+    line-height: 1.7;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.rules .main5_admins_description_div a {
+    color: var(--accent1);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.rules .main5_admins_description_div a:hover {
+    color: var(--accent2);
+    text-decoration: underline;
+}
+
+.rules .main5_admins_description_div strong {
+    color: var(--accent1);
+    font-weight: 600;
+}
+
+/* Responsive Rules Page */
+@media (max-width: 768px) {
+    .rules .main5_admins_description_div {
+        padding: 1rem;
+    }
+    
+    .rules .main5_admins_description_div h1 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .rules .main5_admins_description_div h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+    
+    .rules .main5_admins_description_div ol > li {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .rules .main5_admins_description_div ol > li::before {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9rem;
+        top: -8px;
+        left: 0.8rem;
+    }
+    
+    .rules .main5_admins_description_div ol > li > strong {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .rules .main5_admins_description_div ul {
+        padding-left: 1rem;
+    }
+    
+    .rules .main5_admins_description_div ul li {
+        margin: 0.6rem 0;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rules .main5_admins_description_div {
+        padding: 0.8rem;
+    }
+    
+    .rules .main5_admins_description_div h1 {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+    
+    .rules .main5_admins_description_div h2 {
+        font-size: 1.3rem;
+    }
+    
+    .rules .main5_admins_description_div ol > li {
+        padding: 0.8rem;
+        margin: 1rem 0;
+    }
+    
+    .rules .main5_admins_description_div ol > li::before {
+        width: 22px;
+        height: 22px;
+        font-size: 0.8rem;
+        top: -6px;
+        left: 0.6rem;
+    }
+    
+    .rules .main5_admins_description_div ol > li > strong {
+        font-size: 1rem;
+    }
+    
+    .rules .main5_admins_description_div ul li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .rules .main5_admins_description_div p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+/* Mod Pack Download Links */
 .modpack-links {
     display: flex;
     flex-direction: column;
@@ -997,6 +1196,14 @@ body {
 
 /* Responsive design for mod pack links */
 @media (max-width: 768px) {
+    .gallery-image-container {
+        min-height: 300px;
+    }
+    
+    .gallery-main-image {
+        max-height: 300px;
+    }
+    
     .modpack-links {
         gap: 0.8rem;
     }
@@ -1065,13 +1272,20 @@ body {
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     background: var(--background2);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-main-image {
-    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
 .gallery-image-container:hover .gallery-main-image {
@@ -1117,11 +1331,11 @@ body {
 }
 
 .gallery-nav-prev {
-    left: 15px;
+    left: 20px;
 }
 
 .gallery-nav-next {
-    right: 15px;
+    right: 20px;
 }
 
 /* Image Counter */
@@ -1287,11 +1501,11 @@ body {
     }
     
     .gallery-nav-prev {
-        left: 10px;
+        left: 15px;
     }
     
     .gallery-nav-next {
-        right: 10px;
+        right: 15px;
     }
     
     .gallery-controls {
@@ -1321,6 +1535,14 @@ body {
     
     .gallery-title {
         font-size: 1.8rem;
+    }
+    
+    .gallery-image-container {
+        min-height: 250px;
+    }
+    
+    .gallery-main-image {
+        max-height: 250px;
     }
     
     .gallery-nav {
