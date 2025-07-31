@@ -1847,9 +1847,21 @@ body {
 /* Mod Pack Download Links */
 
 /* Rules Page Responsive Styling */
+
+.rules .main5_admin_div {
+    width: 100%;
+    max-width: none;
+}
+
+.rules .main5_admins_div {
+    width: 100%;
+    max-width: none;
+}
+
 .rules .main5_admins_description_div {
     max-width: none;
     padding: 2rem;
+    width: 100%;
 }
 
 .rules .main5_admins_description_div h1 {
