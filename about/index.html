@@ -58,17 +58,13 @@
   <div class="mainflex">
     <div class="main1 aboutlogo">
       <div class="main1_description">
-        <a class="headline">Who we are?<br>
-        </a>
-        Click to learn more for each role!
-
-
+        <h1 class="about-title">Who We Are</h1>
+        <p class="about-subtitle">Meet our amazing team of administrators, moderators, and event hosts who make our community special!</p>
+        <p class="about-instruction">Click on each role to learn more about our team members</p>
       </div>
 
-      <div id="about">
-
-      </div>
-      <div class="main5 ">
+      <div id="about"></div>
+      <div class="main5">
         <!-- Dropdown menus will be dynamically generated here -->
       </div>
       <script>
@@ -79,19 +75,34 @@
             const main5 = document.querySelector('.main5');
 
             // Iterate through each group in the JSON
-            Object.keys(data).forEach((group) => {
-              const groupData = data[group]; // Access the group object
+            Object.keys(data).forEach((group, index) => {
+              const groupData = data[group];
               const groupDiv = document.createElement('div');
               groupDiv.classList.add('rolegroup');
               groupDiv.classList.add('main5_supporters_div');
               
-              // Create the group header
+              // Create the group header with icon
               const groupHeader = document.createElement('div');
               groupHeader.classList.add('group-header');
-              groupHeader.textContent = group;
+              groupHeader.innerHTML = `
+                <span class="group-title">${group}</span>
+                <i class="fa fa-chevron-down group-arrow"></i>
+              `;
               groupHeader.onclick = () => {
                 const content = groupDiv.querySelector('.group-content');
-                content.style.display = content.style.display === 'none' ? 'grid' : 'none';
+                const arrow = groupDiv.querySelector('.group-arrow');
+                const isVisible = content.style.display === 'grid';
+                
+                content.style.display = isVisible ? 'none' : 'grid';
+                arrow.style.transform = isVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+                
+                // Add expand animation
+                if (!isVisible) {
+                  content.style.opacity = '0';
+                  setTimeout(() => {
+                    content.style.opacity = '1';
+                  }, 50);
+                }
               };
 
               // Add group description
@@ -102,63 +113,73 @@
               // Create the group content container
               const groupContent = document.createElement('div');
               groupContent.classList.add('group-content');
-              groupContent.style.display = 'none';
-              groupDescription.appendChild(document.createElement('br'));
+              groupContent.style.display = index === 0 ? 'grid' : 'none'; // Show first group by default
 
               // Iterate through each player in the group
               groupData.players.forEach((member) => {
                 const memberDiv = document.createElement('div');
                 memberDiv.classList.add('member');
-                memberDiv.classList.add('main5_supporters_div');
+                memberDiv.classList.add('member-card');
+                
+                const memberHeader = document.createElement('div');
+                memberHeader.classList.add('member-header');
                 
                 const img = document.createElement('img');
                 img.classList.add('member-img');
-                img.classList.add('main5_supporters_img');
                 img.src = `https://mc-heads.net/avatar/${member.name}.png`;
                 img.alt = `${member.name} avatar`;
+                img.onerror = function() {
+                  this.src = '../media/member_placeholder.webp';
+                };
                 
-                const descriptionDiv = document.createElement('div');
-                descriptionDiv.classList.add('member-description');
-                descriptionDiv.classList.add('main5_supporters_description');
+                const memberInfo = document.createElement('div');
+                memberInfo.classList.add('member-info');
                 
-
-                const rank = document.createElement('a');
-                rank.classList.add('member-rank');
-                rank.classList.add('main5_supporters_description_rank');
-                rank.textContent = `[${member.role}]`;
-
-                const name = document.createElement('a');
+                const name = document.createElement('h3');
                 name.classList.add('member-name');
-                if(member.link != ""){
-                name.classList.add('member-name-link');
-
-                  name.href = member.link || '';
-                  
+                if(member.link && member.link !== "") {
+                  const nameLink = document.createElement('a');
+                  nameLink.href = member.link;
+                  nameLink.textContent = member.name;
+                  nameLink.target = '_blank';
+                  nameLink.classList.add('member-name-link');
+                  name.appendChild(nameLink);
+                } else {
+                  name.textContent = member.name;
                 }
-                name.textContent = member.name;
 
-                const about = document.createElement('a');
+                const rank = document.createElement('span');
+                rank.classList.add('member-rank');
+                rank.textContent = member.role;
+
+                memberInfo.appendChild(name);
+                memberInfo.appendChild(rank);
+                memberHeader.appendChild(img);
+                memberHeader.appendChild(memberInfo);
+
+                const about = document.createElement('div');
                 about.classList.add('member-about');
-                about.innerHTML = member.about.replace(/\n/g, '<br />');
+                if (member.about && member.about.trim() !== '') {
+                  about.innerHTML = member.about.replace(/\n/g, '<br />');
+                } else {
+                  about.innerHTML = '<em>This member prefers to remain mysterious...</em>';
+                }
 
-                descriptionDiv.appendChild(name);
-                descriptionDiv.appendChild(document.createElement('br'));
-                descriptionDiv.appendChild(rank);
-                descriptionDiv.appendChild(document.createElement('br'));
-                descriptionDiv.appendChild(document.createElement('hr'));
-
-                descriptionDiv.appendChild(about);
-
-                memberDiv.appendChild(img);
-                memberDiv.appendChild(descriptionDiv);
+                memberDiv.appendChild(memberHeader);
+                memberDiv.appendChild(about);
                 groupContent.appendChild(memberDiv);
               });
 
               groupDiv.appendChild(groupHeader);
               groupDiv.appendChild(groupDescription);
-              
               groupDiv.appendChild(groupContent);
               main5.appendChild(groupDiv);
+              
+              // Set initial arrow state for first group
+              if (index === 0) {
+                const arrow = groupDiv.querySelector('.group-arrow');
+                arrow.style.transform = 'rotate(180deg)';
+              }
             });
           })
           .catch((error) => console.error('Error loading members.json:', error));

@@ -823,64 +823,242 @@ body {
     }
 }
 
+/* About Page Styles */
+.about-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent1);
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-subtitle {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.about-instruction {
+    font-size: 1rem;
+    color: var(--accent2);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
 .rolegroup {
-    width: 90%;
-    background-color: #2d2d2d;
-    display: grid;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    min-height: 100px;
+    width: 95%;
+    max-width: 1200px;
+    background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+    display: block;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rolegroup:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent1);
+    cursor: pointer;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--accent2);
+    transition: color 0.3s ease;
+}
+
+.group-header:hover {
+    color: var(--accent2);
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+}
+
+.group-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color: var(--accent2);
+}
+
+.group-description {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent2);
 }
 
 .group-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0px;
+    gap: 20px;
     justify-content: center;
+    transition: opacity 0.3s ease;
 }
 
-.member {
-    width: 20rem;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #ccc;
+.member-card {
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent2);
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.member-img {
+    width: 60px;
+    height: 60px;
     border-radius: 8px;
+    border: 2px solid var(--accent2);
+    transition: transform 0.3s ease;
 }
 
-.group-header {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: left;   
-    height: 1.5rem;
+.member-card:hover .member-img {
+    transform: scale(1.1);
 }
 
-.group-description {
-    font-size: 0.8rem;
-    height: 1rem;
-    margin-bottom: 40px;
-
+.member-info {
+    flex: 1;
 }
 
 .member-name {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #fff;
-}   
-.member-name-link:hover {
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+.member-name-link {
     color: var(--accent1);
-    transform: scale(1.05)
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.member-name-link:hover {
+    color: var(--accent2);
+    text-shadow: 0 0 5px var(--accent2);
 }
 
 .member-rank {
-    font-size: 1rem;
-    width: 100%;
-}   
+    font-size: 0.9rem;
+    color: var(--accent2);
+    font-weight: 600;
+    background: linear-gradient(90deg, var(--accent2), var(--accent1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 
-.member-description {
-    font-size: 1rem;
-    width: 100%;
+.member-about {
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.member-about em {
+    color: #999;
+    font-style: italic;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .rolegroup {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+    
+    .group-header {
+        font-size: 1.5rem;
+    }
+    
+    .group-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .member-card {
+        padding: 15px;
+    }
+    
+    .member-header {
+        gap: 12px;
+    }
+    
+    .member-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .member-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1rem;
+    }
+    
+    .rolegroup {
+        padding: 12px;
+    }
+    
+    .group-header {
+        font-size: 1.3rem;
+    }
+    
+    .member-card {
+        padding: 12px;
+    }
 }   
 
 
