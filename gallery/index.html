@@ -116,27 +116,304 @@
         // Enhanced Gallery Configuration
         const galleryConfig = {
             path: 'images/',
-            autoRotateSpeed: 5000, // 5 seconds
+            autoRotateSpeed: 6000, // 6 seconds (slower for more images)
             images: [
+                // Spawn & Server Areas
+                { 
+                    file: 'spawn.jpg', 
+                    title: 'Server Spawn', 
+                    description: 'The main spawn point where all adventures begin' 
+                },
+                { 
+                    file: 'NewSpawnSunSet.png', 
+                    title: 'New Spawn at Sunset', 
+                    description: 'Beautiful sunset view of the renovated spawn area' 
+                },
+                { 
+                    file: 'NewSpawnSunSet2.png', 
+                    title: 'New Spawn Golden Hour', 
+                    description: 'Another stunning sunset view of the spawn area' 
+                },
+                
+                // Hogwarts Castle Complex
                 { 
                     file: 'hogwarts.png', 
                     title: 'Hogwarts Castle', 
                     description: 'Our magnificent Hogwarts castle build showcasing magical architecture' 
                 },
                 { 
-                    file: 'rules.jpg', 
-                    title: 'Server Rules', 
-                    description: 'Important server rules and guidelines for all players' 
+                    file: 'Hogwarts2.png', 
+                    title: 'Hogwarts Courtyard', 
+                    description: 'The impressive courtyard area of Hogwarts castle' 
                 },
+                { 
+                    file: 'Hogwarts3.png', 
+                    title: 'Hogwarts Towers', 
+                    description: 'Detailed view of the Hogwarts tower structures' 
+                },
+                { 
+                    file: 'Hogwarts4.png', 
+                    title: 'Hogwarts Exterior', 
+                    description: 'Grand exterior view of the complete Hogwarts complex' 
+                },
+                { 
+                    file: 'Hogwarts5.png', 
+                    title: 'Hogwarts Grounds', 
+                    description: 'Panoramic view of the Hogwarts castle and surrounding grounds' 
+                },
+                { 
+                    file: 'GrandHallHogwarts.png', 
+                    title: 'Hogwarts Great Hall', 
+                    description: 'The majestic Great Hall interior with floating candles' 
+                },
+                { 
+                    file: 'NickooHogwarts.png', 
+                    title: 'Hogwarts Detail View', 
+                    description: 'Detailed architectural features of the Hogwarts build' 
+                },
+                { 
+                    file: 'RavenClawHogwarts.png', 
+                    title: 'Ravenclaw House', 
+                    description: 'The Ravenclaw house section of Hogwarts' 
+                },
+                { 
+                    file: 'RavenClawHogwarts2.png', 
+                    title: 'Ravenclaw Tower', 
+                    description: 'Detailed view of the Ravenclaw tower and common room' 
+                },
+                { 
+                    file: 'HufflepuffGreenhouse.png', 
+                    title: 'Hufflepuff Greenhouse', 
+                    description: 'The Hufflepuff house greenhouse for Herbology classes' 
+                },
+                
+                // Shopping Districts
                 { 
                     file: 'shopping.jpg', 
                     title: 'Shopping District', 
-                    description: 'The bustling shopping district where players trade and build shops' 
+                    description: 'The bustling main shopping district where players trade' 
                 },
                 { 
-                    file: 'spawn.jpg', 
-                    title: 'Spawn Area', 
-                    description: 'The server spawn point where new players begin their journey' 
+                    file: 'DownTownShopping.png', 
+                    title: 'Downtown Shopping', 
+                    description: 'The busy downtown shopping area with various stores' 
+                },
+                { 
+                    file: 'GroupShotinDowntownShopping.png', 
+                    title: 'Community in Shopping District', 
+                    description: 'Server members gathering in the downtown shopping area' 
+                },
+                { 
+                    file: 'EvilEmpireShopping.png', 
+                    title: 'Evil Empire Shopping', 
+                    description: 'The themed shopping area of the Evil Empire faction' 
+                },
+                { 
+                    file: 'PerryInShopping.png', 
+                    title: 'Perry\'s Shop Visit', 
+                    description: 'Perry exploring the various shops in the district' 
+                },
+                { 
+                    file: 'ShoppingPalce.png', 
+                    title: 'Shopping Palace', 
+                    description: 'An elegant shopping palace with luxury stores' 
+                },
+                { 
+                    file: 'TheShoppingMall.png', 
+                    title: 'The Shopping Mall', 
+                    description: 'Large indoor shopping mall complex' 
+                },
+                
+                // Player Bases & Builds
+                { 
+                    file: 'BloomingBase.png', 
+                    title: 'Blooming Base', 
+                    description: 'Blooming\'s Epic Base'
+                },
+                { 
+                    file: 'DinosBase.png', 
+                    title: 'Dino\'s Base', 
+                    description: 'Dino\'s impressive personal base build' 
+                },
+                { 
+                    file: 'DucknCoBase.png', 
+                    title: 'Duck & Co Base', 
+                    description: 'Collaborative base build by Duck and company' 
+                },
+                { 
+                    file: 'MeganBase.png', 
+                    title: 'Megan\'s Base', 
+                    description: 'Megan\'s creative and unique base design' 
+                },
+                { 
+                    file: 'NecromancerBase.png', 
+                    title: 'Necromancer\'s Base', 
+                    description: 'Dark and mysterious necromancer-themed base' 
+                },
+                { 
+                    file: 'ObolBase.png', 
+                    title: 'Obol\'s Base', 
+                    description: 'Obol\'s architectural masterpiece base' 
+                },
+                { 
+                    file: 'QuinnetjuhhhBase.png', 
+                    title: 'Quinnetjuhhh\'s Base', 
+                    description: 'Quinnetjuhhh\'s creative base with unique design elements' 
+                },
+                { 
+                    file: 'RoseyBase.png', 
+                    title: 'Rosey\'s Base', 
+                    description: 'Rosey\'s charming base build' 
+                },
+                { 
+                    file: 'S&LBase.png', 
+                    title: 'S&L Base', 
+                    description: 'Collaborative base by S&L with shared facilities' 
+                },
+                { 
+                    file: 'ShortysBase.png', 
+                    title: 'Shorty\'s Base', 
+                    description: 'Shorty\'s base' 
+                },
+                { 
+                    file: 'WolfsNewBase.png', 
+                    title: 'Wolf\'s New Base', 
+                    description: 'Wolf\'s latest and most impressive base build' 
+                },
+                { 
+                    file: 'WolfBaseInRain.png', 
+                    title: 'Wolf\'s Base in Rain', 
+                    description: 'Atmospheric shot of Wolf\'s base during a rainstorm' 
+                },
+                { 
+                    file: 'RevansBase.png', 
+                    title: 'Revan\'s Base', 
+                    description: 'Revan\'s impressive base' 
+                },
+                { 
+                    file: 'MarkAndDoomsStarter.png', 
+                    title: 'Mark & Doom\'s Starter', 
+                    description: 'Mark and Doom\'s collaborative starter base' 
+                },
+                { 
+                    file: 'NickooFarmHouse.png', 
+                    title: 'Nickoo\'s Farm House', 
+                    description: 'Nickoo\'s cozy farmhouse with surrounding crops' 
+                },
+                
+                // Special Builds & Structures
+                { 
+                    file: 'SpaceShip.png', 
+                    title: 'Space Ship', 
+                    description: 'Futuristic spaceship build reaching for the stars' 
+                },
+                { 
+                    file: 'VehusTree.png', 
+                    title: 'Vehu\'s Tree', 
+                    description: 'Massive tree build by Vehu with intricate details' 
+                },
+                { 
+                    file: 'MntVader.png', 
+                    title: 'Mount Vader', 
+                    description: 'Imposing mountain structure named Mount Vader in Starwars Land' 
+                },
+                { 
+                    file: 'FHQCircle.png', 
+                    title: 'FHQ Circle', 
+                    description: 'Circular headquarters building' 
+                },
+                { 
+                    file: 'AztecMachines.png', 
+                    title: 'Aztec Machines', 
+                    description: 'Ancient Aztec-themed machinery and structures' 
+                },
+                { 
+                    file: 'RevanBelrog.png', 
+                    title: 'Revan\'s Belrog', 
+                    description: 'Revan\'s massive Belrog build with impressive detail' 
+                },
+                
+                // Transportation & Infrastructure
+                { 
+                    file: 'TrainStationOutside.png', 
+                    title: 'Train Station Exterior', 
+                    description: 'Grand exterior of the server\'s main train station' 
+                },
+                { 
+                    file: 'TrainStationInside.png', 
+                    title: 'Train Station Interior', 
+                    description: 'Detailed interior of the train station with platforms' 
+                },
+                { 
+                    file: 'LifeSeriesSkyBridge.png', 
+                    title: 'Life Series Sky Bridge', 
+                    description: 'Sky bridge in Life Series Event' 
+                },
+                { 
+                    file: 'WolfStreet.png', 
+                    title: 'Wolf Street', 
+                    description: 'Detailed street area with Wolf\'s architectural style' 
+                },
+                { 
+                    file: 'DarkDuckAlly.png', 
+                    title: 'Dark Duck Alley', 
+                    description: 'Mysterious alley area with unique atmosphere' 
+                },
+                
+                // Mini-Games & Events
+                { 
+                    file: 'MiniGamesArea.png', 
+                    title: 'Mini-Games Area', 
+                    description: 'Dedicated area for server mini-games and competitions' 
+                },
+                { 
+                    file: 'TopOfUnoMiniGame.png', 
+                    title: 'UNO Mini-Game', 
+                    description: 'Aerial view of the UNO card game mini-game area' 
+                },
+                { 
+                    file: 'HalloweenEvent.png', 
+                    title: 'Halloween Event', 
+                    description: 'Halloween event group photo' 
+                },
+                { 
+                    file: 'XmasArea.png', 
+                    title: 'Christmas Area', 
+                    description: 'Christmas event group photo' 
+                },
+                { 
+                    file: 'XmasHouse.png', 
+                    title: 'Christmas House', 
+                    description: 'Cozy Christmas house with warm holiday atmosphere' 
+                },
+                
+                // Special Features & Easter Eggs
+                { 
+                    file: 'WolfsHologramHead.png', 
+                    title: 'Wolf\'s Hologram Head', 
+                    description: 'Wolf\'s creative holographic head display' 
+                },
+                { 
+                    file: 'FrozenHero.png', 
+                    title: 'Frozen Hero', 
+                    description: 'In need of kindness' 
+                },
+                { 
+                    file: 'ATrappedQuin.png', 
+                    title: 'A Trapped Quin', 
+                    description: 'Humorous scene of Quin in a tricky situation' 
+                },
+                { 
+                    file: 'InsideSomeBase.png', 
+                    title: 'Inside Someone\'s Base', 
+                    description: 'Interior view of a beautifully decorated base' 
+                },
+                
+                // Server Rules Reference
+                { 
+                    file: 'rules.jpg', 
+                    title: 'Heru Reading Da Rules', 
+                    description: 'Important server rules and guidelines display' 
                 }
             ]
         };
