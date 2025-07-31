@@ -1,0 +1,106 @@
+{
+    "creators": [
+        {
+            "name": "BloomingCow3665",
+            "platform": "YouTube",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.youtube.com/channel/UCSxh1uIWmV3_Zqy30mkFwpg",
+            "icon": "fa-video-camera",
+            "note": "Livestreams & Shorts",
+            "featured": true
+        },
+        {
+            "name": "Intrac",
+            "platform": "YouTube",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.youtube.com/channel/UCtIs8G1E9GHugsMAkt3VP2g",
+            "icon": "fa-play-circle",
+            "note": "Regular Uploads",
+            "featured": true
+        },
+        {
+            "name": "aidencole",
+            "platform": "YouTube",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.youtube.com/channel/UCJR8vOsd9OVwuYUp9uMj1Tw",
+            "icon": "fa-trophy",
+            "note": "Event Coverage",
+            "featured": true
+        },
+        {
+            "name": "DarkDuckthegreat",
+            "platform": "YouTube",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.youtube.com/channel/UCyjn29B3UOxXBXEDMzgqqww",
+            "icon": "fa-cubes",
+            "note": "Build Master",
+            "featured": true
+        },
+        {
+            "name": "beemanx8355",
+            "platform": "YouTube",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.youtube.com/@beemanx8355",
+            "icon": "fa-users",
+            "note": "Community Focus",
+            "featured": true
+        },
+        {
+            "name": "TheBuilders_69",
+            "platform": "YouTube",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.youtube.com/@TheBuilders_69",
+            "icon": "fa-wrench",
+            "note": "Tutorial Creator",
+            "featured": true
+        },
+        {
+            "name": "MissShortY17",
+            "platform": "Twitch",
+            "type": "Gaming Content",
+            "description": "",
+            "link": "https://www.twitch.tv/missshorty17",
+            "icon": "fa-twitch",
+            "note": "Live Streams",
+            "featured": true
+        }
+    ],
+    "placeholders": [
+        {
+            "name": "Your Channel Here!",
+            "platform": "Any Platform",
+            "type": "Content Creation",
+            "description": "Create content about NHC SMP and get featured!",
+            "link": "",
+            "icon": "fa-video-camera",
+            "note": "Apply in Discord",
+            "featured": false
+        },
+        {
+            "name": "Build Showcases",
+            "platform": "Social Media",
+            "type": "Photography",
+            "description": "Share your amazing builds and get spotlighted",
+            "link": "",
+            "icon": "fa-camera",
+            "note": "Tag us on social media",
+            "featured": false
+        },
+        {
+            "name": "Stream with Us",
+            "platform": "Streaming",
+            "type": "Live Content",
+            "description": "Stream your gameplay and community events",
+            "link": "",
+            "icon": "fa-twitch",
+            "note": "Contact staff for features",
+            "featured": false
+        }
+    ]
+}
