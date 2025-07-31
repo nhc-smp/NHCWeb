@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not HermitCraft SMP</title>
+    <title>Getting Started - Not HermitCraft SMP</title>
     <link rel="icon" type="image/png" href="../media/favicon.png">
     <link rel="stylesheet" href="../media/style.css">
     <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
@@ -14,97 +14,280 @@
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <nav class="desktop_navbar">
-        <a href="../index.html"><img class="desktop_navbar_logo_img" src="../media/logo_small.png" alt="logo"></a>
-        <!--       <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a> -->
-        <a href="../index.html#discord" class="desktop_navbar_link">Community</a>
-        <a href="../about/index.html" class="desktop_navbar_link">About Us</a>
-        <a href="#" class="desktop_navbar_link current">Getting Started</a>
-        <a href="../rules/index.html" class="desktop_navbar_link">Server Rules</a>
-        <a href="../gallery/index.html" class="desktop_navbar_link">Gallery</a>
-        <div class="desktop_navbar_link2_div">
-            <a href="../index.html#join" class="desktop_navbar_link2">Join Us!</a>
-        </div>
-    </nav>
-    <div class="mobile_navbar">
-        <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="../media/logo_small.png"
-                alt="logo"></a>
-        <div id="mobile_navbar_links">
-            <!--           <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a> -->
-            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()"
-                href="../index.html#discord">Community</a>
-            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="../about/index.html">About
-                Us</a>
-            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()"
-                href="#">Getting Started</a>
-            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="../rules/index.html">Server
-                Rules</a>
-            <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="../gallery/index.html">Gallery</a>
-
-        </div>
-        <div class="icon" onclick="mobile_navbar_link_hider()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <script>
-            function mobile_navbar_link_hider() {
-                var x = document.getElementById("mobile_navbar_links");
-                if (x.style.display === "flex") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "flex";
-                }
-            } 
-        </script>
-    </div>
+    <script src="../media/navigation.js"></script>
+    
+    <!-- Navigation containers - content will be dynamically generated -->
+    <div id="desktop-nav-container"></div>
+    <div id="mobile-nav-container"></div>
     <div class="mainflex">
         <div class="main1 started">
             <div class="main1_description">
+                <h1 class="getting-started-main-title">Welcome to NHC SMP!</h1>
+                <p class="getting-started-subtitle">Your journey to joining our amazing community starts here</p>
             </div>
 
-
-            <div id="about"></div>
+            <div id="gettingstarted"></div>
+            
+            <!-- Getting Started Steps Section -->
             <div class="main5">
-                <div class="main5_admin_div">
-                    <div class="main5_admins_div main5_admins_dev_type2">
-                        <div class="main5_admins_description_div">
-                            <a class="main5_admins_description_title">Getting Started</a>
+                <div class="getting-started-section">
+                    
+                    <!-- Step-by-Step Guide -->
+                    <div class="steps-container">
+                        <h2 class="section-title">How to Join NHC SMP</h2>
+                        <div class="steps-grid">
+                            
+                            <!-- Step 1: Join Discord -->
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Join Our Discord</h3>
+                                    <p>Start by joining our Discord server to connect with the community and begin your application.</p>
+                                    <a href="https://discord.com/invite/nothermitcraft" class="step-button discord-btn" target="_blank">
+                                        <i class="fa fa-discord"></i>Join Discord Server
+                                    </a>
+                                </div>
+                            </div>
 
-                            <a class="main5_admins_description">Join Our Discord: Apply for whitelist and then get to
-                                know the community.<br><br>
-                                Install Optional Mods: Voice chat, armor posing, etc. for the full experience.<br><br>
-                                Have Fun!: Go out meet other Hermits! Build and play together. Find that perfect mega
-                                base spot!</a>
+                            <!-- Step 2: Submit Application -->
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Submit Your Application</h3>
+                                    <p>Fill out our application form in Discord to tell us about yourself and your Minecraft experience.</p>
+                                    <div class="application-preview">
+                                        <span class="preview-text">See application details below</span>
+                                        <i class="fa fa-arrow-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Wait for Review -->
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Application Review</h3>
+                                    <p>Our staff team will review your application. This usually takes 24-48 hours during active periods.</p>
+                                    <div class="step-info">
+                                        <i class="fa fa-clock-o"></i>
+                                        <span>Typical wait time: 2-5 days</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Get Whitelisted -->
+                            <div class="step-card">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Welcome to NHC!</h3>
+                                    <p>Once approved, you'll be whitelisted and can join the server to start your adventure!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="main5_admins_div main5_admins_dev_type1">
-                        <div class="main5_admins_description_div">
-                            <a class="main5_admins_description_title">Optional Mods</a>
-                            <a class="main5_admins_description">
-                                Mods are not required to join, but will enhance your time here!<br><br>
-                                We try to keep mod packs up to date. Download from your preferred platform:</a>
-                            
-                            <!-- Mod Pack Download Links -->
-                            <div class="modpack-links">
-                                <a href="https://www.curseforge.com/minecraft/modpacks/nhc" class="modpack-link curseforge-link" target="_blank" rel="noopener noreferrer">
-                                    <div class="modpack-icon">
-                                        <i class="fa fa-download"></i>
+
+                    <!-- Application Details Section -->
+                    <div class="application-section">
+                        <h2 class="section-title">Application Questions</h2>
+                        <p class="application-intro">When you apply in Discord, you'll be asked these questions. Feel free to prepare your answers beforehand!</p>
+                        
+                        <div class="application-questions">
+                            <div class="question-category">
+                                <h3>Basic Information</h3>
+                                <div class="questions-list">
+                                    <div class="question-item">
+                                        <span class="question-label">Name (optional)</span>
+                                        <span class="question-desc">What would you like us to call you?</span>
                                     </div>
-                                    <div class="modpack-info">
-                                        <span class="modpack-platform">CurseForge</span>
-                                        <span class="modpack-description">Download NHC Modpack</span>
+                                    <div class="question-item">
+                                        <span class="question-label">Pronouns</span>
+                                        <span class="question-desc">Your preferred pronouns</span>
                                     </div>
-                                </a>
-                                
-                                <a href="https://modrinth.com/modpack/nhc/" class="modpack-link modrinth-link" target="_blank" rel="noopener noreferrer">
-                                    <div class="modpack-icon">
-                                        <i class="fa fa-download"></i>
+                                    <div class="question-item">
+                                        <span class="question-label">Minecraft IGN</span>
+                                        <span class="question-desc">Your Minecraft Java username</span>
                                     </div>
-                                    <div class="modpack-info">
-                                        <span class="modpack-platform">Modrinth</span>
-                                        <span class="modpack-description">Download NHC Modpack</span>
+                                    <div class="question-item">
+                                        <span class="question-label">Age</span>
+                                        <span class="question-desc">How old are you?</span>
                                     </div>
-                                </a>
+                                    <div class="question-item">
+                                        <span class="question-label">From (country/region)</span>
+                                        <span class="question-desc">Where are you located?</span>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="question-category">
+                                <h3>Communication & Gaming</h3>
+                                <div class="questions-list">
+                                    <div class="question-item">
+                                        <span class="question-label">Voice Chat Preference</span>
+                                        <span class="question-desc">Are you happy with talking on VC / proximity chat?</span>
+                                    </div>
+                                    <div class="question-item">
+                                        <span class="question-label">Minecraft Experience</span>
+                                        <span class="question-desc">How long have you played Minecraft?</span>
+                                    </div>
+                                    <div class="question-item">
+                                        <span class="question-label">Activity Level</span>
+                                        <span class="question-desc">How many days per week do you plan on playing?</span>
+                                    </div>
+                                    <div class="question-item">
+                                        <span class="question-label">Play Style</span>
+                                        <span class="question-desc">How would you describe your play style?</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="question-category">
+                                <h3>Server Experience</h3>
+                                <div class="questions-list">
+                                    <div class="question-item">
+                                        <span class="question-label">Previous SMP Experience</span>
+                                        <span class="question-desc">Have you played on community SMP servers before?</span>
+                                    </div>
+                                    <div class="question-item">
+                                        <span class="question-label">Build Portfolio</span>
+                                        <span class="question-desc">Do you have any screenshots of previous builds you've completed?</span>
+                                    </div>
+                                    <div class="question-item">
+                                        <span class="question-label">Server Goals</span>
+                                        <span class="question-desc">What are you looking to do on the server?</span>
+                                    </div>
+                                    <div class="question-item">
+                                        <span class="question-label">How You Found Us</span>
+                                        <span class="question-desc">Where did you hear about NotHermitCraft? (mention any friends on the server)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application-tips">
+                            <h4><i class="fa fa-lightbulb-o"></i> Application Tips</h4>
+                            <ul>
+                                <li>Be honest and genuine in your responses</li>
+                                <li>Tell us about your building style and interests</li>
+                                <li>Mention if you know any current members</li>
+                                <li>Screenshots of builds help us understand your experience level</li>
+                                <li>Don't worry if you're new to SMPs - everyone starts somewhere!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Optional Mods Section -->
+                    <div class="mods-section">
+                        <h2 class="section-title">Optional Mods & Enhancement</h2>
+                        <p class="mods-intro">While mods aren't required, they greatly enhance your NHC SMP experience!</p>
+                        
+                        <div class="mods-container">
+                            <div class="mods-benefits">
+                                <h3>What's Included</h3>
+                                <div class="benefits-list">
+                                    <div class="benefit-item">
+                                        <i class="fa fa-microphone"></i>
+                                        <span>Voice Chat & Proximity Chat</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fa fa-user"></i>
+                                        <span>Armor Posing & Customization</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fa fa-map"></i>
+                                        <span>Web Map</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fa fa-cog"></i>
+                                        <span>Quality of Life Improvements</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fa fa-eye"></i>
+                                        <span>Better Visuals & Shaders</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fa fa-users"></i>
+                                        <span>Community-Approved Mods</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modpack-downloads">
+                                <h3>Download NHC Modpack</h3>
+                                <div class="modpack-links">
+                                    <a href="https://www.curseforge.com/minecraft/modpacks/nhc" class="modpack-link curseforge-link" target="_blank" rel="noopener noreferrer">
+                                        <div class="modpack-icon">
+                                            <i class="fa fa-download"></i>
+                                        </div>
+                                        <div class="modpack-info">
+                                            <span class="modpack-platform">CurseForge</span>
+                                            <span class="modpack-description">Easy one-click install</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://modrinth.com/modpack/nhc/" class="modpack-link modrinth-link" target="_blank" rel="noopener noreferrer">
+                                        <div class="modpack-icon">
+                                            <i class="fa fa-download"></i>
+                                        </div>
+                                        <div class="modpack-info">
+                                            <span class="modpack-platform">Modrinth</span>
+                                            <span class="modpack-description">Open-source alternative</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p class="modpack-note">
+                                    <i class="fa fa-info-circle"></i>
+                                    Modpacks are kept up-to-date with server requirements. Installing is optional but highly recommended!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What to Expect Section -->
+                    <div class="expectations-section">
+                        <h2 class="section-title">What to Expect</h2>
+                        <div class="expectations-grid">
+                            <div class="expectation-card">
+                                <div class="expectation-icon">🏘️</div>
+                                <h4>Community Towns</h4>
+                                <p>Join existing settlements or start your own town with friends!</p>
+                            </div>
+                            <div class="expectation-card">
+                                <div class="expectation-icon">🏗️</div>
+                                <h4>Mega Projects</h4>
+                                <p>Collaborate on massive builds and infrastructure projects</p>
+                            </div>
+                            <div class="expectation-card">
+                                <div class="expectation-icon">🎉</div>
+                                <h4>Regular Events</h4>
+                                <p>Participate in build competitions, games, and seasonal celebrations</p>
+                            </div>
+                            <div class="expectation-card">
+                                <div class="expectation-icon">💬</div>
+                                <h4>Active Community</h4>
+                                <p>Chat, voice calls, and build together with friendly players</p>
+                            </div>
+                            <div class="expectation-card">
+                                <div class="expectation-icon">🌟</div>
+                                <h4>Creative Freedom</h4>
+                                <p>Build whatever you want while respecting community guidelines</p>
+                            </div>
+                            <div class="expectation-card">
+                                <div class="expectation-icon">🔧</div>
+                                <h4>Technical Players</h4>
+                                <p>Redstone farms and technical builds are welcome!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final CTA -->
+                    <div class="final-cta">
+                        <h3>Ready to Begin Your Adventure?</h3>
+                        <p>Join thousands of players who have made NHC SMP their Minecraft home!</p>
+                        <div class="cta-buttons">
+                            <a href="https://discord.com/invite/nothermitcraft" class="cta-btn primary" target="_blank">
+                                <i class="fa fa-discord"></i>Start Your Application
+                            </a>
+                            <a href="../rules/index.html" class="cta-btn secondary">Read Server Rules</a>
                         </div>
                     </div>
                 </div>
