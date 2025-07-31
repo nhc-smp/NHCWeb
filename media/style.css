@@ -1864,6 +1864,10 @@ body {
     width: 100%;
 }
 
+/* About Page Width Fix */
+.aboutlogo .main5 {
+    width: 95%;
+}
 
 .aboutlogo .main5_admin_div {
     width: 100%;
