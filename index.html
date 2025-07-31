@@ -15,7 +15,8 @@
     <nav class="desktop_navbar">
       <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
 <!--       <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a> -->
-      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Discord</a>
+      <a href="community/index.html" class="desktop_navbar_link">Community</a>
       <a href="about/index.html" class="desktop_navbar_link">About Us</a>
       <a href="gettingstarted/index.html" class="desktop_navbar_link">Getting Started</a>
       <a href="rules/index.html" class="desktop_navbar_link">Server Rules</a>
@@ -28,7 +29,8 @@
       <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
       <div id="mobile_navbar_links">
 <!--           <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a> -->
-<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="#discord">Discord</a>
+<a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="community/index.html">Community</a>
 <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="about/index.html">About Us</a>
 <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="gettingstarted/index.html">Getting Started</a>
 <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="rules/index.html">Server Rules</a>
@@ -55,9 +57,9 @@
           <img class="main1_logo" src="media/logo.png" alt="logo">
         </a>
         <div class="main1_description">
-          <a>Welcome to Not HermitCraft SMP!<br></a>
-          <a class="main1_actcent"> Family Friendly, community-driven server!<br>
-            Inspired by HermitCraft to play Minecraft the way it's supposed to be played, together!</a><a>.</a>
+          <h1 class="main-title">Welcome to Not HermitCraft SMP!</h1>
+          <p class="main-subtitle">Family Friendly, community-driven server!</p>
+          <p class="main-tagline">Inspired by HermitCraft to play Minecraft the way it's supposed to be played, together!</p>
         </div>
         <a href="#more" class="scroll">
           <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
@@ -79,45 +81,56 @@
       </div>
       <div id="more"></div>
       <div class="main2">
-        <a class="headline">What we have</a>
+        <h2 class="headline">What We Have</h2>
         <div class="main2_features_div">
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/spawn.jpg">
-            <a class="main2_feature_headline">Season 4(ever)</a>
-            <a class="main2_feature_text">A permanent, ever-growing world with rich lore and endless creativity no reset in sight.</a>
+          <div class="main2_feature" data-feature="season">
+            <img class="main2_feature_img" alt="Season 4 Forever" src="media/spawn.jpg">
+            <h3 class="main2_feature_headline">Season 4(ever)</h3>
+            <p class="main2_feature_text">A permanent, ever-growing world with rich lore and endless creativity—no reset in sight.</p>
           </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/shopping.jpg">
-            <a class="main2_feature_headline">Diamond-Based Economy</a>
-            <a class="main2_feature_text">Shopping & gaming districts, big community events, and more.</a>
+          <div class="main2_feature" data-feature="economy">
+            <img class="main2_feature_img" alt="Diamond Economy" src="media/shopping.jpg">
+            <h3 class="main2_feature_headline">Diamond-Based Economy</h3>
+            <p class="main2_feature_text">Shopping & gaming districts, big community events, and thriving player businesses.</p>
           </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/minishop.jpg">
-            <a class="main2_feature_headline">Community Events & Minigames</a>
-            <a class="main2_feature_text">Secret Life, Bingo, UHC, guess-the-build, roleplay, large events, and more.</a>
+          <div class="main2_feature" data-feature="events">
+            <img class="main2_feature_img" alt="Community Events" src="media/minishop.jpg">
+            <h3 class="main2_feature_headline">Community Events & Minigames</h3>
+            <p class="main2_feature_text">Secret Life, Bingo, UHC, guess-the-build, roleplay, large events, and much more.</p>
           </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/hogwarts.png">
-            <a class="main2_feature_headline">World Wide!</a>
-            <a class="main2_feature_text">We have players from everywhere around the world!</a>
+          <div class="main2_feature" data-feature="worldwide">
+            <img class="main2_feature_img" alt="Global Community" src="media/hogwarts.png">
+            <h3 class="main2_feature_headline">Worldwide Community!</h3>
+            <p class="main2_feature_text">We have players from everywhere around the world creating amazing builds together!</p>
           </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/minishop.jpg">
-            <a class="main2_feature_headline">White Listed Community!</a>
-            <a class="main2_feature_text">Keeping a tight community of players together!</a>
+          <div class="main2_feature" data-feature="whitelist">
+            <img class="main2_feature_img" alt="Whitelisted Server" src="media/minishop.jpg">
+            <h3 class="main2_feature_headline">Whitelisted Community!</h3>
+            <p class="main2_feature_text">Keeping a tight-knit community of dedicated players who love building together!</p>
           </div>
         </div>
       </div>
       <div id="discord"></div>
       <div class="main4">
-        <a class="headline">Join the Discord</a>
+        <h2 class="headline">Join the Discord</h2>
         <div class="main4_dc_div">
-          <iframe class="main4_dc_widget" src="media/spawn.jpg" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <iframe class="main4_dc_widget" src="https://discord.com/widget?id=643543835091140628&theme=dark" width="350" height="500" title="Discord Widget" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
           <div class="main4_dc_description_div">  
-            <a class="main4_dc_description_title">Let's talk!</a>
-            <a class="main4_dc_description"> ・Apply today! <br>・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
+            <h3 class="main4_dc_description_title">Let's Talk!</h3>
+            <div class="main4_dc_description">
+              <ul class="discord-features">
+                <li>Apply today!</li>
+                <li>Meet other players</li>
+                <li>Ask questions</li>
+                <li>Get notified about updates</li>
+                <li>Give feedback</li>
+                <li>Share your builds</li>
+                <li>Join events</li>
+              </ul>
+              <p class="discord-extra">& much more!</p>
+            </div>
             <a href="https://discord.com/invite/nothermitcraft" class="main4_dc_button_a">
-              <div class="main4_dc_button">Join</div>
+              <div class="main4_dc_button">Join Discord</div>
             </a>
           </div>
         </div>
@@ -125,33 +138,21 @@
 
       <div id="join"></div>
       <div class="main3">
-        <a class="headline">How to join<br>Get Whitelisted on Discord!<br>Then join at</a>
+        <h2 class="headline">How to Join</h2>
+        <p class="join-instructions">Get whitelisted on Discord first, then join us at:</p>
         <div class="main3_join_div_div">
           <div class="main3_join_div">
-            <a class="main3_join_title">Java</a>
+            <h3 class="main3_join_title">Java Edition</h3>
             <div class="main3_join_content_div">
               <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Version:</a>
+                <span>IP:</span>
+                <span>Version:</span>
               </div>
               <div class="main3_join_values">
-                <a>apply for white list today!</a>
-                <a>1.21.7 or Newer</a>
+                <span class="server-ip">Apply for whitelist first!</span>
+                <span>1.21.7 or Newer</span>
               </div>
             </div>
-          </div>
-          <!-- <div class="main3_join_div">
-            <a class="main3_join_title">Bedrock</a>
-            <div class="main3_join_content_div">
-              <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Port:</a>
-              </div>
-              <div class="main3_join_values">
-                <a>be.example.com</a>
-                <a>69420</a>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -159,5 +160,66 @@
     <footer class="copyright_div">
       <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by Dakota - HeruEdhel 2025</a>
     </footer>
+
+    <script>
+      // Random gallery images for feature cards
+      const galleryImages = [
+        'ATrappedQuin.png', 'AztecMachines.png', 'BloomingBase.png', 'DarkDuckAlly.png',
+        'DinosBase.png', 'DownTownShopping.png', 'DucknCoBase.png', 'EvilEmpireShopping.png',
+        'FHQCircle.png', 'FrozenHero.png', 'GrandHallHogwarts.png', 'GroupShotinDowntownShopping.png',
+        'HalloweenEvent.png', 'Hogwarts2.png', 'Hogwarts3.png', 'Hogwarts4.png', 'Hogwarts5.png',
+        'HufflepuffGreenhouse.png', 'InsideSomeBase.png', 'LifeSeriesSkyBridge.png',
+        'MarkAndDoomsStarter.png', 'MeganBase.png', 'MiniGamesArea.png', 'MntVader.png',
+        'NecromancerBase.png', 'NewSpawnSunSet.png', 'NewSpawnSunSet2.png', 'NickooFarmHouse.png',
+        'NickooHogwarts.png', 'ObolBase.png', 'PerryInShopping.png', 'QuinnetjuhhhBase.png',
+        'RavenClawHogwarts.png', 'RavenClawHogwarts2.png', 'RevanBelrog.png', 'RevansBase.png',
+        'RoseyBase.png', 'S&LBase.png', 'ShoppingPalce.png', 'ShortysBase.png', 'SpaceShip.png',
+        'TheShoppingMall.png', 'TopOfUnoMiniGame.png', 'TrainStationInside.png', 
+        'TrainStationOutside.png', 'VehusTree.png', 'WolfBaseInRain.png', 'WolfsHologramHead.png',
+        'WolfsNewBase.png', 'WolfStreet.png', 'XmasArea.png', 'XmasHouse.png'
+      ];
+
+      // Function to get random image
+      function getRandomImage() {
+        return galleryImages[Math.floor(Math.random() * galleryImages.length)];
+      }
+
+      // Function to set random images for feature cards
+      function setRandomFeatureImages() {
+        const featureCards = document.querySelectorAll('.main2_feature');
+        const usedImages = new Set();
+        
+        featureCards.forEach(card => {
+          let randomImage;
+          // Ensure we don't use the same image twice
+          do {
+            randomImage = getRandomImage();
+          } while (usedImages.has(randomImage) && usedImages.size < galleryImages.length);
+          
+          usedImages.add(randomImage);
+          const img = card.querySelector('.main2_feature_img');
+          if (img) {
+            img.src = `gallery/images/${randomImage}`;
+            img.onerror = function() {
+              // Fallback to default images if gallery image fails
+              const feature = card.getAttribute('data-feature');
+              switch(feature) {
+                case 'season': this.src = 'media/spawn.jpg'; break;
+                case 'economy': this.src = 'media/shopping.jpg'; break;
+                case 'events': this.src = 'media/minishop.jpg'; break;
+                case 'worldwide': this.src = 'media/hogwarts.png'; break;
+                default: this.src = 'media/spawn.jpg';
+              }
+            };
+          }
+        });
+      }
+
+      // Set random images when page loads
+      document.addEventListener('DOMContentLoaded', setRandomFeatureImages);
+
+      // Optional: Refresh images every 30 seconds for dynamic effect
+      // setInterval(setRandomFeatureImages, 30000);
+    </script>
   </body>
 </html>
