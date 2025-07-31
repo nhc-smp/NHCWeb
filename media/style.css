@@ -509,7 +509,6 @@ body {
 .main5 {
     background-color: var(--background2);
     min-height: 10rem;
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
