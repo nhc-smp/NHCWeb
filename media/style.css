@@ -1864,6 +1864,22 @@ body {
     width: 100%;
 }
 
+
+.aboutlogo .main5_admin_div {
+    width: 100%;
+    max-width: none;
+}
+
+.aboutlogo .main5_admins_div {
+    width: 100%;
+    max-width: none;
+}
+
+.aboutlogo .main5_supporters_div {
+    width: 100%;
+    max-width: none;
+}
+
 .rules .main5_admins_description_div h1 {
     font-size: 2.5rem;
     color: var(--accent1);
