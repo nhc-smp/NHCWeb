@@ -151,22 +151,6 @@ class NavigationManager {
         `;
     }
 
-    // Generate mobile navigation toggle script
-    generateMobileScript() {
-        return `
-            <script>
-                function mobile_navbar_link_hider() {
-                    var x = document.getElementById("mobile_navbar_links");
-                    if (x.style.display === "flex") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "flex";
-                    }
-                }
-            </script>
-        `;
-    }
-
     // Initialize navigation on page load
     init() {
         // Insert desktop navigation
@@ -178,8 +162,18 @@ class NavigationManager {
         // Insert mobile navigation
         const mobileNavContainer = document.getElementById('mobile-nav-container');
         if (mobileNavContainer) {
-            mobileNavContainer.innerHTML = this.generateMobileNav() + this.generateMobileScript();
+            mobileNavContainer.innerHTML = this.generateMobileNav();
         }
+
+        // Define the mobile navigation toggle function globally
+        window.mobile_navbar_link_hider = function() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        };
     }
 }
 
