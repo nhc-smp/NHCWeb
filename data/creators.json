@@ -7,7 +7,7 @@
             "description": "",
             "link": "https://www.youtube.com/channel/UCSxh1uIWmV3_Zqy30mkFwpg",
             "icon": "fa-video-camera",
-            "note": "Livestreams & Shorts",
+            "note": "",
             "featured": true
         },
         {
@@ -17,7 +17,7 @@
             "description": "",
             "link": "https://www.youtube.com/channel/UCtIs8G1E9GHugsMAkt3VP2g",
             "icon": "fa-play-circle",
-            "note": "Regular Uploads",
+            "note": "",
             "featured": true
         },
         {
@@ -27,7 +27,7 @@
             "description": "",
             "link": "https://www.youtube.com/channel/UCJR8vOsd9OVwuYUp9uMj1Tw",
             "icon": "fa-trophy",
-            "note": "Event Coverage",
+            "note": "",
             "featured": true
         },
         {
@@ -37,7 +37,7 @@
             "description": "",
             "link": "https://www.youtube.com/channel/UCyjn29B3UOxXBXEDMzgqqww",
             "icon": "fa-cubes",
-            "note": "Build Master",
+            "note": "",
             "featured": true
         },
         {
@@ -47,7 +47,7 @@
             "description": "",
             "link": "https://www.youtube.com/@beemanx8355",
             "icon": "fa-users",
-            "note": "Community Focus",
+            "note": "",
             "featured": true
         },
         {
@@ -57,7 +57,7 @@
             "description": "",
             "link": "https://www.youtube.com/@TheBuilders_69",
             "icon": "fa-wrench",
-            "note": "Tutorial Creator",
+            "note": "",
             "featured": true
         },
         {
@@ -67,7 +67,7 @@
             "description": "",
             "link": "https://www.twitch.tv/missshorty17",
             "icon": "fa-twitch",
-            "note": "Live Streams",
+            "note": "",
             "featured": true
         }
     ],

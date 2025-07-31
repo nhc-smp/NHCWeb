@@ -1393,6 +1393,46 @@ body {
     color: var(--accent2);
 }
 
+/* New avatar styling for profile pictures */
+.creator-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, #333, #222);
+    border: 3px solid var(--accent2);
+    transition: all 0.3s ease;
+}
+
+.creator-avatar img.creator-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.creator-avatar:hover img.creator-profile-img {
+    transform: scale(1.05);
+}
+
+/* Fallback icon styling within avatar */
+.creator-avatar i {
+    font-size: 2rem;
+    color: var(--accent2);
+}
+
+/* Hover effect for avatar */
+.creator-card:hover .creator-avatar {
+    border-color: var(--accent1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
 .creator-info h4 {
     margin: 0 0 8px 0;
     font-size: 1.1rem;

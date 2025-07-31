@@ -145,10 +145,134 @@
   </footer>
 
   <script>
+    // Function to extract channel ID from YouTube URL
+    function extractYouTubeChannelId(url) {
+      const patterns = [
+        /youtube\.com\/channel\/(UC[\w-]+)/,
+        /youtube\.com\/@([\w-]+)/,
+        /youtube\.com\/c\/([\w-]+)/,
+        /youtube\.com\/user\/([\w-]+)/
+      ];
+      
+      for (const pattern of patterns) {
+        const match = url.match(pattern);
+        if (match) return { type: pattern === patterns[0] ? 'channel' : 'handle', id: match[1] };
+      }
+      return null;
+    }
+
+    // Function to extract Twitch username from URL
+    function extractTwitchUsername(url) {
+      const match = url.match(/twitch\.tv\/([\w-]+)/);
+      return match ? match[1] : null;
+    }
+
+    // Function to get profile picture for YouTube channels
+    async function getYouTubeProfilePicture(channelUrl) {
+      try {
+        const channelInfo = extractYouTubeChannelId(channelUrl);
+        if (!channelInfo) return null;
+
+        // For YouTube channels, we can try several approaches
+        if (channelInfo.type === 'channel' && channelInfo.id.startsWith('UC')) {
+          // Try the direct YouTube avatar URL pattern
+          const avatarUrl = `https://yt3.ggpht.com/ytc/AIdro_${channelInfo.id.substring(2)}/s88-c-k-c0x00ffffff-no-rj`;
+          
+          // Test if the image exists
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => resolve(avatarUrl);
+            img.onerror = () => resolve(null);
+            img.src = avatarUrl;
+          });
+        }
+
+        // For handles and other formats, try a different approach
+        try {
+          // Use a simple proxy service to get channel info
+          const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(`https://www.youtube.com/c/${channelInfo.id}`)}`;
+          const response = await fetch(proxyUrl);
+          
+          if (response.ok) {
+            const html = await response.text();
+            // Extract profile picture from the HTML
+            const avatarMatch = html.match(/"avatar":{"thumbnails":\[{"url":"([^"]+)"/);
+            if (avatarMatch) {
+              return avatarMatch[1];
+            }
+          }
+        } catch (proxyError) {
+          console.log('Proxy method failed:', proxyError);
+        }
+
+        return null;
+      } catch (error) {
+        console.log('Could not fetch YouTube profile picture:', error);
+        return null;
+      }
+    }
+
+    // Function to get profile picture for Twitch channels
+    async function getTwitchProfilePicture(twitchUrl) {
+      try {
+        const username = extractTwitchUsername(twitchUrl);
+        if (!username) return null;
+
+        // Try to fetch from a CORS-friendly endpoint
+        // Note: This would require a backend service or API key in production
+        // For now, we'll return null to fall back to FontAwesome icons
+        return null;
+      } catch (error) {
+        console.log('Could not fetch Twitch profile picture:', error);
+        return null;
+      }
+    }
+
+    // Function to create creator avatar element
+    async function createCreatorAvatar(creator) {
+      const avatarContainer = document.createElement('div');
+      avatarContainer.classList.add('creator-avatar');
+
+      let profilePicUrl = null;
+
+      // First, check if there's a manual avatar URL in the data
+      if (creator.avatarUrl) {
+        profilePicUrl = creator.avatarUrl;
+      } else {
+        // Try to get profile picture based on platform
+        if (creator.platform === 'YouTube' && creator.link) {
+          profilePicUrl = await getYouTubeProfilePicture(creator.link);
+        } else if (creator.platform === 'Twitch' && creator.link) {
+          profilePicUrl = await getTwitchProfilePicture(creator.link);
+        }
+      }
+
+      if (profilePicUrl) {
+        // Create image element for profile picture
+        const img = document.createElement('img');
+        img.src = profilePicUrl;
+        img.alt = `${creator.name} profile picture`;
+        img.classList.add('creator-profile-img');
+        
+        // Add error handling to fall back to icon
+        img.onerror = function() {
+          console.log(`Failed to load profile picture for ${creator.name}, falling back to icon`);
+          avatarContainer.innerHTML = `<i class="fa ${creator.icon}"></i>`;
+        };
+        
+        avatarContainer.appendChild(img);
+      } else {
+        // Fall back to FontAwesome icon
+        avatarContainer.innerHTML = `<i class="fa ${creator.icon}"></i>`;
+      }
+
+      return avatarContainer;
+    }
+
     // Load and display random content creators
     fetch('../data/creators.json')
       .then(response => response.json())
-      .then(data => {
+      .then(async data => {
         const creatorsGrid = document.getElementById('creators-grid');
         const allCreators = [...data.creators, ...data.placeholders];
         
@@ -162,7 +286,7 @@
         const randomCreators = getRandomCreators(allCreators, 3);
         
         // Create creator cards
-        randomCreators.forEach(creator => {
+        for (const creator of randomCreators) {
           const creatorCard = document.createElement('div');
           creatorCard.classList.add('creator-card');
           
@@ -172,18 +296,23 @@
           } else {
             creatorCard.classList.add('placeholder-creator');
           }
+
+          // Create avatar (this will be async)
+          const avatarElement = await createCreatorAvatar(creator);
           
-          creatorCard.innerHTML = `
-            <div class="creator-placeholder">
-              <i class="fa ${creator.icon}"></i>
-            </div>
-            <div class="creator-info">
-              <h4>${creator.name}</h4>
-              <p class="creator-type">${creator.type} • ${creator.platform}</p>
-              <p>${creator.description}</p>
-              <span class="creator-note">${creator.note}</span>
-            </div>
+          // Create the card content
+          const cardContent = document.createElement('div');
+          cardContent.classList.add('creator-info');
+          cardContent.innerHTML = `
+            <h4>${creator.name}</h4>
+            <p class="creator-type">${creator.type} • ${creator.platform}</p>
+            <p>${creator.description}</p>
+            <span class="creator-note">${creator.note}</span>
           `;
+
+          // Assemble the card
+          creatorCard.appendChild(avatarElement);
+          creatorCard.appendChild(cardContent);
           
           // Add click functionality for real creators
           if (creator.link && creator.link.trim() !== '') {
@@ -195,7 +324,7 @@
           }
           
           creatorsGrid.appendChild(creatorCard);
-        });
+        }
       })
       .catch(error => {
         console.error('Error loading creators:', error);
@@ -203,7 +332,7 @@
         const creatorsGrid = document.getElementById('creators-grid');
         creatorsGrid.innerHTML = `
           <div class="creator-card placeholder-creator">
-            <div class="creator-placeholder">
+            <div class="creator-avatar">
               <i class="fa fa-video-camera"></i>
             </div>
             <div class="creator-info">
@@ -214,7 +343,7 @@
             </div>
           </div>
           <div class="creator-card placeholder-creator">
-            <div class="creator-placeholder">
+            <div class="creator-avatar">
               <i class="fa fa-camera"></i>
             </div>
             <div class="creator-info">
@@ -225,7 +354,7 @@
             </div>
           </div>
           <div class="creator-card placeholder-creator">
-            <div class="creator-placeholder">
+            <div class="creator-avatar">
               <i class="fa fa-twitch"></i>
             </div>
             <div class="creator-info">
