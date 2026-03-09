@@ -30,7 +30,7 @@
         <!-- Main Image Display -->
         <div class="gallery-viewer">
             <div class="gallery-image-container">
-                <img id="gallery-image" src="images/hogwarts.png" alt="Server Screenshot" class="gallery-main-image">
+                <img id="gallery-image" src="images/season 4/spawn.jpg" alt="Server Screenshot" class="gallery-main-image">
                 <div class="gallery-loading" id="gallery-loading">Loading...</div>
                 
                 <!-- Navigation Arrows -->
@@ -56,6 +56,14 @@
 
         <!-- Gallery Controls -->
         <div class="gallery-controls">
+            <div class="gallery-season-picker">
+                <label class="gallery-season-label" for="season-select">Season</label>
+                <select id="season-select" class="gallery-select" aria-label="Select season" onchange="handleSeasonChange(this.value)"></select>
+            </div>
+            <div class="gallery-season-picker">
+                <label class="gallery-season-label" for="tag-select">Tag</label>
+                <select id="tag-select" class="gallery-select" aria-label="Select tag" onchange="handleTagChange(this.value)"></select>
+            </div>
             <button class="gallery-btn" onclick="pauseGallery()" id="pause-btn">
                 <i class="fa fa-pause"></i> Pause
             </button>
@@ -69,7 +77,7 @@
 
         <!-- Thumbnails -->
         <div class="gallery-thumbnails">
-            <h4 class="thumbnails-title">All Images</h4>
+            <h4 class="thumbnails-title">Images</h4>
             <div class="thumbnails-grid" id="thumbnails-container">
                 <!-- Thumbnails will be generated here -->
             </div>
@@ -77,324 +85,197 @@
     </div>
 
     <script>
-        // Enhanced Gallery Configuration
+        // Season data is loaded from ../data/gallerySeasons.json
+        let gallerySeasons = {};
+
         const galleryConfig = {
-            path: 'images/',
+            path: '',
             autoRotateSpeed: 6000, // 6 seconds (slower for more images)
-            images: [
-                // Spawn & Server Areas
-                { 
-                    file: 'spawn.jpg', 
-                    title: 'Server Spawn', 
-                    description: 'The main spawn point where all adventures begin' 
-                },
-                { 
-                    file: 'NewSpawnSunSet.png', 
-                    title: 'New Spawn at Sunset', 
-                    description: 'Beautiful sunset view of the renovated spawn area' 
-                },
-                { 
-                    file: 'NewSpawnSunSet2.png', 
-                    title: 'New Spawn Golden Hour', 
-                    description: 'Another stunning sunset view of the spawn area' 
-                },
-                
-                // Hogwarts Castle Complex
-                { 
-                    file: 'hogwarts.png', 
-                    title: 'Hogwarts Castle', 
-                    description: 'Our magnificent Hogwarts castle build showcasing magical architecture' 
-                },
-                { 
-                    file: 'Hogwarts2.png', 
-                    title: 'Hogwarts Courtyard', 
-                    description: 'The impressive courtyard area of Hogwarts castle' 
-                },
-                { 
-                    file: 'Hogwarts3.png', 
-                    title: 'Hogwarts Towers', 
-                    description: 'Detailed view of the Hogwarts tower structures' 
-                },
-                { 
-                    file: 'Hogwarts4.png', 
-                    title: 'Hogwarts Exterior', 
-                    description: 'Grand exterior view of the complete Hogwarts complex' 
-                },
-                { 
-                    file: 'Hogwarts5.png', 
-                    title: 'Hogwarts Grounds', 
-                    description: 'Panoramic view of the Hogwarts castle and surrounding grounds' 
-                },
-                { 
-                    file: 'GrandHallHogwarts.png', 
-                    title: 'Hogwarts Great Hall', 
-                    description: 'The majestic Great Hall interior with floating candles' 
-                },
-                { 
-                    file: 'NickooHogwarts.png', 
-                    title: 'Hogwarts Detail View', 
-                    description: 'Detailed architectural features of the Hogwarts build' 
-                },
-                { 
-                    file: 'RavenClawHogwarts.png', 
-                    title: 'Ravenclaw House', 
-                    description: 'The Ravenclaw house section of Hogwarts' 
-                },
-                { 
-                    file: 'RavenClawHogwarts2.png', 
-                    title: 'Slytherin Tower', 
-                    description: 'Detailed view of the Slytherin tower and common room' 
-                },
-                { 
-                    file: 'HufflepuffGreenhouse.png', 
-                    title: 'Hufflepuff Greenhouse', 
-                    description: 'The Hufflepuff house greenhouse for Herbology classes' 
-                },
-                
-                // Shopping Districts
-                { 
-                    file: 'shopping.jpg', 
-                    title: 'Shopping District', 
-                    description: 'The bustling main shopping district where players trade' 
-                },
-                { 
-                    file: 'DownTownShopping.png', 
-                    title: 'Downtown Shopping', 
-                    description: 'The busy downtown shopping area with various stores' 
-                },
-                { 
-                    file: 'GroupShotinDowntownShopping.png', 
-                    title: 'Community in Shopping District', 
-                    description: 'Server members gathering in the downtown shopping area' 
-                },
-                { 
-                    file: 'EvilEmpireShopping.png', 
-                    title: 'Evil Empire Shopping', 
-                    description: 'The themed shopping area of the Evil Empire faction' 
-                },
-                { 
-                    file: 'PerryInShopping.png', 
-                    title: 'Perry\'s Shop Visit', 
-                    description: 'Perry exploring the various shops in the district' 
-                },
-                { 
-                    file: 'ShoppingPalce.png', 
-                    title: 'Shopping Palace', 
-                    description: 'An elegant shopping palace with luxury stores' 
-                },
-                { 
-                    file: 'TheShoppingMall.png', 
-                    title: 'The Shopping Mall', 
-                    description: 'Large indoor shopping mall complex' 
-                },
-                
-                // Player Bases & Builds
-                { 
-                    file: 'BloomingBase.png', 
-                    title: 'JesseMC Base', 
-                    description: 'JesseMC\'s Epic Base'
-                },
-                { 
-                    file: 'DinosBase.png', 
-                    title: 'Dino\'s Base', 
-                    description: 'Dino\'s impressive personal base build' 
-                },
-                { 
-                    file: 'DucknCoBase.png', 
-                    title: 'DarkDuck Base', 
-                    description: 'build by Duck' 
-                },
-                { 
-                    file: 'MeganBase.png', 
-                    title: 'Megan\'s Base', 
-                    description: 'Megan\'s creative and unique base design' 
-                },
-                { 
-                    file: 'NecromancerBase.png', 
-                    title: 'Blooming\'s Necromancer Base', 
-                    description: 'Dark and mysterious necromancer-themed base' 
-                },
-                { 
-                    file: 'ObolBase.png', 
-                    title: 'Blooming\'s Obol Base', 
-                    description: 'Blooming\'s Obol architectural masterpiece base' 
-                },
-                { 
-                    file: 'QuinnetjuhhhBase.png', 
-                    title: 'Quinnetjuhhh\'s Base', 
-                    description: 'Quinnetjuhhh\'s creative base with unique design elements' 
-                },
-                { 
-                    file: 'RoseyBase.png', 
-                    title: 'Rosey\'s Base', 
-                    description: 'Rosey\'s charming base build' 
-                },
-                { 
-                    file: 'S&LBase.png', 
-                    title: 'VMM\'s Base', 
-                    description: 'VMM\'s Base' 
-                },
-                { 
-                    file: 'ShortysBase.png', 
-                    title: 'Shorty\'s Base', 
-                    description: 'Shorty\'s base' 
-                },
-                { 
-                    file: 'WolfsNewBase.png', 
-                    title: 'Wolf\'s New Base', 
-                    description: 'Wolf\'s latest and most impressive base build' 
-                },
-                { 
-                    file: 'WolfBaseInRain.png', 
-                    title: 'Wolf\'s Base in Rain', 
-                    description: 'Atmospheric shot of Wolf\'s base during a rainstorm' 
-                },
-                { 
-                    file: 'RevansBase.png', 
-                    title: 'Revan\'s Base', 
-                    description: 'Revan\'s impressive base' 
-                },
-                { 
-                    file: 'MarkAndDoomsStarter.png', 
-                    title: 'Mark & Doom\'s Starter', 
-                    description: 'Mark and Doom\'s collaborative starter base' 
-                },
-                { 
-                    file: 'NickooFarmHouse.png', 
-                    title: 'Nickoo\'s Farm House', 
-                    description: 'Nickoo\'s cozy farmhouse with surrounding crops' 
-                },
-                
-                // Special Builds & Structures
-                { 
-                    file: 'SpaceShip.png', 
-                    title: 'Space Ship', 
-                    description: 'Futuristic spaceship build reaching for the stars' 
-                },
-                { 
-                    file: 'VehusTree.png', 
-                    title: 'Vehu\'s Tree', 
-                    description: 'Massive tree build by Vehu with intricate details' 
-                },
-                { 
-                    file: 'MntVader.png', 
-                    title: 'Mount Vader', 
-                    description: 'Imposing mountain structure named Mount Vader in Starwars Land' 
-                },
-                { 
-                    file: 'FHQCircle.png', 
-                    title: 'FHHQ Circle', 
-                    description: 'Circular headquarters building' 
-                },
-                { 
-                    file: 'AztecMachines.png', 
-                    title: 'Aztec Machines', 
-                    description: 'Ancient Aztec-themed machinery and structures' 
-                },
-                { 
-                    file: 'RevanBelrog.png', 
-                    title: 'Revan\'s Belrog', 
-                    description: 'Revan\'s massive Belrog build with impressive detail' 
-                },
-                
-                // Transportation & Infrastructure
-                { 
-                    file: 'TrainStationOutside.png', 
-                    title: 'Train Station Exterior', 
-                    description: 'Grand exterior of the server\'s main train station' 
-                },
-                { 
-                    file: 'TrainStationInside.png', 
-                    title: 'Train Station Interior', 
-                    description: 'Detailed interior of the train station with platforms' 
-                },
-                { 
-                    file: 'LifeSeriesSkyBridge.png', 
-                    title: 'Life Series Sky Bridge', 
-                    description: 'Sky bridge in Life Series Event' 
-                },
-                { 
-                    file: 'WolfStreet.png', 
-                    title: 'Wolf Street', 
-                    description: 'Detailed street area with Wolf\'s architectural style' 
-                },
-                { 
-                    file: 'DarkDuckAlly.png', 
-                    title: 'Dark Duck Alley', 
-                    description: 'Mysterious alley area with unique atmosphere' 
-                },
-                
-                // Mini-Games & Events
-                { 
-                    file: 'MiniGamesArea.png', 
-                    title: 'Mini-Games Area', 
-                    description: 'Dedicated area for server mini-games and competitions' 
-                },
-                { 
-                    file: 'TopOfUnoMiniGame.png', 
-                    title: 'UNO Mini-Game', 
-                    description: 'Aerial view of the UNO card game mini-game area' 
-                },
-                { 
-                    file: 'HalloweenEvent.png', 
-                    title: 'Halloween Event', 
-                    description: 'Halloween event group photo' 
-                },
-                { 
-                    file: 'XmasArea.png', 
-                    title: 'Christmas Area', 
-                    description: 'Christmas event group photo' 
-                },
-                { 
-                    file: 'XmasHouse.png', 
-                    title: 'R0dzens Christmas House', 
-                    description: 'R0dzens Cozy Christmas house with warm holiday atmosphere' 
-                },
-                
-                // Special Features & Easter Eggs
-                { 
-                    file: 'WolfsHologramHead.png', 
-                    title: 'Wolf\'s Hologram Head', 
-                    description: 'Wolf\'s creative holographic head display' 
-                },
-                { 
-                    file: 'FrozenHero.png', 
-                    title: 'Frozen Hero', 
-                    description: 'In need of kindness' 
-                },
-                { 
-                    file: 'ATrappedQuin.png', 
-                    title: 'A Trapped Quin', 
-                    description: 'Humorous scene of Quin in a tricky situation' 
-                },
-                { 
-                    file: 'InsideSomeBase.png', 
-                    title: 'R0dzens Christmas\'s Base', 
-                    description: 'Interior view of a beautifully decorated base' 
-                },
-                
-                // Server Rules Reference
-                { 
-                    file: 'rules.jpg', 
-                    title: 'Heru Reading Da Rules', 
-                    description: 'Important server rules and guidelines display' 
-                }
-            ]
+            images: []
         };
 
         let currentIndex = 0;
         let isPaused = false;
         let autoRotateInterval = null;
         let isFullscreen = false;
+        let currentSeasonKey = null;
+        let currentTag = 'all';
+        let seasonAllImages = [];
 
-        // Initialize gallery
-        function initGallery() {
+        async function loadGallerySeasons() {
+            const response = await fetch('../data/gallerySeasons.json', { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error(`Failed to load gallery seasons: ${response.status} ${response.statusText}`);
+            }
+            const data = await response.json();
+
+            if (!data || typeof data !== 'object') {
+                throw new Error('Gallery seasons data is not an object');
+            }
+
+            const seasonKeys = Object.keys(data);
+            if (seasonKeys.length === 0) {
+                throw new Error('Gallery seasons JSON has no seasons');
+            }
+
+            gallerySeasons = data;
+        }
+
+        function buildImageUrl(file) {
+            return `${encodeURI(galleryConfig.path)}${encodeURIComponent(file)}`;
+        }
+
+        function getImageTags(image) {
+            if (!image || !Array.isArray(image.tags)) return [];
+            return image.tags.filter(t => typeof t === 'string' && t.trim().length > 0);
+        }
+
+        function collectSeasonTags(images) {
+            const tagSet = new Set();
+            images.forEach(img => {
+                getImageTags(img).forEach(t => tagSet.add(t));
+            });
+            return Array.from(tagSet).sort((a, b) => a.localeCompare(b));
+        }
+
+        function initTagSelector(tags) {
+            const select = document.getElementById('tag-select');
+            if (!select) return;
+            select.innerHTML = '';
+
+            const allOption = document.createElement('option');
+            allOption.value = 'all';
+            allOption.textContent = 'All';
+            select.appendChild(allOption);
+
+            tags.forEach(tag => {
+                const option = document.createElement('option');
+                option.value = tag;
+                option.textContent = tag;
+                select.appendChild(option);
+            });
+        }
+
+        function getInitialTag() {
+            const params = new URLSearchParams(window.location.search);
+            const tag = String(params.get('tag') || '').trim();
+            return tag || 'all';
+        }
+
+        function applyFilters({ pushHistory = true } = {}) {
+            const filtered = (currentTag === 'all')
+                ? seasonAllImages
+                : seasonAllImages.filter(img => getImageTags(img).includes(currentTag));
+
+            galleryConfig.images = filtered;
+            currentIndex = 0;
+
+            const total = filtered.length;
+            document.getElementById('total-images').textContent = total;
+            document.getElementById('current-index').textContent = total > 0 ? 1 : 0;
+
+            const prevBtn = document.querySelector('.gallery-nav-prev');
+            const nextBtn = document.querySelector('.gallery-nav-next');
+            if (prevBtn) prevBtn.disabled = total === 0;
+            if (nextBtn) nextBtn.disabled = total === 0;
+
             createThumbnails();
             updateDisplay();
-            startAutoRotate();
-            
-            // Update total images counter
-            document.getElementById('total-images').textContent = galleryConfig.images.length;
+
+            const tagSelect = document.getElementById('tag-select');
+            if (tagSelect) tagSelect.value = currentTag;
+
+            if (pushHistory) {
+                const url = new URL(window.location.href);
+                url.searchParams.set('season', currentSeasonKey);
+                if (currentTag && currentTag !== 'all') {
+                    url.searchParams.set('tag', currentTag);
+                } else {
+                    url.searchParams.delete('tag');
+                }
+                window.history.replaceState({}, '', url);
+            }
+        }
+
+        function normalizeSeasonKey(value) {
+            const trimmed = String(value || '').trim().toLowerCase();
+            if (!trimmed) return null;
+            if (trimmed === '4' || trimmed === 'season4' || trimmed === 'season-4') return 'season-4';
+            return trimmed;
+        }
+
+        function getInitialSeasonKey() {
+            const params = new URLSearchParams(window.location.search);
+            const fromQuery = normalizeSeasonKey(params.get('season'));
+            if (fromQuery && gallerySeasons[fromQuery]) return fromQuery;
+            return Object.keys(gallerySeasons)[0];
+        }
+
+        function initSeasonSelector() {
+            const select = document.getElementById('season-select');
+            if (!select) return;
+            select.innerHTML = '';
+
+            Object.entries(gallerySeasons).forEach(([key, season]) => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = season.label;
+                select.appendChild(option);
+            });
+        }
+
+        function setSeason(seasonKey, { pushHistory = true } = {}) {
+            if (!gallerySeasons[seasonKey]) return;
+
+            stopAutoRotate();
+            currentSeasonKey = seasonKey;
+            currentIndex = 0;
+
+            galleryConfig.path = gallerySeasons[seasonKey].path;
+            seasonAllImages = Array.isArray(gallerySeasons[seasonKey].images) ? gallerySeasons[seasonKey].images : [];
+
+            const tags = collectSeasonTags(seasonAllImages);
+            initTagSelector(tags);
+
+            // Preserve the current tag if it exists for this season; otherwise reset to 'all'
+            if (currentTag !== 'all' && !tags.includes(currentTag)) {
+                currentTag = 'all';
+            }
+
+            applyFilters({ pushHistory });
+            if (!isPaused) startAutoRotate();
+
+            const select = document.getElementById('season-select');
+            if (select) select.value = seasonKey;
+
+        }
+
+        function handleSeasonChange(seasonKey) {
+            setSeason(seasonKey);
+        }
+
+        function handleTagChange(tag) {
+            currentTag = tag || 'all';
+            applyFilters();
+        }
+
+        // Initialize gallery
+        async function initGallery() {
+            try {
+                await loadGallerySeasons();
+            } catch (err) {
+                console.error(err);
+                const loading = document.getElementById('gallery-loading');
+                if (loading) {
+                    loading.style.display = 'flex';
+                    loading.textContent = 'Gallery failed to load (missing seasons JSON)';
+                }
+                return;
+            }
+
+            initSeasonSelector();
+            currentTag = getInitialTag();
+            setSeason(getInitialSeasonKey(), { pushHistory: false });
             
             // Add keyboard navigation
             document.addEventListener('keydown', handleKeyNavigation);
@@ -405,17 +286,34 @@
 
         // Update main image and info
         function updateDisplay() {
+            if (!galleryConfig.images || galleryConfig.images.length === 0) {
+                const galleryImage = document.getElementById('gallery-image');
+                const loading = document.getElementById('gallery-loading');
+                if (galleryImage) {
+                    galleryImage.removeAttribute('src');
+                    galleryImage.alt = '';
+                }
+                if (loading) {
+                    loading.style.display = 'flex';
+                    loading.textContent = 'No images match this tag.';
+                }
+                document.getElementById('image-title').textContent = '';
+                document.getElementById('image-description').textContent = '';
+                return;
+            }
+
             const currentImage = galleryConfig.images[currentIndex];
             const galleryImage = document.getElementById('gallery-image');
             const loading = document.getElementById('gallery-loading');
             
             // Show loading
             loading.style.display = 'flex';
+            loading.textContent = 'Loading...';
             
             // Create new image to preload
             const newImg = new Image();
             newImg.onload = function() {
-                galleryImage.src = `${galleryConfig.path}${currentImage.file}`;
+                galleryImage.src = buildImageUrl(currentImage.file);
                 galleryImage.alt = currentImage.title;
                 loading.style.display = 'none';
                 
@@ -427,11 +325,12 @@
                 // Update active thumbnail
                 updateActiveThumbnail();
             };
-            newImg.src = `${galleryConfig.path}${currentImage.file}`;
+            newImg.src = buildImageUrl(currentImage.file);
         }
 
         // Navigate to previous image
         function prevImage() {
+            if (!galleryConfig.images || galleryConfig.images.length === 0) return;
             currentIndex = (currentIndex - 1 + galleryConfig.images.length) % galleryConfig.images.length;
             updateDisplay();
             resetAutoRotate();
@@ -439,6 +338,7 @@
 
         // Navigate to next image
         function nextImage() {
+            if (!galleryConfig.images || galleryConfig.images.length === 0) return;
             currentIndex = (currentIndex + 1) % galleryConfig.images.length;
             updateDisplay();
             resetAutoRotate();
@@ -446,6 +346,7 @@
 
         // Jump to specific image
         function jumpToImage(index) {
+            if (!galleryConfig.images || galleryConfig.images.length === 0) return;
             currentIndex = index;
             updateDisplay();
             resetAutoRotate();
@@ -515,7 +416,7 @@
         function downloadImage() {
             const currentImage = galleryConfig.images[currentIndex];
             const link = document.createElement('a');
-            link.href = `${galleryConfig.path}${currentImage.file}`;
+            link.href = buildImageUrl(currentImage.file);
             link.download = currentImage.file;
             document.body.appendChild(link);
             link.click();
@@ -533,7 +434,7 @@
                 thumbContainer.onclick = () => jumpToImage(index);
                 
                 const thumb = document.createElement('img');
-                thumb.src = `${galleryConfig.path}${image.file}`;
+                thumb.src = buildImageUrl(image.file);
                 thumb.alt = image.title;
                 thumb.className = 'thumbnail-image';
                 

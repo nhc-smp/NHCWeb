@@ -49,10 +49,10 @@
       <div class="main2">
         <h2 class="headline">What We Have</h2>
         <div class="main2_features_div">
-          <div class="main2_feature" data-feature="season">
-            <img class="main2_feature_img" alt="Season 4 Forever" src="media/spawn.jpg">
-            <h3 class="main2_feature_headline">Season 4</h3>
-            <p class="main2_feature_text">Season 5 is about to start in the near future!<br>Currently planned for start of December.<br>Seasons last 2+ years</p>
+          <div class="main2_feature" data-feature="builds">
+            <img class="main2_feature_img" alt="Season 5" src="media/spawn.jpg">
+            <h3 class="main2_feature_headline">Season 5</h3>
+            <p class="main2_feature_text">Season 5 started December 2025.<br>Seasons last 2+ years</p>
           </div>
           <div class="main2_feature" data-feature="economy">
             <img class="main2_feature_img" alt="Diamond Economy" src="media/shopping.jpg">
@@ -64,12 +64,12 @@
             <h3 class="main2_feature_headline">Community Events & Minigames</h3>
             <p class="main2_feature_text">Secret Life, Bingo, UHC, guess-the-build, roleplay, large events, and much more.</p>
           </div>
-          <div class="main2_feature" data-feature="worldwide">
+          <div class="main2_feature" data-feature="builds">
             <img class="main2_feature_img" alt="Global Community" src="media/hogwarts.png">
             <h3 class="main2_feature_headline">Worldwide Community!</h3>
             <p class="main2_feature_text">We have players from everywhere around the world creating amazing builds together!</p>
           </div>
-          <div class="main2_feature" data-feature="whitelist">
+          <div class="main2_feature" data-feature="builds">
             <img class="main2_feature_img" alt="Whitelisted Server" src="media/minishop.jpg">
             <h3 class="main2_feature_headline">Whitelisted Community!</h3>
             <p class="main2_feature_text">Keeping a tight-knit community of dedicated players who love building together!</p>
@@ -116,7 +116,7 @@
               </div>
               <div class="main3_join_values">
                 <span class="server-ip">Apply for whitelist first!</span>
-                <span>1.21.7 or Newer</span>
+                <span>1.21.11 or Newer</span>
               </div>
             </div>
           </div>
@@ -128,60 +128,93 @@
     </footer>
 
     <script>
-      // Random gallery images for feature cards
-      const galleryImages = [
-        'ATrappedQuin.png', 'AztecMachines.png', 'BloomingBase.png', 'DarkDuckAlly.png',
-        'DinosBase.png', 'DownTownShopping.png', 'DucknCoBase.png', 'EvilEmpireShopping.png',
-        'FHQCircle.png', 'FrozenHero.png', 'GrandHallHogwarts.png', 'GroupShotinDowntownShopping.png',
-        'HalloweenEvent.png', 'Hogwarts2.png', 'Hogwarts3.png', 'Hogwarts4.png', 'Hogwarts5.png',
-        'HufflepuffGreenhouse.png', 'InsideSomeBase.png', 'LifeSeriesSkyBridge.png',
-        'MarkAndDoomsStarter.png', 'MeganBase.png', 'MiniGamesArea.png', 'MntVader.png',
-        'NecromancerBase.png', 'NewSpawnSunSet.png', 'NewSpawnSunSet2.png', 'NickooFarmHouse.png',
-        'NickooHogwarts.png', 'ObolBase.png', 'PerryInShopping.png', 'QuinnetjuhhhBase.png',
-        'RavenClawHogwarts.png', 'RavenClawHogwarts2.png', 'RevanBelrog.png', 'RevansBase.png',
-        'RoseyBase.png', 'S&LBase.png', 'ShoppingPalce.png', 'ShortysBase.png', 'SpaceShip.png',
-        'TheShoppingMall.png', 'TopOfUnoMiniGame.png', 'TrainStationInside.png', 
-        'TrainStationOutside.png', 'VehusTree.png', 'WolfBaseInRain.png', 'WolfsHologramHead.png',
-        'WolfsNewBase.png', 'WolfStreet.png', 'XmasArea.png', 'XmasHouse.png'
-      ];
-
-      // Function to get random image
-      function getRandomImage() {
-        return galleryImages[Math.floor(Math.random() * galleryImages.length)];
+      async function loadGallerySeasons() {
+        const response = await fetch('data/gallerySeasons.json', { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error(`Failed to load gallery seasons: ${response.status} ${response.statusText}`);
+        }
+        return response.json();
       }
 
-      // Function to set random images for feature cards
-      function setRandomFeatureImages() {
+      function buildGalleryImageUrl(seasonPath, file) {
+        return `gallery/${encodeURI(seasonPath)}${encodeURIComponent(file)}`;
+      }
+
+      function flattenImages(seasonsJson) {
+        const result = [];
+        if (!seasonsJson || typeof seasonsJson !== 'object') return result;
+        Object.values(seasonsJson).forEach(season => {
+          if (!season || typeof season !== 'object') return;
+          const seasonPath = String(season.path || '');
+          const images = Array.isArray(season.images) ? season.images : [];
+          images.forEach(img => {
+            if (!img || typeof img !== 'object') return;
+            const file = String(img.file || '');
+            if (!file) return;
+            const tags = Array.isArray(img.tags) ? img.tags : [];
+            result.push({ seasonPath, file, tags });
+          });
+        });
+        return result;
+      }
+
+      function pickRandomFrom(pool, usedKeys) {
+        if (!pool || pool.length === 0) return null;
+        if (!usedKeys) return pool[Math.floor(Math.random() * pool.length)];
+
+        // Try a few times to avoid repeats.
+        for (let i = 0; i < 25; i++) {
+          const candidate = pool[Math.floor(Math.random() * pool.length)];
+          const key = `${candidate.seasonPath}${candidate.file}`;
+          if (!usedKeys.has(key)) return candidate;
+        }
+        return pool[Math.floor(Math.random() * pool.length)];
+      }
+
+      async function setRandomFeatureImages() {
         const featureCards = document.querySelectorAll('.main2_feature');
-        const usedImages = new Set();
-        
+        const used = new Set();
+
+        let allImages = [];
+        try {
+          const seasons = await loadGallerySeasons();
+          allImages = flattenImages(seasons);
+        } catch (e) {
+          console.warn('Falling back to default feature images (no gallery seasons JSON).', e);
+        }
+
+        const economyImages = allImages.filter(i => (i.tags || []).includes('Economy'));
+
         featureCards.forEach(card => {
-          let randomImage;
-          // Ensure we don't use the same image twice
-          do {
-            randomImage = getRandomImage();
-          } while (usedImages.has(randomImage) && usedImages.size < galleryImages.length);
-          
-          usedImages.add(randomImage);
           const img = card.querySelector('.main2_feature_img');
-          if (img) {
-            img.src = `gallery/images/${randomImage}`;
-            img.onerror = function() {
-              // Fallback to default images if gallery image fails
-              const feature = card.getAttribute('data-feature');
-              switch(feature) {
-                case 'season': this.src = 'media/spawn.jpg'; break;
-                case 'economy': this.src = 'media/shopping.jpg'; break;
-                case 'events': this.src = 'media/minishop.jpg'; break;
-                case 'worldwide': this.src = 'media/hogwarts.png'; break;
-                default: this.src = 'media/spawn.jpg';
-              }
-            };
+          if (!img) return;
+
+          const feature = card.getAttribute('data-feature');
+          let pool = allImages;
+          if (feature === 'economy' && economyImages.length > 0) {
+            pool = economyImages;
           }
+
+          const chosen = pickRandomFrom(pool, used);
+          if (chosen) {
+            const key = `${chosen.seasonPath}${chosen.file}`;
+            used.add(key);
+            img.src = buildGalleryImageUrl(chosen.seasonPath, chosen.file);
+          }
+
+          img.onerror = function() {
+            // Fallback to default images if gallery image fails
+            switch(feature) {
+              case 'season': this.src = 'media/spawn.jpg'; break;
+              case 'economy': this.src = 'media/shopping.jpg'; break;
+              case 'events': this.src = 'media/minishop.jpg'; break;
+              case 'worldwide': this.src = 'media/hogwarts.png'; break;
+              default: this.src = 'media/spawn.jpg';
+            }
+          };
         });
       }
 
-      // Set random images when page loads
       document.addEventListener('DOMContentLoaded', setRandomFeatureImages);
 
       // Optional: Refresh images every 30 seconds for dynamic effect

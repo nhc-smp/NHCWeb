@@ -1,0 +1,1409 @@
+{
+  "season-4": {
+    "label": "Season 4",
+    "path": "images/season 4/",
+    "images": [
+      {
+        "file": "Spawn.jpg",
+        "title": "Server Spawn",
+        "description": "The main spawn point where all adventures begin",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Spawn",
+          "Community"
+        ]
+      },
+      {
+        "file": "New_Spawn_Sun_Set.png",
+        "title": "New Spawn at Sunset",
+        "description": "Beautiful sunset view of the renovated spawn area",
+        "tags": [
+          "Builds",
+          "Spawn",
+          "Community"
+        ]
+      },
+      {
+        "file": "New_Spawn_Sun_Set_2.png",
+        "title": "New Spawn Golden Hour",
+        "description": "Another stunning sunset view of the spawn area",
+        "tags": [
+          "Builds",
+          "Spawn",
+          "Community"
+        ]
+      },
+      {
+        "file": "Hogwarts.png",
+        "title": "Hogwarts Castle",
+        "description": "Our magnificent Hogwarts castle build showcasing magical architecture",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Community",
+          "Events"
+        ]
+      },
+      {
+        "file": "Hogwarts_2.png",
+        "title": "Hogwarts Courtyard",
+        "description": "The impressive courtyard area of Hogwarts castle",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Hogwarts_3.png",
+        "title": "Hogwarts Towers",
+        "description": "Detailed view of the Hogwarts tower structures",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Hogwarts_4.png",
+        "title": "Hogwarts Exterior",
+        "description": "Grand exterior view of the complete Hogwarts complex",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Hogwarts_5.png",
+        "title": "Hogwarts Grounds",
+        "description": "Panoramic view of the Hogwarts castle and surrounding grounds",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Grand_Hall_Hogwarts.png",
+        "title": "Hogwarts Great Hall",
+        "description": "The majestic Great Hall interior with floating candles",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Nickoo_Hogwarts.png",
+        "title": "Hogwarts Detail View",
+        "description": "Detailed architectural features of the Hogwarts build",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Raven_Claw_Hogwarts.png",
+        "title": "Ravenclaw House",
+        "description": "The Ravenclaw house section of Hogwarts",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Raven_Claw_Hogwarts_2.png",
+        "title": "Slytherin Tower",
+        "description": "Detailed view of the Slytherin tower and common room",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Hufflepuff_Greenhouse.png",
+        "title": "Hufflepuff Greenhouse",
+        "description": "The Hufflepuff house greenhouse for Herbology classes",
+        "tags": [
+          "Builds",
+          "Community",
+          "Events",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Shopping.jpg",
+        "title": "Shopping District",
+        "description": "The bustling main shopping district where players trade",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Down_Town_Shopping.png",
+        "title": "Downtown Shopping",
+        "description": "The busy downtown shopping area with various stores",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Group_Shotin_Downtown_Shopping.png",
+        "title": "Community in Shopping District",
+        "description": "Server members gathering in the downtown shopping area",
+        "tags": [
+          "Builds",
+          "Economy",
+          "Players"
+        ]
+      },
+      {
+        "file": "Evil_Empire_Shopping.png",
+        "title": "Evil Empire Shopping",
+        "description": "The themed shopping area of the Evil Empire faction",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Perry_In_Shopping.png",
+        "title": "Perry's Shop Visit",
+        "description": "Perry exploring the various shops in the district",
+        "tags": [
+          "Builds",
+          "Pranks",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Shopping_Palce.png",
+        "title": "Shopping Palace",
+        "description": "An elegant shopping palace with luxury stores",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "The_Shopping_Mall.png",
+        "title": "The Shopping Mall",
+        "description": "Large indoor shopping mall complex",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Blooming_Base.png",
+        "title": "JesseMC Base",
+        "description": "JesseMC's Epic Base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Dinos_Base.png",
+        "title": "Dino's Base",
+        "description": "Dino's impressive personal base build",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Duckn_Co_Base.png",
+        "title": "DarkDuck Base",
+        "description": "build by Duck",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Megan_Base.png",
+        "title": "Megan's Base",
+        "description": "Megan's creative and unique base design",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Necromancer_Base.png",
+        "title": "Blooming's Necromancer Base",
+        "description": "Dark and mysterious necromancer-themed base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Obol_Base.png",
+        "title": "Blooming's Obol Base",
+        "description": "Blooming's Obol architectural masterpiece base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Quinnetjuhhh_Base.png",
+        "title": "Quinnetjuhhh's Base",
+        "description": "Quinnetjuhhh's creative base with unique design elements",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Rosey_Base.png",
+        "title": "Rosey's Base",
+        "description": "Rosey's charming base build",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "S_L_Base.png",
+        "title": "VMM's Base",
+        "description": "VMM's Base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Shortys_Base.png",
+        "title": "Shorty's Base",
+        "description": "Shorty's base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Wolfs_New_Base.png",
+        "title": "Wolf's New Base",
+        "description": "Wolf's latest and most impressive base build",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Wolf_Base_In_Rain.png",
+        "title": "Wolf's Base in Rain",
+        "description": "Atmospheric shot of Wolf's base during a rainstorm",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Revans_Base.png",
+        "title": "Revan's Base",
+        "description": "Revan's impressive base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Mark_And_Dooms_Starter.png",
+        "title": "Mark & Doom's Starter",
+        "description": "Mark and Doom's collaborative starter base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Nickoo_Farm_House.png",
+        "title": "Nickoo's Farm House",
+        "description": "Nickoo's cozy farmhouse with surrounding crops",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Space_Ship.png",
+        "title": "Space Ship",
+        "description": "Futuristic spaceship build reaching for the stars",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Vehus_Tree.png",
+        "title": "Vehu's Tree",
+        "description": "Massive tree build by Vehu with intricate details",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Mnt_Vader.png",
+        "title": "Mount Vader",
+        "description": "Imposing mountain structure named Mount Vader in Starwars Land",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "FHQ_Circle.png",
+        "title": "FHHQ Circle",
+        "description": "Circular headquarters building",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Aztec_Machines.png",
+        "title": "Aztec Machines",
+        "description": "Ancient Aztec-themed machinery and structures",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Revan_Belrog.png",
+        "title": "Revan's Belrog",
+        "description": "Revan's massive Belrog build with impressive detail",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Train_Station_Outside.png",
+        "title": "Train Station Exterior",
+        "description": "Grand exterior of the server's main train station",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Train_Station_Inside.png",
+        "title": "Train Station Interior",
+        "description": "Detailed interior of the train station with platforms",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Life_Series_Sky_Bridge.png",
+        "title": "Life Series Sky Bridge",
+        "description": "Sky bridge in Life Series Event",
+        "tags": [
+          "Events"
+        ]
+      },
+      {
+        "file": "Wolf_Street.png",
+        "title": "Wolf Street",
+        "description": "Detailed street area with Wolf's architectural style",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Dark_Duck_Ally.png",
+        "title": "Dark Duck Alley",
+        "description": "Mysterious alley area with unique atmosphere",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Mini_Games_Area.png",
+        "title": "Mini-Games Area",
+        "description": "Dedicated area for server mini-games and competitions",
+        "tags": [
+          "Builds",
+          "Events",
+          "Community",
+          "Minigames"
+        ]
+      },
+      {
+        "file": "Top_Of_Uno_Mini_Game.png",
+        "title": "UNO Mini-Game",
+        "description": "Aerial view of the UNO card game mini-game area",
+        "tags": [
+          "Builds",
+          "Events",
+          "Community",
+          "Minigames"
+        ]
+      },
+      {
+        "file": "Halloween_Event.png",
+        "title": "Halloween Event",
+        "description": "Halloween event group photo",
+        "tags": [
+          "Builds",
+          "Events",
+          "Community",
+          "Players"
+        ]
+      },
+      {
+        "file": "Xmas_Area.png",
+        "title": "Christmas Area",
+        "description": "Christmas event group photo",
+        "tags": [
+          "Builds",
+          "Events",
+          "Community",
+          "Players"
+        ]
+      },
+      {
+        "file": "Xmas_House.png",
+        "title": "R0dzens Christmas House",
+        "description": "R0dzens Cozy Christmas house with warm holiday atmosphere",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Wolfs_Hologram_Head.png",
+        "title": "Wolf's Hologram Head",
+        "description": "Wolf's creative holographic head display",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Frozen_Hero.png",
+        "title": "Frozen Hero",
+        "description": "In need of kindness",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "A_Trapped_Quin.png",
+        "title": "A Trapped Quin",
+        "description": "Humorous scene of Quin in a tricky situation",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Inside_Some_Base.png",
+        "title": "R0dzens Christmas's Base",
+        "description": "Interior view of a beautifully decorated base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Rules.jpg",
+        "title": "Heru Reading Da Rules",
+        "description": "Important server rules and guidelines display",
+        "tags": [
+          "Builds"
+        ]
+      }
+    ]
+  },
+  "season-5": {
+    "label": "Season 5",
+    "path": "images/season 5/",
+    "images": [
+      {
+        "file": "Allay.png",
+        "title": "Allay",
+        "description": "Allay",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Black_Castle.png",
+        "title": "Black Castle",
+        "description": "Black Castle",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Bridge_Crossing.png",
+        "title": "Bridge Crossing",
+        "description": "Bridge Crossing",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Cherry_Tree_Glass_House.png",
+        "title": "Cherry Tree Glass House",
+        "description": "Cherry Tree Glass House",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Copper_Building.png",
+        "title": "Copper Building",
+        "description": "Copper Building",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Copper_Shopping.png",
+        "title": "Copper Shopping",
+        "description": "Copper Shopping",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Cozy_Forest_Home.png",
+        "title": "Cozy Forest Home",
+        "description": "Cozy Forest Home",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Curch_Grave_Yard.png",
+        "title": "Curch Grave Yard",
+        "description": "Curch Grave Yard",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Custom_Forest.png",
+        "title": "Custom Forest",
+        "description": "Custom Forest",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Custom_Forest_2.png",
+        "title": "Custom Forest 2",
+        "description": "Custom Forest 2",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Custom_Mountain_Afternoon.png",
+        "title": "Custom Mountain Afternoon",
+        "description": "Custom Mountain Afternoon",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Dock_View_Above.png",
+        "title": "Dock View Above",
+        "description": "Dock View Above",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Dock_View_Below.png",
+        "title": "Dock View Below",
+        "description": "Dock View Below",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Dock_View_Close.png",
+        "title": "Dock View Close",
+        "description": "Dock View Close",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Docks.png",
+        "title": "Docks",
+        "description": "Docks",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "End_Portal_Trikki.png",
+        "title": "End Portal Trikki",
+        "description": "End Portal Trikki",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Farmer_Starter.png",
+        "title": "Farmer Starter",
+        "description": "Farmer Starter",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Ghast_Bot.png",
+        "title": "Ghast Bot",
+        "description": "Ghast Bot",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Glub_Building.png",
+        "title": "Glub Building",
+        "description": "Glub Building",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Goose_Home.png",
+        "title": "Goose Home",
+        "description": "Goose Home",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Group_Photo_Mountian.png",
+        "title": "Group Photo Mountian",
+        "description": "Group Photo Mountian",
+        "tags": [
+          "Builds",
+          "Community",
+          "Players"
+        ]
+      },
+      {
+        "file": "Harold_Base.png",
+        "title": "Harold Base",
+        "description": "Harold Base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Homy.png",
+        "title": "Homy",
+        "description": "Homy",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Hot_Air_Balloon.png",
+        "title": "Hot Air Balloon",
+        "description": "Hot Air Balloon",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Hot_Springs.png",
+        "title": "Hot Springs",
+        "description": "Hot Springs",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Hydro_Corp_HQ_Early_Days.png",
+        "title": "Hydro Corp HQ Early Days",
+        "description": "Hydro Corp HQ Early Days",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Ice_Breaker_Ship.png",
+        "title": "Ice Breaker Ship",
+        "description": "Ice Breaker Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Ice_Breaker_Ship_2.png",
+        "title": "Ice Breaker Ship 2",
+        "description": "Ice Breaker Ship 2",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Ice_Ring.png",
+        "title": "Ice Ring",
+        "description": "Ice Ring",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Intrac_Air_Ship.png",
+        "title": "Intrac Air Ship",
+        "description": "Intrac Air Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Light_House.png",
+        "title": "Light House",
+        "description": "Light House",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Mage_Tower.png",
+        "title": "Mage Tower",
+        "description": "Mage Tower",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Magic_Mountain.png",
+        "title": "Magic Mountain",
+        "description": "Magic Mountain",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Magic_Mountain_Day.png",
+        "title": "Magic Mountain Day",
+        "description": "Magic Mountain Day",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Mesa_Town.png",
+        "title": "Mesa Town",
+        "description": "Mesa Town",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Mohobie_Starter.png",
+        "title": "Mohobie Starter",
+        "description": "Mohobie Starter",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Mountian_Top_Ruins.png",
+        "title": "Mountian Top Ruins",
+        "description": "Mountian Top Ruins",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Mushroom_Hillside.png",
+        "title": "Mushroom Hillside",
+        "description": "Mushroom Hillside",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Oil_Rig.png",
+        "title": "Oil Rig",
+        "description": "Oil Rig",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Post_Office.png",
+        "title": "Post Office",
+        "description": "Post Office",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Post_Office_Shaders.png",
+        "title": "Post Office Shaders",
+        "description": "Post Office Shaders",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Rods_Arena.jpg",
+        "title": "Rods Arena",
+        "description": "Rods Arena",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Events"
+        ]
+      },
+      {
+        "file": "Rods_Tavern.png",
+        "title": "Rods Tavern",
+        "description": "Rods Tavern",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "S_L_Base.jpg",
+        "title": "S L Base",
+        "description": "S L Base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Sand_Tower.png",
+        "title": "Sand Tower",
+        "description": "Sand Tower",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Sandy_Tower.png",
+        "title": "Sandy Tower",
+        "description": "Sandy Tower",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Ship.png",
+        "title": "Ship",
+        "description": "Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Small_Ship.png",
+        "title": "Small Ship",
+        "description": "Small Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Some_Bridge.png",
+        "title": "Some Bridge",
+        "description": "Some Bridge",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Spawn_High_Rise.png",
+        "title": "Spawn High Rise",
+        "description": "Spawn High Rise",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Spawn"
+        ]
+      },
+      {
+        "file": "Spawn_Shaders.png",
+        "title": "Spawn Shaders",
+        "description": "Spawn Shaders",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Spawn"
+        ]
+      },
+      {
+        "file": "Spawn_Starter.png",
+        "title": "Spawn Starter",
+        "description": "Spawn Starter",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Spawn"
+        ]
+      },
+      {
+        "file": "Spawn_Sun_Set.png",
+        "title": "Spawn Sun Set",
+        "description": "Spawn Sun Set",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Spawn"
+        ]
+      },
+      {
+        "file": "Spawn_Tunnel.png",
+        "title": "Spawn Tunnel",
+        "description": "Spawn Tunnel",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Spawn"
+        ]
+      },
+      {
+        "file": "The_Peeps.png",
+        "title": "The Peeps",
+        "description": "The Peeps",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "The_Peeps_Entry.png",
+        "title": "The Peeps Entry",
+        "description": "The Peeps Entry",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "The_Start_Shopping.jpg",
+        "title": "The Start Shopping",
+        "description": "The Start Shopping",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Underwater_Base.png",
+        "title": "Underwater Base",
+        "description": "Underwater Base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Underwater_Custom.png",
+        "title": "Underwater Custom",
+        "description": "Underwater Custom",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Water_Mountain_Base.png",
+        "title": "Water Mountain Base",
+        "description": "Water Mountain Base",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Water_Tower.png",
+        "title": "Water Tower",
+        "description": "Water Tower",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Wheat_Fields.png",
+        "title": "Wheat Fields",
+        "description": "Wheat Fields",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Wind_Mill.png",
+        "title": "Wind Mill",
+        "description": "Wind Mill",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Wizard_Tower.png",
+        "title": "Wizard Tower",
+        "description": "Wizard Tower",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Wolf_Air_Ship.png",
+        "title": "Wolf Air Ship",
+        "description": "Wolf Air Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Wolf_Near_Spawn.png",
+        "title": "Wolf Near Spawn",
+        "description": "Wolf Near Spawn",
+        "tags": [
+          "Builds",
+          "Players",
+          "Spawn"
+        ]
+      },
+      {
+        "file": "Xmas_2025.png",
+        "title": "Xmas 2025",
+        "description": "Xmas 2025",
+        "tags": [
+          "Builds",
+          "Events"
+        ]
+      },
+      {
+        "file": "Xmas_Entry.png",
+        "title": "Xmas Entry",
+        "description": "Xmas Entry",
+        "tags": [
+          "Builds",
+          "Events"
+        ]
+      }
+    ]
+  },
+  "season-2": {
+    "label": "Season 2",
+    "path": "images/season 2/",
+    "images": [
+      {
+        "file": "Air_Ship.png",
+        "title": "Air Ship",
+        "description": "Air Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Black_Castle.png",
+        "title": "Black Castle",
+        "description": "Black Castle",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Camp_Character.png",
+        "title": "Camp Character",
+        "description": "Camp Character",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Car.png",
+        "title": "Car",
+        "description": "Car",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "City.png",
+        "title": "City",
+        "description": "City",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "City_2.png",
+        "title": "City 2",
+        "description": "City 2",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Dwarf.png",
+        "title": "Dwarf",
+        "description": "Dwarf",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Fairy.png",
+        "title": "Fairy",
+        "description": "Fairy",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Fairy_Closeup.png",
+        "title": "Fairy Closeup",
+        "description": "Fairy Closeup",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Glass_Box.png",
+        "title": "Glass Box",
+        "description": "Glass Box",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Hogwarts.png",
+        "title": "Hogwarts",
+        "description": "Hogwarts",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Hogwarts_Hall.png",
+        "title": "Hogwarts Hall",
+        "description": "Hogwarts Hall",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "Hogwarts_Sorting.png",
+        "title": "Hogwarts Sorting",
+        "description": "Hogwarts Sorting",
+        "tags": [
+          "Builds",
+          "Point Of Interest",
+          "Hogwarts"
+        ]
+      },
+      {
+        "file": "House_On_Moon.png",
+        "title": "House On Moon",
+        "description": "House On Moon",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "House_On_Moon_Day.png",
+        "title": "House On Moon Day",
+        "description": "House On Moon Day",
+        "tags": [
+          "Builds",
+          "Player Bases"
+        ]
+      },
+      {
+        "file": "Ice_Race.png",
+        "title": "Ice Race",
+        "description": "Ice Race",
+        "tags": [
+          "Builds",
+          "Events"
+        ]
+      },
+      {
+        "file": "King_Zenny.png",
+        "title": "King Zenny",
+        "description": "King Zenny",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Mesa_Town.png",
+        "title": "Mesa Town",
+        "description": "Mesa Town",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Nether_Castle.png",
+        "title": "Nether Castle",
+        "description": "Nether Castle",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Nether_Castle_2.png",
+        "title": "Nether Castle 2",
+        "description": "Nether Castle 2",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Netherfarm.png",
+        "title": "Netherfarm",
+        "description": "Netherfarm",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Peeps_Sunset.png",
+        "title": "Peeps Sunset",
+        "description": "Peeps Sunset",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Pond.png",
+        "title": "Pond",
+        "description": "Pond",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "River_Rock.png",
+        "title": "River Rock",
+        "description": "River Rock",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Ship.png",
+        "title": "Ship",
+        "description": "Ship",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Ship_Wreck.png",
+        "title": "Ship Wreck",
+        "description": "Ship Wreck",
+        "tags": [
+          "Builds",
+          "Point Of Interest"
+        ]
+      },
+      {
+        "file": "Shop.png",
+        "title": "Shop",
+        "description": "Shop",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Shopping_Hall.png",
+        "title": "Shopping Hall",
+        "description": "Shopping Hall",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Shopping_Hall_2.png",
+        "title": "Shopping Hall 2",
+        "description": "Shopping Hall 2",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Stone_Tower.png",
+        "title": "Stone Tower",
+        "description": "Stone Tower",
+        "tags": [
+          "Builds"
+        ]
+      },
+      {
+        "file": "Trading_Hall.png",
+        "title": "Trading Hall",
+        "description": "Trading Hall",
+        "tags": [
+          "Builds",
+          "Economy"
+        ]
+      },
+      {
+        "file": "Waterside.png",
+        "title": "Waterside",
+        "description": "Waterside",
+        "tags": [
+          "Builds"
+        ]
+      }
+    ]
+  }
+}
