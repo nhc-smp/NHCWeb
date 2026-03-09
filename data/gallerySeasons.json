@@ -546,7 +546,7 @@
       {
         "file": "Black_Castle.png",
         "title": "Black Castle",
-        "description": "Black Castle",
+        "description": "by WebbyDiggers",
         "tags": [
           "Builds"
         ]
@@ -554,7 +554,7 @@
       {
         "file": "Bridge_Crossing.png",
         "title": "Bridge Crossing",
-        "description": "Bridge Crossing",
+        "description": "Bridge from Sonik to Scorp",
         "tags": [
           "Builds"
         ]
@@ -562,7 +562,7 @@
       {
         "file": "Cherry_Tree_Glass_House.png",
         "title": "Cherry Tree Glass House",
-        "description": "Cherry Tree Glass House",
+        "description": "Azriellah's Bee Santuary",
         "tags": [
           "Builds",
           "Player Bases"
@@ -570,16 +570,16 @@
       },
       {
         "file": "Copper_Building.png",
-        "title": "Copper Building",
-        "description": "Copper Building",
+        "title": "Mohobie's Base",
+        "description": "Steampunk Island",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Copper_Shopping.png",
-        "title": "Copper Shopping",
-        "description": "Copper Shopping",
+        "title": "NeuroSpicey's Shop",
+        "description": "CopperWorks Shopping District",
         "tags": [
           "Builds",
           "Economy"
@@ -587,7 +587,7 @@
       },
       {
         "file": "Cozy_Forest_Home.png",
-        "title": "Cozy Forest Home",
+        "title": "Sonik's Base",
         "description": "Cozy Forest Home",
         "tags": [
           "Builds",
@@ -596,8 +596,8 @@
       },
       {
         "file": "Curch_Grave_Yard.png",
-        "title": "Curch Grave Yard",
-        "description": "Curch Grave Yard",
+        "title": "King Zarim's Church",
+        "description": "Church Grave Yard",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -605,7 +605,7 @@
       },
       {
         "file": "Custom_Forest.png",
-        "title": "Custom Forest",
+        "title": "Rodzen's Arena",
         "description": "Custom Forest",
         "tags": [
           "Builds"
@@ -613,8 +613,8 @@
       },
       {
         "file": "Custom_Forest_2.png",
-        "title": "Custom Forest 2",
-        "description": "Custom Forest 2",
+        "title": "Rodzen's Custom Tree's",
+        "description": "Custom Forest",
         "tags": [
           "Builds"
         ]
@@ -629,8 +629,8 @@
       },
       {
         "file": "Dock_View_Above.png",
-        "title": "Dock View Above",
-        "description": "Dock View Above",
+        "title": "Aiden's Mountain & Lighthouse",
+        "description": "Custom terraforming",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -638,8 +638,8 @@
       },
       {
         "file": "Dock_View_Below.png",
-        "title": "Dock View Below",
-        "description": "Dock View Below",
+        "title": "Wiinter's Boat",
+        "description": "and dockyard",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -674,8 +674,8 @@
       },
       {
         "file": "Farmer_Starter.png",
-        "title": "Farmer Starter",
-        "description": "Farmer Starter",
+        "title": "Trikki's Farm",
+        "description": "Starter Base",
         "tags": [
           "Builds",
           "Player Bases"
@@ -691,8 +691,8 @@
       },
       {
         "file": "Glub_Building.png",
-        "title": "Glub Building",
-        "description": "Glub Building",
+        "title": "Ghibby's Base",
+        "description": "Ghibby's Base",
         "tags": [
           "Builds"
         ]
@@ -709,7 +709,7 @@
       {
         "file": "Group_Photo_Mountian.png",
         "title": "Group Photo Mountian",
-        "description": "Group Photo Mountian",
+        "description": "at Aiden's Mountain",
         "tags": [
           "Builds",
           "Community",
@@ -727,16 +727,16 @@
       },
       {
         "file": "Homy.png",
-        "title": "Homy",
-        "description": "Homy",
+        "title": "Carbo's Cottage",
+        "description": "Starter Home",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Hot_Air_Balloon.png",
-        "title": "Hot Air Balloon",
-        "description": "Hot Air Balloon",
+        "title": "S&L's Hot Air Balloon",
+        "description": "over theirs & ArcherReaper & Guverner",
         "tags": [
           "Builds"
         ]
@@ -759,23 +759,23 @@
       },
       {
         "file": "Ice_Breaker_Ship.png",
-        "title": "Ice Breaker Ship",
-        "description": "Ice Breaker Ship",
+        "title": "Quinn's Ice Breaker",
+        "description": "Winter Wonderland",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Ice_Breaker_Ship_2.png",
-        "title": "Ice Breaker Ship 2",
-        "description": "Ice Breaker Ship 2",
+        "title": "Quibby Quob's",
+        "description": "Winter Wonderland",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Ice_Ring.png",
-        "title": "Ice Ring",
+        "title": "Quinn's portal",
         "description": "Ice Ring",
         "tags": [
           "Builds"
@@ -783,16 +783,16 @@
       },
       {
         "file": "Intrac_Air_Ship.png",
-        "title": "Intrac Air Ship",
-        "description": "Intrac Air Ship",
+        "title": "Webby's Airship",
+        "description": "over Mob Farm",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Light_House.png",
-        "title": "Light House",
-        "description": "Light House",
+        "title": "Aiden's Light House",
+        "description": "Custom Terrain",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -800,7 +800,7 @@
       },
       {
         "file": "Mage_Tower.png",
-        "title": "Mage Tower",
+        "title": "NeuroSpicey's Tower",
         "description": "Mage Tower",
         "tags": [
           "Builds"
@@ -808,23 +808,23 @@
       },
       {
         "file": "Magic_Mountain.png",
-        "title": "Magic Mountain",
-        "description": "Magic Mountain",
+        "title": "Hex Gate",
+        "description": "Hydrocraft Custom Island",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Magic_Mountain_Day.png",
-        "title": "Magic Mountain Day",
-        "description": "Magic Mountain Day",
+        "title": "Hydrocraft island",
+        "description": "Custom Terrain",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Mesa_Town.png",
-        "title": "Mesa Town",
+        "title": "Nickoo's Mesa",
         "description": "Mesa Town",
         "tags": [
           "Builds",
@@ -843,7 +843,7 @@
       {
         "file": "Mountian_Top_Ruins.png",
         "title": "Mountian Top Ruins",
-        "description": "Mountian Top Ruins",
+        "description": "Blast 555's Base",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -852,7 +852,7 @@
       {
         "file": "Mushroom_Hillside.png",
         "title": "Mushroom Hillside",
-        "description": "Mushroom Hillside",
+        "description": "NeuroSpicey's Starter",
         "tags": [
           "Builds"
         ]
@@ -868,8 +868,8 @@
       },
       {
         "file": "Post_Office.png",
-        "title": "Post Office",
-        "description": "Post Office",
+        "title": "Vanguard Arena",
+        "description": "Peeps Arena",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -877,8 +877,8 @@
       },
       {
         "file": "Post_Office_Shaders.png",
-        "title": "Post Office Shaders",
-        "description": "Post Office Shaders",
+        "title": "Post Office",
+        "description": "by Alt4Andy",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -905,8 +905,8 @@
       },
       {
         "file": "S_L_Base.jpg",
-        "title": "S L Base",
-        "description": "S L Base",
+        "title": "S&L Base",
+        "description": "S&L Base",
         "tags": [
           "Builds",
           "Player Bases"
@@ -914,31 +914,31 @@
       },
       {
         "file": "Sand_Tower.png",
-        "title": "Sand Tower",
-        "description": "Sand Tower",
+        "title": "Hydrocraft's Island",
+        "description": "with Hex Gate",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Sandy_Tower.png",
-        "title": "Sandy Tower",
-        "description": "Sandy Tower",
+        "title": "Sleepy's Desert Oasis",
+        "description": "Sand Tower",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Ship.png",
-        "title": "Ship",
-        "description": "Ship",
+        "title": "Chef's Ship",
+        "description": "in Space",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Small_Ship.png",
-        "title": "Small Ship",
+        "title": "Wiinter's Base",
         "description": "Small Ship",
         "tags": [
           "Builds"
@@ -946,8 +946,8 @@
       },
       {
         "file": "Some_Bridge.png",
-        "title": "Some Bridge",
-        "description": "Some Bridge",
+        "title": "S&L Bridge",
+        "description": "Connecting Base's",
         "tags": [
           "Builds"
         ]
@@ -965,7 +965,7 @@
       {
         "file": "Spawn_Shaders.png",
         "title": "Spawn Shaders",
-        "description": "Spawn Shaders",
+        "description": "Bridge to Shopping",
         "tags": [
           "Builds",
           "Point Of Interest",
@@ -995,7 +995,7 @@
       {
         "file": "Spawn_Tunnel.png",
         "title": "Spawn Tunnel",
-        "description": "Spawn Tunnel",
+        "description": "from Starter Valley",
         "tags": [
           "Builds",
           "Point Of Interest",
@@ -1005,7 +1005,7 @@
       {
         "file": "The_Peeps.png",
         "title": "The Peeps",
-        "description": "The Peeps",
+        "description": "Grand Storage",
         "tags": [
           "Builds"
         ]
@@ -1021,7 +1021,7 @@
       {
         "file": "The_Start_Shopping.jpg",
         "title": "The Start Shopping",
-        "description": "The Start Shopping",
+        "description": "Market District",
         "tags": [
           "Builds",
           "Economy"
@@ -1029,7 +1029,7 @@
       },
       {
         "file": "Underwater_Base.png",
-        "title": "Underwater Base",
+        "title": "Duck's Base",
         "description": "Underwater Base",
         "tags": [
           "Builds",
@@ -1038,7 +1038,7 @@
       },
       {
         "file": "Underwater_Custom.png",
-        "title": "Underwater Custom",
+        "title": "Revan's Sanctuary",
         "description": "Underwater Custom",
         "tags": [
           "Builds"
@@ -1046,7 +1046,7 @@
       },
       {
         "file": "Water_Mountain_Base.png",
-        "title": "Water Mountain Base",
+        "title": "Aiden & Duck's Bases",
         "description": "Water Mountain Base",
         "tags": [
           "Builds",
@@ -1065,7 +1065,7 @@
       {
         "file": "Wheat_Fields.png",
         "title": "Wheat Fields",
-        "description": "Wheat Fields",
+        "description": "Archi's Base",
         "tags": [
           "Builds"
         ]
@@ -1073,7 +1073,7 @@
       {
         "file": "Wind_Mill.png",
         "title": "Wind Mill",
-        "description": "Wind Mill",
+        "description": "Rubber Wafflez Base",
         "tags": [
           "Builds",
           "Point Of Interest"
@@ -1082,23 +1082,23 @@
       {
         "file": "Wizard_Tower.png",
         "title": "Wizard Tower",
-        "description": "Wizard Tower",
+        "description": "NeuroSpicey's Base",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Wolf_Air_Ship.png",
-        "title": "Wolf Air Ship",
-        "description": "Wolf Air Ship",
+        "title": "Wolf's Air Ship",
+        "description": "Copperworks District",
         "tags": [
           "Builds"
         ]
       },
       {
         "file": "Wolf_Near_Spawn.png",
-        "title": "Wolf Near Spawn",
-        "description": "Wolf Near Spawn",
+        "title": "Sunset near Spawn",
+        "description": "Wolf Starter",
         "tags": [
           "Builds",
           "Players",
