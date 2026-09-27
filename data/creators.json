@@ -1,16 +1,6 @@
 {
     "creators": [
         {
-            "name": "BloomingCow3665",
-            "platform": "YouTube",
-            "type": "Gaming Content",
-            "description": "",
-            "link": "https://www.youtube.com/channel/UCSxh1uIWmV3_Zqy30mkFwpg",
-            "icon": "fa-video-camera",
-            "note": "",
-            "featured": true
-        },
-        {
             "name": "Intrac",
             "platform": "YouTube",
             "type": "Gaming Content",
