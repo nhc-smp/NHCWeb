@@ -1,0 +1,28 @@
+/* FAQ uses the site's existing palette, typography and panel styling. */
+.faq-page { padding: 7rem 1.5rem 4rem; min-height: 65vh; }
+.faq-page header { max-width: 850px; margin: 0 auto 2.5rem; }
+.faq-list { max-width: 900px; margin: 0 auto; }
+.faq-item { background: linear-gradient(145deg, #2d2d2d, #1a1a1a); border: 1px solid #444; border-radius: var(--roundness); margin: 1rem 0; box-shadow: 0 8px 25px #0000004d; }
+.faq-tools { max-width: 900px; margin: 0 auto 2rem; }
+.faq-tools label { display: block; margin-bottom: .65rem; }
+.faq-tools input { box-sizing: border-box; width: 100%; padding: 1rem; border: 1px solid #666; border-radius: var(--roundness); background: var(--background2); color: #fff; font: inherit; }
+.faq-tools input::placeholder { color: #aaa; }
+.faq-tools input:focus-visible, .faq-topics a:focus-visible { outline: 2px solid var(--accent1); outline-offset: 4px; }
+.faq-topics { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
+.faq-topics a { color: #ddd; background: var(--background2); padding: .65rem .9rem; border: 1px solid #444; border-radius: var(--roundness); text-decoration: none; }
+.faq-topics a:hover { color: var(--accent1); border-color: var(--accent2); }
+.faq-results, .faq-category-intro, .faq-empty { color: #ccc; line-height: 1.6; }
+.faq-category { margin-top: 3rem; scroll-margin-top: 6rem; }
+.faq-category h2 { color: var(--accent1); font-size: 1.65rem; }
+.faq-answer code { background: #0004; border-radius: .3rem; padding: .15rem .35rem; font-size: .95em; }
+.faq-answer pre { padding: 1rem; border-left: 3px solid var(--accent2); background: #0004; border-radius: .3rem; white-space: pre-wrap; }
+.faq-answer li { margin: .6rem 0; }
+.faq-answer ul { padding-left: 1.5rem; }
+.faq-page [hidden] { display: none !important; }
+.faq-item summary { padding: 1.4rem; cursor: pointer; color: var(--accent1); font-size: 1.2rem; line-height: 1.5; overflow-wrap: anywhere; }
+.faq-item summary:hover { color: var(--accent2); }
+.faq-item summary:focus-visible { outline: 2px solid var(--accent1); outline-offset: 4px; border-radius: var(--roundness); }
+.faq-item[open] summary { border-bottom: 1px solid #444; }
+.faq-answer { padding: .25rem 1.4rem 1rem; color: #ddd; line-height: 1.8; overflow-wrap: anywhere; }
+.faq-answer a { color: var(--accent1); text-decoration: underline; }
+@media (max-width: 600px) { .faq-page { padding: 6rem 1rem 3rem; } .faq-page .about-title { font-size: 2rem; } .faq-item summary { padding: 1rem; font-size: 1.1rem; } }

@@ -10,6 +10,7 @@ class NavigationManager {
     // Detect which page we're currently on
     detectCurrentPage() {
         const path = window.location.pathname;
+        if (path.includes('/faq/')) return 'faq';
         if (path.includes('/about/')) return 'about';
         if (path.includes('/community/')) return 'community';
         if (path.includes('/gettingstarted/')) return 'gettingstarted';
@@ -40,6 +41,7 @@ class NavigationManager {
                     <a href="gettingstarted/index.html" class="desktop_navbar_link">Getting Started</a>
                     <a href="rules/index.html" class="desktop_navbar_link">Server Rules</a>
                     <a href="gallery/index.html" class="desktop_navbar_link">Gallery</a>
+                    <a href="faq/index.html" class="desktop_navbar_link">FAQ</a>
                     <div class="desktop_navbar_link2_div">
                         <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
                     </div>
@@ -59,6 +61,7 @@ class NavigationManager {
                     <a href="${basePath}gettingstarted/index.html" class="desktop_navbar_link">Getting Started</a>
                     <a href="${basePath}rules/index.html" class="desktop_navbar_link">Server Rules</a>
                     <a href="${basePath}gallery/index.html" class="desktop_navbar_link">Gallery</a>
+                    <a href="${basePath}faq/index.html" class="desktop_navbar_link">FAQ</a>
                     <div class="desktop_navbar_link2_div">
                         <a href="${basePath}index.html#join" class="desktop_navbar_link2">Join Us!</a>
                     </div>
@@ -77,6 +80,7 @@ class NavigationManager {
                 <a href="${basePath}gettingstarted/index.html" class="desktop_navbar_link ${currentPage === 'gettingstarted' ? 'current' : ''}">Getting Started</a>
                 <a href="${basePath}rules/index.html" class="desktop_navbar_link ${currentPage === 'rules' ? 'current' : ''}">Server Rules</a>
                 <a href="${basePath}gallery/index.html" class="desktop_navbar_link ${currentPage === 'gallery' ? 'current' : ''}">Gallery</a>
+                <a href="${basePath}faq/index.html" class="desktop_navbar_link ${currentPage === 'faq' ? 'current' : ''}">FAQ</a>
                 <div class="desktop_navbar_link2_div">
                     <a href="${basePath}index.html#join" class="desktop_navbar_link2">Join Us!</a>
                 </div>
@@ -102,6 +106,7 @@ class NavigationManager {
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="gettingstarted/index.html">Getting Started</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="rules/index.html">Server Rules</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="gallery/index.html">Gallery</a>
+                        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="faq/index.html">FAQ</a>
                     </div>
                     <div class="icon" onclick="mobile_navbar_link_hider()">
                         <i class="fa fa-bars"></i>
@@ -123,6 +128,7 @@ class NavigationManager {
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}gettingstarted/index.html">Getting Started</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}rules/index.html">Server Rules</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}gallery/index.html">Gallery</a>
+                        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}faq/index.html">FAQ</a>
                     </div>
                     <div class="icon" onclick="mobile_navbar_link_hider()">
                         <i class="fa fa-bars"></i>
@@ -143,6 +149,7 @@ class NavigationManager {
                     <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}gettingstarted/index.html">Getting Started</a>
                     <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}rules/index.html">Server Rules</a>
                     <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}gallery/index.html">Gallery</a>
+                    <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}faq/index.html">FAQ</a>
                 </div>
                 <div class="icon" onclick="mobile_navbar_link_hider()">
                     <i class="fa fa-bars"></i>
