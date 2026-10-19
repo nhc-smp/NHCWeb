@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Not HermitCraft SMP</title>
+    <meta name="description" content="Frequently asked questions about the Not HermitCraft SMP community.">
+    <link rel="icon" type="image/png" href="../media/favicon.png">
+    <link rel="stylesheet" href="../media/style.css">
+    <link rel="stylesheet" href="../media/faq.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../media/navigation.js" defer></script>
+</head>
+<body>
+    <div id="desktop-nav-container"></div>
+    <div id="mobile-nav-container"></div>
+    <main class="faq-page">
+        <header>
+            <h1 class="about-title">Frequently Asked Questions</h1>
+            <p class="about-subtitle">Find answers to common questions about Not HermitCraft SMP.</p>
+        </header>
+        <div class="faq-tools">
+            <label for="faq-search">Search the FAQ</label>
+            <input id="faq-search" type="search" placeholder="Try portals, shops, or voice chat" autocomplete="off">
+            <nav class="faq-topics" aria-label="FAQ topics">
+                <a href="#building">Building &amp; the map</a>
+                <a href="#shared-spaces">Trading hall &amp; the End</a>
+                <a href="#portals">Nether portals</a>
+                <a href="#shopping">Shopping</a>
+                <a href="#community">Community &amp; events</a>
+                <a href="#server">Server &amp; support</a>
+                <a href="#lore">Community lore</a>
+            </nav>
+            <p id="faq-results" class="faq-results" role="status" aria-live="polite"></p>
+        </div>
+        <div class="faq-list">
+            <section class="faq-category" id="building" aria-labelledby="building-title">
+                <h2 id="building-title">Building &amp; the map</h2>
+                <details class="faq-item">
+                    <summary>How do I know where I can build a base?</summary>
+                    <div class="faq-answer"><p>Check <a href="https://map.nhc-smp.com/">the NHC map</a> for designated zones and player-marked bases before choosing a spot. Some players also mark their base boundaries with wool pillars or similar markers.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I see zones and bases on the map?</summary>
+                    <div class="faq-answer"><p>Click the three-line menu in the top-left corner of the map, then enable the relevant layers under <strong>Markers</strong>. Bases use a Minecraft bed icon. You may need to zoom in to see them; hover over a marker to read the name the player has added.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What are the main zones, and what do they mean?</summary>
+                    <div class="faq-answer">
+                        <p>Zoom in near spawn to see three smaller zones:</p>
+                        <ul><li><strong>Blue — Spawn Valley:</strong> a place to build a starter base.</li><li><strong>Red — Shopping:</strong> reserved for shops. Do not build bases here.</li><li><strong>Cyan — Public trading hall:</strong> the community villager trading area.</li></ul>
+                        <p>Zoom out to see the larger zones:</p>
+                        <ul><li><strong>Blue — Industrial area:</strong> reserved for industrial redstone farms.</li><li><strong>Red — Reset zone:</strong> do not build here. This area is reset with each update so new biomes can generate and resources can be replenished.</li><li><strong>Yellow — Resource area:</strong> northwest of spawn, reserved for mining sand, terracotta, and coral. This area is also reset when necessary.</li></ul>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How can I mark my base on the map?</summary>
+                    <div class="faq-answer"><p>Place a sign with <code>[base]</code> on the first line and your base name on the second:</p><pre aria-label="Example base sign">[base]
+House Name</pre></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How can I mark my shop on the map?</summary>
+                    <div class="faq-answer"><p>Place a sign with <code>[store]</code> on the first line, followed by your shop name on the remaining lines:</p><pre aria-label="Example shop sign">[store]
+Shop Name</pre></div>
+                </details>
+            </section>
+            <section class="faq-category" id="shared-spaces" aria-labelledby="shared-spaces-title">
+                <h2 id="shared-spaces-title">Trading hall &amp; the End</h2>
+                <details class="faq-item">
+                    <summary>Where is the trading hall?</summary>
+                    <div class="faq-answer"><p>The center of the trading hall area is at <code>X: -65, Y: 81, Z: -550</code>.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How does the trading hall work?</summary>
+                    <div class="faq-answer">
+                        <p>Villagers are grouped into separate buildings by profession. The buildings are still being finished, but each villager type is available.</p>
+                        <ul><li><strong>Farmers:</strong> <code>X: -94, Y: 84, Z: -563</code>. This building has a free-to-use pumpkin and melon farm collection area. Use these crops to trade for emeralds.</li><li><strong>Librarians and clerics:</strong> <code>X: -23, Y: 83, Z: -579</code>. Free curing supplies are to the left of the door. Contact Azriellah if they need refilling.</li></ul>
+                        <p>All villagers have a zombie conversion setup. Flip the lever in front of the villagers you want to convert and cure, then flip it back up to access them again.</p>
+                        <p>Both buildings also have emerald barrels you may take from. Please contribute when you can by spending time AFK at the pumpkin and melon farm or donating emeralds. Be considerate of other players.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Where is the End portal?</summary>
+                    <div class="faq-answer"><p>On the Nether roof, head directly west of spawn to <code>X: -195, Z: 0</code>. Look for a Nether portal with elytra wings on top. Go through it, then head toward the middle of the giant chasm at Trikki’s base. Cross the bridge to reach the End portal.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use the farms in the End?</summary>
+                    <div class="faq-answer"><p>The Enderman XP farm is the only public farm in the End. All other farms are private, so do not take items from them without permission.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Where is the public Enderman XP farm?</summary>
+                    <div class="faq-answer"><p>From End spawn, follow the colorful tunnel to the elevator drop. Drop down, then follow the bridge to the public Enderman XP farm.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use the elytra at End spawn?</summary>
+                    <div class="faq-answer"><p>Yes! Members provide loaner elytra and rockets so you can find an elytra of your own. Repair the borrowed elytra at the Enderman XP farm and return it afterward. If it goes missing, let members know in <strong>#members-chat</strong> so it can be replaced.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use items left around the trading hall or Enderman XP farm?</summary>
+                    <div class="faq-answer"><p>Only use items that are clearly marked or provided for public use, such as the library’s curing supplies or the XP farm’s anvils and free Mending books. Other items may belong to players who left them behind. Please leave those alone.</p></div>
+                </details>
+            </section>
+            <section class="faq-category" id="portals" aria-labelledby="portals-title">
+                <h2 id="portals-title">Nether portals</h2>
+                <details class="faq-item">
+                    <summary>How do I make a portal on the Nether roof?</summary>
+                    <div class="faq-answer"><p>Use a Nether portal calculator to work out the matching Overworld and Nether coordinates. Build both portals, then enter from the Nether side first to link them.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Why does my portal need to be 10 blocks above the Nether roof?</summary>
+                    <div class="faq-answer"><p>aiden_cole is building this season’s Nether hub, and the design needs space underneath the portals until they can be moved into their final positions. Raise your portal 10 blocks if it is within roughly 250 blocks of spawn. Portals outside that radius do not need to be raised.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I still decorate my portal?</summary>
+                    <div class="faq-answer"><p>Temporary decorations are welcome. Contact aiden_cole before adding permanent decorations.</p></div>
+                </details>
+            </section>
+            <section class="faq-category" id="shopping" aria-labelledby="shopping-title">
+                <h2 id="shopping-title">Shopping</h2>
+                <details class="faq-item">
+                    <summary>How do I find an item’s price?</summary>
+                    <div class="faq-answer"><p>Each shop displays prices differently. Look for renamed items in stock chests, such as an emerald named “1 diamond per stack.” Some shops use named shulker boxes to show the price of the contents, while others use signs.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What currency do shops use?</summary>
+                    <div class="faq-answer"><p>Diamonds, unless the shop’s pricing says otherwise. Each shop owner sets their own prices.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I find out which shops sell what?</summary>
+                    <div class="faq-answer"><p>At <code>X: 165, Y: 66, Z: -422</code>, you’ll find a map and books listing the shops in each district and what they sell. There is also a book where you can request items that are not currently sold. You can also browse shop adverts in Discord’s <strong>#shops-adverts-s5</strong> channel.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How can I claim a shop plot?</summary>
+                    <div class="faq-answer"><p>Each district has its own governor and claiming process. In most districts, write your username and pay the required diamonds into a chest at the district’s central building. Some districts place their claiming chests elsewhere. Contact the governor if you need help.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What are the shopping districts, and who are their governors?</summary>
+                    <div class="faq-answer"><ul><li><strong>Market Square:</strong> Doomdots</li><li><strong>Copperworks District:</strong> Mohobie</li><li><strong>Emerald Keep:</strong> greengoose07</li><li><strong>Pillarstone Plaza:</strong> DeucesMyGooses</li><li><strong>Skyline District:</strong> DarkDuckthegreat</li><li><strong>Overgrown District:</strong> Nickoo3</li></ul></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What theme should I use for my shop?</summary>
+                    <div class="faq-answer"><p>Follow the theme of the district you choose:</p><ul><li><strong>Market Square:</strong> small market stalls and shops, with flexible theming.</li><li><strong>Copperworks District:</strong> steampunk, copper, and machinery.</li><li><strong>Emerald Keep:</strong> medieval, weathered stone and rubble, market stalls, and carts.</li><li><strong>Pillarstone Plaza:</strong> Moroccan-inspired builds, colorful fabrics, desert themes, stalls, and caravans.</li><li><strong>Skyline District:</strong> modern buildings, skyscrapers, and European city architecture. Older and newer architectural styles can be mixed.</li><li><strong>Overgrown District:</strong> plants, vines, moss, and nature reclaiming buildings.</li></ul></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Who is the President of Shopping, and what do they do?</summary>
+                    <div class="faq-answer"><p>CatboyQsco is the President of Shopping. They oversee the shopping area and introduce changes to help improve it.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Where can I advertise my shop?</summary>
+                    <div class="faq-answer"><p>Create a thread in Discord’s <strong>#shops-adverts-s5</strong> channel. Write it in your own style, but include what you sell and where to find your shop. Members sometimes share these adverts in <strong>#members-chat</strong> too.</p></div>
+                </details>
+            </section>
+            <section class="faq-category" id="community" aria-labelledby="community-title">
+                <h2 id="community-title">Community &amp; events</h2>
+                <details class="faq-item">
+                    <summary>Where can I build a minigame?</summary>
+                    <div class="faq-answer"><p>There are two minigame districts with no set theme: one near shopping and another farther out. The first district is quite full, so look for an available space or choose another suitable location on the server. DarkDuckthegreat is working on connecting these areas from the first minigame district.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Where can I post instructions for my minigame?</summary>
+                    <div class="faq-answer"><p>Create a thread in Discord’s <strong>#minigames</strong> channel to share instructions, rules, and any other information players need.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I organize an event?</summary>
+                    <div class="faq-answer"><p>Contact an event host or admin with your idea and the details. They can help you get it set up.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What player groups are on the server?</summary>
+                    <div class="faq-answer"><p>Several groups enjoy playing and building farms together. These groups are not exclusive—everyone is welcome to play with one another!</p><ul><li>Peeps</li><li>Hydrocorp</li><li>Freaking Horners</li><li>69 Crew</li><li>EA (Eastern Alliance)</li><li>Terra Islanders</li></ul></div>
+                </details>
+            </section>
+            <section class="faq-category" id="server" aria-labelledby="server-title">
+                <h2 id="server-title">Server &amp; support</h2>
+                <details class="faq-item">
+                    <summary>What useful mods and data packs can I use on the server?</summary>
+                    <div class="faq-answer"><p>NHC has several features to make playing more convenient:</p><ul><li><code>/unplug</code> leaves a bot in your place so you can stay AFK without keeping Minecraft open.</li><li><code>/trigger formatname</code> opens a menu for customizing item names and adding lore.</li><li><code>/trigger if_invisible</code> makes an item frame invisible.</li><li><strong>Sit:</strong> right-click an upward-facing stair, bottom slab, or carpet with an empty hand to sit down, just as you would with a cushion.</li><li><strong>Recipe changes:</strong> additions include shapeless crafting, craftable red sand, stripping wood in a stonecutter, and smelting diorite into calcite in a blast furnace.</li></ul></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Who should I contact about server issues?</summary>
+                    <div class="faq-answer"><p>Contact Mohobie for most technical issues. You can also message any admin, who can pass the issue to the technical team.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What can I do if my connection is poor?</summary>
+                    <div class="faq-answer"><p>Try an alternative server address:</p><ul><li><code>usw3.pixelbays.com:27000</code></li><li><code>global.nhc-smp.com</code></li></ul><p>You can also try restarting your computer and router. If the problem continues, contact Mohobie or another admin for help.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What version is the server running?</summary>
+                    <div class="faq-answer"><p>The server is running <strong>26.2</strong>, with plans to update to the latest version. Updates usually happen once the core mods and plugins support the new version.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What difficulty is the server set to?</summary>
+                    <div class="faq-answer"><p>The server is set to <strong>Hard</strong> difficulty.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What do the numbers next to our names in the player list mean?</summary>
+                    <div class="faq-answer"><p>They show the number of hours each player has spent on the server since it started on December 5, 2025.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need any mods to join?</summary>
+                    <div class="faq-answer"><p>No mods are required. However, <strong>Simple Voice Chat</strong> is highly recommended so you can join in with other members. You do not have to speak—being able to hear others is fine!</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Are TNT dupers allowed?</summary>
+                    <div class="faq-answer"><p>Yes, for simple farms. Ask an admin before using TNT dupers for large excavations, as big machines can cause lag and accidents.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How can I request a custom model or audio?</summary>
+                    <div class="faq-answer"><p>Open a ticket using YAGPDBxyz’s <code>/ticket open</code> command in Discord’s <strong>#bot-commands</strong> channel.</p></div>
+                </details>
+            </section>
+            <section class="faq-category" id="lore" aria-labelledby="lore-title">
+                <h2 id="lore-title">Community lore</h2>
+                <p class="faq-category-intro">A few inside jokes from the NHC community. Take these with a pinch of salt.</p>
+                <details class="faq-item"><summary>Who keeps stealing my crafting tables?</summary><div class="faq-answer"><p>Probably Davlah.</p></div></details>
+                <details class="faq-item"><summary>Who killed Herbert the Crafting Table?</summary><div class="faq-answer"><p>Also Davlah.</p></div></details>
+                <details class="faq-item"><summary>Who is Herbert?</summary><div class="faq-answer"><p>The most legendary crafting table of all.</p></div></details>
+                <details class="faq-item"><summary>Who is Herbutt?</summary><div class="faq-answer"><p>A poor imitation of Herbert.</p></div></details>
+                <details class="faq-item"><summary>Why is there a base in my base?</summary><div class="faq-answer"><p>Fred.</p></div></details>
+                <details class="faq-item"><summary>If Herbert is dead, who is Herbert_Crafter?</summary><div class="faq-answer"><p>Shhhhhh.</p></div></details>
+            </section>
+            <p id="faq-empty" class="faq-empty" hidden>No matching questions. Try a different search or clear the search box to see everything.</p>
+        </div>
+    </main>
+    <footer class="copyright_div">
+        <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by Dakota - HeruEdhel 2025</a>
+    </footer>
+    <script src="../media/faq.js" defer></script>
+</body>
+</html>
