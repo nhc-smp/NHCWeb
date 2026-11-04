@@ -128,5 +128,32 @@
       }
     ]
   },
-  "closing": "Choose your allies carefully. Your next life could depend on them."
+  "closing": "Choose your allies carefully. Your next life could depend on them.",
+  "join": {
+    "title": "Your next adventure starts on NHC",
+    "command": "/lifer",
+    "description": "Ready, NotHermit? Use /lifer on NHC (NotHermitCraft) to get to the games. Once you are there, /NHCLife opens your player menu."
+  },
+  "community": {
+    "title": "NotHermits make the mayhem",
+    "description": "The best moments do not come from a menu. They come from you. NHC Lifer comes alive when NotHermits get involved: a questionable alliance, an ambitious scheme, a surprise adventure, or a deal that is definitely, probably, completely trustworthy.",
+    "items": [
+      {
+        "title": "Be the plot twist",
+        "text": "Make the first move. Propose a trade, recruit an ally, build something worth visiting or invite someone on a risky expedition. Give other NotHermits a reason to leave their hideouts."
+      },
+      {
+        "title": "Make room for more mischief",
+        "text": "Bring someone into the plan, especially a NotHermit you have not played with before. A busy world starts with players making things happen together."
+      },
+      {
+        "title": "Play for the story",
+        "text": "Chase the win, but enjoy the spectacular failures too. A backfired scheme can become the best story of the night. Keep rivalries playful and give everyone something to laugh about afterward."
+      },
+      {
+        "title": "Keep the adventure moving",
+        "text": "Do not wait for someone else to make it interesting. Show up, get curious and bring an idea. Follow the game rules, keep the fun shared, and help turn an ordinary encounter into a NotHermitCraft legend."
+      }
+    ]
+  }
 }
