@@ -1,0 +1,132 @@
+{
+  "title": "NHC Lifer",
+  "eyebrow": "NHC • Survival with a twist",
+  "intro": "Make allies. Keep secrets. Make every life count.",
+  "description": "Take your Minecraft survival instincts into Boogie and Hunger Games. Whether you are hiding a secret objective or watching the border close in, every encounter could change the game.",
+  "menu": {
+    "title": "Your game, one command away",
+    "command": "/NHCLife",
+    "description": "Type /NHCLife in Minecraft chat to open the player menu. Check your lives, read the current rules, and find the options available to you.",
+    "items": [
+      {
+        "title": "Rules and status",
+        "text": "Read the current game settings. Starting lives, opening protection, inventory retention and other options can vary between games."
+      },
+      {
+        "title": "Your Boogie Assignment",
+        "text": "If you are a Boogie, check your remaining deadline and private bounty target here."
+      },
+      {
+        "title": "My Secret Task",
+        "text": "In Boogie, view your private objective, use Reroll Task, and report PASS or FAIL when review opens."
+      },
+      {
+        "title": "Transfer a life",
+        "text": "Gift a life in Boogie through the confirmation menu. You can also type /giveaheart playername."
+      },
+      {
+        "title": "Watch Game / Return to Limbo",
+        "text": "Guests and eliminated players can watch active play in Spectator mode or return to the safe limbo hangout. Living participants stay in the game until a break or session end."
+      }
+    ]
+  },
+  "modes": [
+    {
+      "id": "boogie",
+      "title": "Boogie",
+      "tagline": "Trust is precious. So are your lives.",
+      "description": "Build, explore and form alliances in a survival game where a friend may secretly need a kill. Balance your remaining lives against private bounties and secret objectives. The last participant with lives wins.",
+      "highlights": [
+        "Multiple lives",
+        "Secret Boogies & bounties",
+        "Secret tasks",
+        "Fixed world border"
+      ],
+      "sections": [
+        {
+          "title": "Survive the Boogie",
+          "items": [
+            "After opening PvP protection ends, eligible online participants may be secretly selected as Boogies. Watch your private messages and Your Boogie Assignment in the menu.",
+            "As a Boogie, earn a qualifying player kill before your displayed deadline to clear the assignment. Another Boogie can be your victim. Missing the deadline costs a life; dying also clears your assignment.",
+            "A private bounty names a particular player. Killing that target clears your assignment and earns one extra life. Killing another eligible participant still clears it, without the bonus.",
+            "New bounties do not target red-life players. A Boogie may receive no bounty if there are too few eligible targets; they can still clear the assignment with a qualifying kill. A target disconnecting does not reroll the bounty.",
+            "Once all current Boogies have completed or lost their assignments, new Boogies can be chosen. If you are a Boogie, logging out does not stop your countdown. The countdown stops during breaks and whenever gameplay is paused. Any assignments still active at the end of a session are cleared."
+          ]
+        },
+        {
+          "title": "Know when you can fight",
+          "items": [
+            "PvP is blocked during the opening safe period. Wait for the in-game announcement before fighting.",
+            "On your last life, your name turns red. You receive special red-life tasks and, once opening protection ends, you can kill other players without losing a life for unauthorized murder.",
+            "If both killer and victim have more than one life and neither is a current Boogie, the killer loses a life for unauthorized murder. The victim also loses a life from the death.",
+            "Deaths cost one life. At zero lives you are eliminated. The tab list shows your life total. Names change color with lives: 5+ dark green, 4 lime green, 3 yellow, 2 gold, 1 red, and 0 gray. Guests are also gray."
+          ]
+        },
+        {
+          "title": "Keep your task secret",
+          "items": [
+            "Open My Secret Task to read your private role and objective. Expect resource challenges, trades, builds, exploration and objectives involving other players.",
+            "Complete the actual objective without having it correctly identified by another player before open review. A discovered objective must be reported FAIL, even if you completed it. Report honestly: this is an honor system.",
+            "One-life players receive red objectives involving traps, tricks, theft or sabotage. Gaining another life returns you to normal objectives.",
+            "Need a different objective? My Secret Task > Reroll Task gives one confirmed reroll per session during active play, before reporting. A new task round or reconnect does not refresh that allowance.",
+            "At hourly and final task-review gatherings, follow the on-screen instructions and assemble within 50 blocks of game spawn. PvP and damage are blocked during gathering. Wait until review is open to reveal your task.",
+            "Explain your task, choose PASS or FAIL in My Secret Task, and confirm. Stay within the 50-block area until review ends. Being offline, outside the area or leaving a task unreported results in FAIL.",
+            "PASS earns one life. FAIL costs one life, except that a red-life player never loses their last life for a failed task. Results settle together when review finishes, then new tasks are assigned if play continues."
+          ]
+        },
+        {
+          "title": "Give an ally another chance",
+          "items": [
+            "Use Transfer a life or /giveaheart playername to open a confirmation. Both players must be online, living participants in active Boogie gameplay.",
+            "You can successfully give one life per session and must keep your final life. Gifts cannot revive eliminated players. Receiving lives can take you above the starting total."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunger-games",
+      "title": "Hunger Games",
+      "tagline": "Gear up. Keep moving. Outlast everyone.",
+      "description": "Race to gather supplies, choose your fights and survive as the world border shrinks. The safe ground gets smaller, the stakes get higher, and the last participant with lives takes the win.",
+      "highlights": [
+        "Survival PvP",
+        "Shrinking world border",
+        "Last survivor wins"
+      ],
+      "sections": [
+        {
+          "title": "Rules of survival",
+          "items": [
+            "Use the protected opening to gather resources and prepare. PvP becomes available when the safe period ends.",
+            "After opening protection ends, fight to outlast the other participants. Boogie assignments, bounty rewards, life gifts and secret tasks belong to Boogie, not Hunger Games.",
+            "Watch the visible world border and move inward as it shrinks. Staying outside the game-world border causes damage. A bed or respawn anchor left outside it will no longer return you there; you will be redirected to game spawn.",
+            "Every death costs a life; reaching zero eliminates you. Check Rules and status for the starting lives and inventory rules of your game.",
+            "The game ends when one participant has lives remaining. If nobody has lives left, it is a draw. An offline participant with lives still counts."
+          ]
+        }
+      ]
+    }
+  ],
+  "essentials": {
+    "title": "Before you play",
+    "items": [
+      {
+        "title": "Be there for the start",
+        "text": "The roster is set during the first session’s opening safe period. Once it closes, new arrivals are guests for that game. In later sessions, rostered survivors who miss the safe-period deadline lose one life, but can still join later with any lives remaining."
+      },
+      {
+        "title": "Check what is at stake",
+        "text": "Each new game starts with empty player inventories. Read Rules and status for the current inventory-on-death setting and follow the host’s start instructions."
+      },
+      {
+        "title": "Follow the game notices",
+        "text": "Breaks move players to protected limbo, then living players return to play. Follow the in-game announcements for protection, gatherings and when gameplay resumes."
+      },
+      {
+        "title": "Stay for the spectacle",
+        "text": "Out of lives or joining as a guest? Open /NHCLife and choose Watch Game to spectate active play, or Return to Limbo to hang out safely."
+      }
+    ]
+  },
+  "closing": "Choose your allies carefully. Your next life could depend on them."
+}
