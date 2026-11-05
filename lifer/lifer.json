@@ -22,7 +22,7 @@
       },
       {
         "title": "My Secret Task",
-        "text": "In Boogie, view your private objective, use Reroll Task, and report PASS or FAIL when review opens. This menu also provides tasks in Soulbound games where they are enabled."
+        "text": "In Boogie, view your private objective, use Reroll Task, and report PASS or FAIL when review opens."
       },
       {
         "title": "Transfer a life",
@@ -149,8 +149,7 @@
             "Use /NHCLife > Transfer a life or /giveaheart playername to gift a life. Both players must be online, living participants in active gameplay. You can give once per session and must keep your last life.",
             "Life gifts change individual life totals, not the shared health bar. They cannot revive eliminated players.",
             "The last surviving bonded pair wins together. A lone survivor wins individually; no survivors means a draw.",
-            "Secret tasks are off by default in Soulbound. If your game enables them, use My Secret Task and follow the task-review notices. Rewards and penalties affect your own life total; a task penalty does not trigger a linked death.",
-            "Check Rules and status for your game’s starting lives, inventory-on-death rule and bond settings. Then make a plan together—preferably before one of you decides to hug a creeper."
+            "Keep each other supplied, talk through risky plans and check Your Soul Bond when partners change. Preferably before one of you decides to hug a creeper."
           ]
         }
       ]
