@@ -2,7 +2,7 @@
   "title": "NHC Lifer",
   "eyebrow": "NHC • Survival with a twist",
   "intro": "Make allies. Keep secrets. Make every life count.",
-  "description": "Take your Minecraft survival instincts into Boogie and Hunger Games. Whether you are hiding a secret objective or watching the border close in, every encounter could change the game.",
+  "description": "Take your Minecraft survival instincts into Boogie, Hunger Games and Soulbound. Hide a secret objective, race the shrinking border or put your life in another NotHermit’s hands. Every encounter could change the game.",
   "menu": {
     "title": "Your game, one command away",
     "command": "/NHCLife",
@@ -17,12 +17,16 @@
         "text": "If you are a Boogie, check your remaining deadline and private bounty target here."
       },
       {
+        "title": "Your Soul Bond",
+        "text": "In Soulbound, check your current partner in /NHCLife > Your Soul Bond. If identities are hidden for the game, the menu keeps your partner a mystery. Before opening protection ends, you are not yet bonded."
+      },
+      {
         "title": "My Secret Task",
-        "text": "In Boogie, view your private objective, use Reroll Task, and report PASS or FAIL when review opens."
+        "text": "In Boogie, view your private objective, use Reroll Task, and report PASS or FAIL when review opens. This menu also provides tasks in Soulbound games where they are enabled."
       },
       {
         "title": "Transfer a life",
-        "text": "Gift a life in Boogie through the confirmation menu. You can also type /giveaheart playername."
+        "text": "Gift a life in Boogie or Soulbound through the confirmation menu. You can also type /giveaheart playername."
       },
       {
         "title": "Watch Game / Return to Limbo",
@@ -102,6 +106,51 @@
             "Watch the visible world border and move inward as it shrinks. Staying outside the game-world border causes damage. A bed or respawn anchor left outside it will no longer return you there; you will be redirected to game spawn.",
             "Every death costs a life; reaching zero eliminates you. Check Rules and status for the starting lives and inventory rules of your game.",
             "The game ends when one participant has lives remaining. If nobody has lives left, it is a draw. An offline participant with lives still counts."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soulbound",
+      "title": "Soulbound",
+      "tagline": "Two NotHermits. One health bar. What could possibly go wrong?",
+      "description": "Your partner’s daring adventure is suddenly your problem too. Share the danger, share the healing and try to keep each other alive as soul bonds bring NotHermits together. When partners change, yesterday’s rival could become the person you need most.",
+      "highlights": [
+        "Shared damage & healing",
+        "Changing partners",
+        "Win as a pair",
+        "Fixed world border"
+      ],
+      "sections": [
+        {
+          "title": "Your life is in their hands",
+          "items": [
+            "Use the protected opening to prepare. Bonds form when the safe period ends, and each session begins with a fresh, unpaired opening.",
+            "Once bonded, you and your partner share health—even across long distances and different dimensions. Damage to either of you lowers the shared health; healing either of you helps both. Your own armor and defenses determine the damage from a hit you take.",
+            "Food, absorption hearts, equipment and inventories remain your own. Keep yourself supplied as well as watching out for your partner.",
+            "If either partner dies, both die and each loses one life. Your remaining life totals are individual, so one partner may be eliminated before the other. An ordinary death does not break the bond if you both still have lives.",
+            "A Totem of Undying held by either online partner can save the pair from a lethal hit, consuming one totem. Keep it in your main hand or offhand when danger is close.",
+            "Once opening protection ends, PvP is on. Even partners can hurt each other, so watch that sword swing. Coordinate your fights: the risk belongs to both of you."
+          ]
+        },
+        {
+          "title": "New bond, new adventure",
+          "items": [
+            "When partner rotation is enabled, bonds change during active play. Watch the in-game warning and check Your Soul Bond after the change. Rotation pauses whenever gameplay pauses.",
+            "Partner identities may be revealed or hidden for your game. With hidden bonds, shared damage and healing might be your clues. A little detective work could save your life.",
+            "Pairing can use the lower of the two players’ current health, their average health or full health, depending on the game settings. A new partner does not always mean a fresh health bar.",
+            "An odd number of survivors leaves one NotHermit unbound, with ordinary individual health. When bonds rotate, the unbound turn is shared around. If your partner is eliminated, you become unbound; two unbound survivors can be linked together.",
+            "Logging out does not sever a soul bond. Shared damage and linked deaths can still affect you while you are offline."
+          ]
+        },
+        {
+          "title": "Keep your partner—and your chances—alive",
+          "items": [
+            "Use /NHCLife > Transfer a life or /giveaheart playername to gift a life. Both players must be online, living participants in active gameplay. You can give once per session and must keep your last life.",
+            "Life gifts change individual life totals, not the shared health bar. They cannot revive eliminated players.",
+            "The last surviving bonded pair wins together. A lone survivor wins individually; no survivors means a draw.",
+            "Secret tasks are off by default in Soulbound. If your game enables them, use My Secret Task and follow the task-review notices. Rewards and penalties affect your own life total; a task penalty does not trigger a linked death.",
+            "Check Rules and status for your game’s starting lives, inventory-on-death rule and bond settings. Then make a plan together—preferably before one of you decides to hug a creeper."
           ]
         }
       ]
