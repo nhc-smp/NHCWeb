@@ -126,7 +126,7 @@
           "title": "Your life is in their hands",
           "items": [
             "Use the protected opening to prepare. Bonds form when the safe period ends, and each session begins with a fresh, unpaired opening.",
-            "Once bonded, you and your partner share health—even across long distances and different dimensions. Damage to either of you lowers the shared health; healing either of you helps both. Your own armor and defenses determine the damage from a hit you take.",
+            "Once bonded, you and your partner share health, even across long distances and different dimensions. Damage to either of you lowers the shared health; healing either of you helps both. Your own armor and defenses determine the damage from a hit you take.",
             "Food, absorption hearts, equipment and inventories remain your own. Keep yourself supplied as well as watching out for your partner.",
             "If either partner dies, both die and each loses one life. Your remaining life totals are individual, so one partner may be eliminated before the other. An ordinary death does not break the bond if you both still have lives.",
             "A Totem of Undying held by either online partner can save the pair from a lethal hit, consuming one totem. Keep it in your main hand or offhand when danger is close.",
@@ -144,7 +144,7 @@
           ]
         },
         {
-          "title": "Keep your partner—and your chances—alive",
+          "title": "Keep your partner and your chances alive",
           "items": [
             "Use /NHCLife > Transfer a life or /giveaheart playername to gift a life. Both players must be online, living participants in active gameplay. You can give once per session and must keep your last life.",
             "Life gifts change individual life totals, not the shared health bar. They cannot revive eliminated players.",
@@ -158,7 +158,7 @@
       "id": "expanding-horizons",
       "title": "Expanding Horizons",
       "tagline": "Tiny world. Big ideas. Every discovery opens a door.",
-      "description": "A whole Minecraft world is out there—if you can make room for it. Start shoulder to shoulder with your fellow NotHermits, collect something new and watch the border grow. A humble stick might be the beginning of your next great adventure.",
+      "description": "You and your fellow NotHermits are trapped within a tiny border, with a whole world waiting just out of reach. New discoveries push the boundary back, revealing room to roam, resources to chase and opportunities worth taking a risk for. How far can your curiosity take you?",
       "highlights": [
         "Discover to expand",
         "Shared item collection",
@@ -167,30 +167,28 @@
       ],
       "sections": [
         {
-          "title": "Discover your way out",
+          "title": "A bigger world starts with curiosity",
           "items": [
-            "The default starting border is just 1 × 1 block. Every new item type collected by a living participant adds one block to its width: your first stick makes it 2 × 2, your first dirt makes it 3 × 3. Check Rules and status for your game’s starting size and growth per discovery.",
-            "Discoveries count for everyone. If another NotHermit has already collected dirt, another stack of dirt will not expand the border again. Look for something nobody has found yet.",
-            "Pick up resources, craft new items and collect items from containers. Get the item into your inventory to register the discovery. You can start expanding during opening protection.",
-            "Renaming or enchanting an item does not make it a new discovery. Different potion variants of the same item type also count only once. Passing the same item around will not create extra space.",
-            "The square border grows evenly around spawn, opening up more room to explore. Watch the discovery announcements to see who found something new and how big the world has become."
+            "Collect item types nobody in the game has found yet to expand the shared border. Every fresh discovery brings more of the world within reach.",
+            "Explore what you have, experiment with recipes and look for resources that could unlock your next opportunity. A small find could open the way to a much bigger adventure.",
+            "Discoveries are shared across the game. More of an item already found will not expand the world again, and renaming or enchanting it does not make it new. Think variety, not stockpiles."
           ]
         },
         {
-          "title": "Make a little room for adventure",
+          "title": "Make room for a little mischief",
           "items": [
-            "Coordinate your discoveries: one NotHermit can try new recipes while another digs for resources. Think beyond the obvious—your next craft could put a whole new patch of world within reach.",
-            "Use the protected opening to gather and prepare. Once protection ends, PvP is on. Choose your allies and your battles carefully: every discovery gives your rivals more room too.",
-            "Stay inside the visible border. The space may be growing, but crossing its edge still causes damage.",
-            "Your shared collection and expanded border carry over when you reconnect or return for the next session of the same game. A fresh game starts a fresh collection."
+            "Work with other NotHermits to discover more: trade ideas, divide up the search and help each other reach something new. You might need an ally to unlock the resource your next plan depends on.",
+            "Expanding the world creates opportunities for everyone, including your rivals. When opening protection ends, choose your battles carefully and make the most of the space you have earned.",
+            "Stay inside the visible border as it grows. The next stretch of wilderness is tempting, but you will need to discover your way there first."
           ]
         },
         {
-          "title": "Keep your adventure alive",
+          "title": "Keep the adventure going",
           "items": [
-            "Every death costs one life. At zero lives you are eliminated; the last participant with lives remaining wins. If nobody survives, it is a draw. Offline participants with lives still count.",
-            "Want to help another NotHermit keep going? Use Transfer a life or /giveaheart playername. Both players must be online, living participants in active gameplay. You can give once per session and must keep your final life. Gifts cannot revive eliminated players.",
-            "Check Rules and status for your starting lives and what happens to your inventory when you die. Then get collecting—there is a whole horizon waiting just beyond that border."
+            "Protect your remaining lives as you explore. Run out and you are eliminated; outlast the other participants to claim the win.",
+            "Want to give another NotHermit a fighting chance? Use Transfer a life or /giveaheart playername to open the gift confirmation. Keep your final life, and remember that gifts cannot bring eliminated players back.",
+            "Your shared discoveries carry over as the same game continues. Return with fresh ideas and see what lies beyond the next boundary.",
+            "Check Rules and status for the current game’s settings. Then get curious. The horizon will not move itself."
           ]
         }
       ]
@@ -245,7 +243,7 @@
       },
       {
         "title": "Rivals in the game. Friends, always.",
-        "text": "Steal the victory, spring the trap, betray the alliance—but keep the rivalry in the game. There are friends behind every player name. Celebrate each other’s clever plays, laugh off the setbacks, and finish with the same friendships you started with. The best ending is everyone wanting to play again."
+        "text": "Steal the victory, spring the trap, betray the alliance, but keep the rivalry in the game. There are friends behind every player name. Celebrate each other’s clever plays, laugh off the setbacks, and finish with the same friendships you started with. The best ending is everyone wanting to play again."
       }
     ]
   }
