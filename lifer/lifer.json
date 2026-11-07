@@ -160,35 +160,25 @@
       "tagline": "Tiny world. Big ideas. Every discovery opens a door.",
       "description": "You and your fellow NotHermits are trapped within a tiny border, with a whole world waiting just out of reach. New discoveries push the boundary back, revealing room to roam, resources to chase and opportunities worth taking a risk for. How far can your curiosity take you?",
       "highlights": [
-        "Discover to expand",
-        "Shared item collection",
-        "Multiple lives",
-        "Last survivor wins"
+        "Discover something new",
+        "Open up the world",
+        "Explore together"
       ],
       "sections": [
         {
-          "title": "A bigger world starts with curiosity",
+          "title": "Curiosity opens the world",
           "items": [
-            "Collect item types nobody in the game has found yet to expand the shared border. Every fresh discovery brings more of the world within reach.",
-            "Explore what you have, experiment with recipes and look for resources that could unlock your next opportunity. A small find could open the way to a much bigger adventure.",
-            "Discoveries are shared across the game. More of an item already found will not expand the world again, and renaming or enchanting it does not make it new. Think variety, not stockpiles."
+            "You are trapped within a tiny border, with unexplored wilderness just beyond your reach. Collect something new and help push the boundary back.",
+            "Try a new recipe, search for an overlooked resource or follow a promising idea. Each discovery could reveal the space you need for your next adventure.",
+            "Think beyond another chest full of the same supplies. Seek out variety and give your fellow NotHermits something new to get excited about."
           ]
         },
         {
-          "title": "Make room for a little mischief",
+          "title": "Bring a NotHermit and a bright idea",
           "items": [
-            "Work with other NotHermits to discover more: trade ideas, divide up the search and help each other reach something new. You might need an ally to unlock the resource your next plan depends on.",
-            "Expanding the world creates opportunities for everyone, including your rivals. When opening protection ends, choose your battles carefully and make the most of the space you have earned.",
-            "Stay inside the visible border as it grows. The next stretch of wilderness is tempting, but you will need to discover your way there first."
-          ]
-        },
-        {
-          "title": "Keep the adventure going",
-          "items": [
-            "Protect your remaining lives as you explore. Run out and you are eliminated; outlast the other participants to claim the win.",
-            "Want to give another NotHermit a fighting chance? Use Transfer a life or /giveaheart playername to open the gift confirmation. Keep your final life, and remember that gifts cannot bring eliminated players back.",
-            "Your shared discoveries carry over as the same game continues. Return with fresh ideas and see what lies beyond the next boundary.",
-            "Check Rules and status for the current game’s settings. Then get curious. The horizon will not move itself."
+            "Share discoveries, compare ideas and make plans together. Someone else might spot the possibility you walked straight past.",
+            "More room means more possibilities: a place to build, a resource to chase or the perfect setting for your next questionable scheme.",
+            "Do not wait for adventure to find you. Get curious, get involved and give everyone a reason to wonder what is beyond the next boundary."
           ]
         }
       ]
