@@ -2,7 +2,7 @@
   "title": "NHC Lifer",
   "eyebrow": "NHC • Survival with a twist",
   "intro": "Make allies. Keep secrets. Make every life count.",
-  "description": "Take your Minecraft survival instincts into Boogie, Hunger Games and Soulbound. Hide a secret objective, race the shrinking border or put your life in another NotHermit’s hands. Every encounter could change the game.",
+  "description": "Take your Minecraft survival instincts into Boogie, Hunger Games, Soulbound and Expanding Horizons. Keep secrets, outlast your rivals, share your fate or discover your way into a bigger world. Every encounter could change the game.",
   "menu": {
     "title": "Your game, one command away",
     "command": "/NHCLife",
@@ -26,7 +26,7 @@
       },
       {
         "title": "Transfer a life",
-        "text": "Gift a life in Boogie or Soulbound through the confirmation menu. You can also type /giveaheart playername."
+        "text": "Gift a life in Boogie, Soulbound or Expanding Horizons through the confirmation menu. You can also type /giveaheart playername."
       },
       {
         "title": "Watch Game / Return to Limbo",
@@ -150,6 +150,47 @@
             "Life gifts change individual life totals, not the shared health bar. They cannot revive eliminated players.",
             "The last surviving bonded pair wins together. A lone survivor wins individually; no survivors means a draw.",
             "Keep each other supplied, talk through risky plans and check Your Soul Bond when partners change. Preferably before one of you decides to hug a creeper."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expanding-horizons",
+      "title": "Expanding Horizons",
+      "tagline": "Tiny world. Big ideas. Every discovery opens a door.",
+      "description": "A whole Minecraft world is out there—if you can make room for it. Start shoulder to shoulder with your fellow NotHermits, collect something new and watch the border grow. A humble stick might be the beginning of your next great adventure.",
+      "highlights": [
+        "Discover to expand",
+        "Shared item collection",
+        "Multiple lives",
+        "Last survivor wins"
+      ],
+      "sections": [
+        {
+          "title": "Discover your way out",
+          "items": [
+            "The default starting border is just 1 × 1 block. Every new item type collected by a living participant adds one block to its width: your first stick makes it 2 × 2, your first dirt makes it 3 × 3. Check Rules and status for your game’s starting size and growth per discovery.",
+            "Discoveries count for everyone. If another NotHermit has already collected dirt, another stack of dirt will not expand the border again. Look for something nobody has found yet.",
+            "Pick up resources, craft new items and collect items from containers. Get the item into your inventory to register the discovery. You can start expanding during opening protection.",
+            "Renaming or enchanting an item does not make it a new discovery. Different potion variants of the same item type also count only once. Passing the same item around will not create extra space.",
+            "The square border grows evenly around spawn, opening up more room to explore. Watch the discovery announcements to see who found something new and how big the world has become."
+          ]
+        },
+        {
+          "title": "Make a little room for adventure",
+          "items": [
+            "Coordinate your discoveries: one NotHermit can try new recipes while another digs for resources. Think beyond the obvious—your next craft could put a whole new patch of world within reach.",
+            "Use the protected opening to gather and prepare. Once protection ends, PvP is on. Choose your allies and your battles carefully: every discovery gives your rivals more room too.",
+            "Stay inside the visible border. The space may be growing, but crossing its edge still causes damage.",
+            "Your shared collection and expanded border carry over when you reconnect or return for the next session of the same game. A fresh game starts a fresh collection."
+          ]
+        },
+        {
+          "title": "Keep your adventure alive",
+          "items": [
+            "Every death costs one life. At zero lives you are eliminated; the last participant with lives remaining wins. If nobody survives, it is a draw. Offline participants with lives still count.",
+            "Want to help another NotHermit keep going? Use Transfer a life or /giveaheart playername. Both players must be online, living participants in active gameplay. You can give once per session and must keep your final life. Gifts cannot revive eliminated players.",
+            "Check Rules and status for your starting lives and what happens to your inventory when you die. Then get collecting—there is a whole horizon waiting just beyond that border."
           ]
         }
       ]
