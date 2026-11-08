@@ -63,6 +63,8 @@
 <script src="../media/navigation.js"></script>
 <script>
 'use strict';
+// Recognize this unlisted subpage locally without changing shared navigation.
+NavigationManager.prototype.detectCurrentPage = function () { return 'lifer'; };
 const el=(tag,text,cls)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(cls)node.className=cls;return node;};
 function cards(items){const grid=el('div',undefined,'grid');for(const item of items){const card=el('article',undefined,'panel');card.append(el('h3',item.title),el('p',item.text));grid.append(card);}return grid;}
 async function loadGuide(){
