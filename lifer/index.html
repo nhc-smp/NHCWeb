@@ -38,6 +38,14 @@
 .lifer details[open] summary {border-bottom:1px solid #444}
 .lifer ul {padding:0 1.5rem 1rem 2.8rem;color:#ddd}
 .lifer li {padding-left:.3rem;margin:1rem 0}
+.lifer .series {border-top:1px solid #444;padding-top:2.5rem;scroll-margin-top:6rem}
+.lifer .series-header {margin-bottom:1.5rem}
+.lifer .series-header .eyebrow {margin:0 0 .75rem}
+.lifer .series-joke {font-size:1.15rem;line-height:1.6}
+.lifer .series-prize {display:flex;align-items:center;gap:1.25rem;margin-top:1rem;padding:1.5rem;background:linear-gradient(120deg,#b48a1920,#16191b);border:1px solid #786129;border-radius:var(--roundness)}
+.lifer .series-prize .fa-trophy {font-size:2.4rem;color:#e4bd58;flex-shrink:0}
+.lifer .series-prize h3 {color:#e4bd58}
+.lifer .series-prize p {margin:.35rem 0 0}
 .lifer .closing {text-align:center;font-size:1.4rem;color:var(--accent1);margin:3rem auto}
 .lifer [hidden] {display:none!important}
 @media(max-width:650px){.lifer{padding:6rem 1rem 2rem}.lifer .hero{padding:1.5rem}.lifer .grid{grid-template-columns:1fr}.lifer h2{font-size:1.7rem}.lifer summary{padding:1rem}.lifer ul{padding-right:1rem}}
@@ -68,7 +76,10 @@ async function loadGuide(){
   const topics=el('nav',undefined,'topics');topics.setAttribute('aria-label','Player guide sections');
   for(const item of [...data.modes,{id:'life-series',title:'NHC Life Series'},{id:'not-hermits',title:'Make the mayhem'},{id:'player-menu',title:'In-game menu'},{id:'before-you-play',title:'Before you play'}]){const link=el('a',item.title);link.href='#'+item.id;topics.append(link);}hero.append(topics);fragment.append(hero);
   const join=el('section',undefined,'panel');const joinTitle=el('h2',data.join.title);joinTitle.id='join-games-title';join.setAttribute('aria-labelledby',joinTitle.id);join.append(joinTitle,el('code',data.join.command,'command'),el('p',data.join.description));fragment.append(join);
-  const series=el('section',undefined,'panel');series.id='life-series';const seriesTitle=el('h2',data.series.title);seriesTitle.id='series-title';series.setAttribute('aria-labelledby',seriesTitle.id);series.append(seriesTitle);for(const paragraph of data.series.paragraphs)series.append(el('p',paragraph));fragment.append(series);
+  const series=el('section',undefined,'series');series.id='life-series';const seriesTitle=el('h2',data.series.title);seriesTitle.id='series-title';series.setAttribute('aria-labelledby',seriesTitle.id);
+  const seriesHeader=el('header',undefined,'series-header');seriesHeader.append(el('p',data.series.eyebrow,'eyebrow'),seriesTitle,el('p',data.series.intro,'series-joke'),el('p',data.series.description));
+  const prize=el('aside',undefined,'series-prize');const trophy=el('i',undefined,'fa fa-trophy');trophy.setAttribute('aria-hidden','true');const prizeCopy=el('div');prizeCopy.append(el('h3',data.series.prize.title),el('p',data.series.prize.text));prize.append(trophy,prizeCopy);
+  series.append(seriesHeader,cards(data.series.items),prize);fragment.append(series);
   const community=el('section');community.id='not-hermits';const communityTitle=el('h2',data.community.title);communityTitle.id='community-title';community.setAttribute('aria-labelledby',communityTitle.id);community.append(communityTitle,el('p',data.community.description),cards(data.community.items));fragment.append(community);
   const menu=el('section');menu.id='player-menu';const menuTitle=el('h2',data.menu.title);menuTitle.id='menu-title';menu.setAttribute('aria-labelledby',menuTitle.id);menu.append(menuTitle,el('code',data.menu.command,'command'),el('p',data.menu.description),cards(data.menu.items));fragment.append(menu);
   for(const mode of data.modes){const section=el('section',undefined,'mode');section.id=mode.id;const title=el('h2',mode.title);title.id=mode.id+'-title';section.setAttribute('aria-labelledby',title.id);section.append(title,el('p',mode.tagline,'tagline'),el('p',mode.description));const badges=el('div',undefined,'badges');for(const text of mode.highlights)badges.append(el('span',text,'badge'));section.append(badges);

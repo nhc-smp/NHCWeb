@@ -337,13 +337,30 @@
   },
   "series": {
     "title": "NHC Life Series",
-    "paragraphs": [
-      "NHC Life Series. Not to be confused with NHC Lifer. If you mix them up, just mumble the last bit. We’ll know what you mean.",
-      "The series runs over an extended period, bringing separate Lifer events together into a longer competition. Each session is a fresh game using one of the Lifer modes. Win the game and you earn a point toward your series total.",
-      "Series winners will claim a trophy next to their name. Wear your victory with pride and give your fellow NotHermits something to aim for next time.",
-      "We’ll return to the same map location, so you can keep building and using your base between games. Make yourself at home. Your questionable architectural choices could be with us for a while.",
-      "You don’t need to attend every session to take part in the series. Missing one won’t cost you points. You’ll just miss that session’s chance to claim a win.",
-      "When you do join a session, arrive before the opening safety timer expires. Once it ends, that game’s player roster closes, so get there on time if you want to play."
-    ]
+    "eyebrow": "More game nights. One ongoing series.",
+    "intro": "NHC Life Series. Not to be confused with NHC Lifer. If you mix them up, just mumble the last bit. We’ll know what you mean.",
+    "description": "A run of separate Lifer games played over an extended period. Each session is a fresh game using one of the Lifer modes, with your wins adding up across the series.",
+    "items": [
+      {
+        "title": "Every win adds up",
+        "text": "Win a Lifer game and earn a point toward your series total. Come back for another session and another chance to add to your score."
+      },
+      {
+        "title": "Same place. Make it home.",
+        "text": "We’ll return to the same map location so you can keep building and using your base. Your questionable architectural choices could be with us for a while."
+      },
+      {
+        "title": "Join when you can",
+        "text": "You don’t need to attend every session. Missing a game won’t cost you points. You’ll just miss that session’s chance to claim a win."
+      },
+      {
+        "title": "Beat the safety timer",
+        "text": "Each session is a new game. Arrive before the opening safety timer expires to take part. Once it ends, that game’s player roster closes."
+      }
+    ],
+    "prize": {
+      "title": "A trophy with your name on it",
+      "text": "Series winners claim a trophy next to their name. Wear your victory with pride and give your fellow NotHermits something to aim for next time."
+    }
   }
 }
