@@ -206,7 +206,6 @@
           "title": "Find your next challenge",
           "items": [
             "Complete Minecraft advancements during play to earn points. Finish the whole advancement to score, then choose your next goal.",
-            "Advancements you already completed before the session do not score again. Look for something you have yet to achieve.",
             "Follow your own route or bring another NotHermit along. A shared expedition might help you both tick something off your lists."
           ]
         },
@@ -224,7 +223,7 @@
       "id": "community-builds",
       "title": "Community Builds",
       "tagline": "Bring your blocks. Bring your ideas. Build it together.",
-      "description": "A shared theme, a group of NotHermits and a place to make something happen. Turn a collection of projects into somewhere worth visiting. Gatherers, builders, decorators and enthusiastic helpers all have a part to play.",
+      "description": "Your group gets a randomly selected theme with required builds to complete together. Gather supplies, share ideas and turn the checklist into somewhere worth visiting. Gatherers, builders, decorators and enthusiastic helpers all have a part to play.",
       "highlights": [
         "Cooperative building",
         "Shared project checklist",
@@ -234,7 +233,7 @@
         {
           "title": "Make the theme your own",
           "items": [
-            "Open /NHCLife > Community Goal to see the build theme, its description and the shared project checklist. Pick something you would enjoy helping with.",
+            "A theme is selected at random for the whole group, along with a set of required builds. Open /NHCLife > Community Goal to read the theme and see what the team needs to complete.",
             "Talk through your ideas, share materials and find ways to connect your builds. Invite someone into the project rather than waiting for them to find a job.",
             "You do not need to be a master builder. A simple build that meets the project description counts. Bring a little personality and enjoy making it together."
           ]
