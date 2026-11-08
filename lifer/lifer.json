@@ -2,7 +2,7 @@
   "title": "NHC Lifer",
   "eyebrow": "NHC • Survival with a twist",
   "intro": "Make allies. Keep secrets. Make every life count.",
-  "description": "Take your Minecraft survival instincts into Boogie, Hunger Games, Soulbound and Expanding Horizons. Keep secrets, outlast your rivals, share your fate or discover your way into a bigger world. Every encounter could change the game.",
+  "description": "Find your next adventure on NotHermitCraft. Keep secrets in Boogie, survive Hunger Games, share your fate in Soulbound or explore Expanding Horizons. Chase achievements in Trophy Hunter, build something together in Community Builds or keep the supplies flowing in Supply Board.",
   "menu": {
     "title": "Your game, one command away",
     "command": "/NHCLife",
@@ -23,6 +23,10 @@
       {
         "title": "My Secret Task",
         "text": "In Boogie, view your private objective, use Reroll Task, and report PASS or FAIL when review opens."
+      },
+      {
+        "title": "Community Goal",
+        "text": "In Community Builds, check the shared theme and project list. In Supply Board, see the current order and click a requirement to donate matching supplies from your inventory."
       },
       {
         "title": "Transfer a life",
@@ -183,6 +187,93 @@
             "Bring your ideas, lend a hand and invite another NotHermit along. Someone else might spot the possibility you walked straight past.",
             "Work toward shared goals: gather supplies for a new project, help someone reach a resource or plan an expedition into newly opened land.",
             "There is no rival to outsmart here. The adventure is seeing what you can achieve together, one discovery at a time. Make space for everyone to contribute and celebrate each other’s finds."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trophy-hunter",
+      "title": "Trophy Hunter",
+      "tagline": "A little ambition. A long list of adventures.",
+      "description": "There is always another first waiting in Minecraft. Set out with your fellow NotHermits, chase advancements and see how much you can achieve. Will you explore somewhere new, take on a dangerous challenge or finally tick off the thing you always meant to try?",
+      "highlights": [
+        "Advancement hunting",
+        "Personal scores",
+        "Explore your own way"
+      ],
+      "sections": [
+        {
+          "title": "Find your next challenge",
+          "items": [
+            "Complete Minecraft advancements during play to earn points. Finish the whole advancement to score, then choose your next goal.",
+            "Advancements you already completed before the session do not score again. Look for something you have yet to achieve.",
+            "Follow your own route or bring another NotHermit along. A shared expedition might help you both tick something off your lists."
+          ]
+        },
+        {
+          "title": "Make your adventures count",
+          "items": [
+            "Watch your score beside your name as your achievements add up. The highest score at the end wins, and tied leaders share the win.",
+            "Stay alive so you can keep exploring and earning points. If you are eliminated, the points you already earned still count.",
+            "Keep an eye out for opportunities while helping others. Your next great achievement might start with someone asking for a hand."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community-builds",
+      "title": "Community Builds",
+      "tagline": "Bring your blocks. Bring your ideas. Build it together.",
+      "description": "A shared theme, a group of NotHermits and a place to make something happen. Turn a collection of projects into somewhere worth visiting. Gatherers, builders, decorators and enthusiastic helpers all have a part to play.",
+      "highlights": [
+        "Cooperative building",
+        "Shared project checklist",
+        "A place made together"
+      ],
+      "sections": [
+        {
+          "title": "Make the theme your own",
+          "items": [
+            "Open /NHCLife > Community Goal to see the build theme, its description and the shared project checklist. Pick something you would enjoy helping with.",
+            "Talk through your ideas, share materials and find ways to connect your builds. Invite someone into the project rather than waiting for them to find a job.",
+            "You do not need to be a master builder. A simple build that meets the project description counts. Bring a little personality and enjoy making it together."
+          ]
+        },
+        {
+          "title": "Every helping hand counts",
+          "items": [
+            "Gather supplies, lay out a path, finish a roof or add the detail that makes everyone smile. There is more to a community build than placing the fanciest blocks.",
+            "Check Community Goal to see what is finished and what still needs a hand. Let the host know when a project is ready to be checked off.",
+            "Complete the shared checklist to win together. Unfinished projects carry on with the same game, so you can return and pick up where the group left off."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supply-board",
+      "title": "Supply Board",
+      "tagline": "Big orders. Busy NotHermits. Everyone pitches in.",
+      "description": "The board needs supplies, and your fellow NotHermits need a team that can deliver. Head out gathering, get the farms working and turn a pile of resources into a job well done. There is always someone to help and something useful to bring home.",
+      "highlights": [
+        "Cooperative gathering",
+        "Shared orders",
+        "Donate your supplies"
+      ],
+      "sections": [
+        {
+          "title": "See what the team needs",
+          "items": [
+            "Open /NHCLife > Community Goal to see the current order and what still needs collecting.",
+            "Choose a job, team up for an expedition or work on the supplies you enjoy gathering. Compare plans so the group can cover more ground.",
+            "Check the materials accepted for each requirement. Some orders let you contribute a mix of suitable resources."
+          ]
+        },
+        {
+          "title": "Bring it home",
+          "items": [
+            "Carry your supplies in your inventory, open Community Goal and click the matching requirement to donate. Donated items are used to fill the order, so bring what you mean to contribute.",
+            "Only the amount still needed is taken. Check the board as deliveries come in to see where your next contribution will help most.",
+            "Finish an order together and move on to the next. Meet the board’s goal to win as a team. Your deliveries and unfinished orders carry over as the same game continues."
           ]
         }
       ]
