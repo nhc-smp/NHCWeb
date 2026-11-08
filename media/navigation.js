@@ -10,6 +10,7 @@ class NavigationManager {
     // Detect which page we're currently on
     detectCurrentPage() {
         const path = window.location.pathname;
+        if (path.includes('/lifer/')) return 'lifer';
         if (path.includes('/faq/')) return 'faq';
         if (path.includes('/about/')) return 'about';
         if (path.includes('/community/')) return 'community';
@@ -42,6 +43,7 @@ class NavigationManager {
                     <a href="rules/index.html" class="desktop_navbar_link">Server Rules</a>
                     <a href="gallery/index.html" class="desktop_navbar_link">Gallery</a>
                     <a href="faq/index.html" class="desktop_navbar_link">FAQ</a>
+                    <a href="lifer/index.html" class="desktop_navbar_link">NHC Lifer</a>
                     <div class="desktop_navbar_link2_div">
                         <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
                     </div>
@@ -62,6 +64,7 @@ class NavigationManager {
                     <a href="${basePath}rules/index.html" class="desktop_navbar_link">Server Rules</a>
                     <a href="${basePath}gallery/index.html" class="desktop_navbar_link">Gallery</a>
                     <a href="${basePath}faq/index.html" class="desktop_navbar_link">FAQ</a>
+                    <a href="${basePath}lifer/index.html" class="desktop_navbar_link">NHC Lifer</a>
                     <div class="desktop_navbar_link2_div">
                         <a href="${basePath}index.html#join" class="desktop_navbar_link2">Join Us!</a>
                     </div>
@@ -81,6 +84,7 @@ class NavigationManager {
                 <a href="${basePath}rules/index.html" class="desktop_navbar_link ${currentPage === 'rules' ? 'current' : ''}">Server Rules</a>
                 <a href="${basePath}gallery/index.html" class="desktop_navbar_link ${currentPage === 'gallery' ? 'current' : ''}">Gallery</a>
                 <a href="${basePath}faq/index.html" class="desktop_navbar_link ${currentPage === 'faq' ? 'current' : ''}">FAQ</a>
+                <a href="${basePath}lifer/index.html" class="desktop_navbar_link ${currentPage === 'lifer' ? 'current' : ''}">NHC Lifer</a>
                 <div class="desktop_navbar_link2_div">
                     <a href="${basePath}index.html#join" class="desktop_navbar_link2">Join Us!</a>
                 </div>
@@ -107,6 +111,7 @@ class NavigationManager {
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="rules/index.html">Server Rules</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="gallery/index.html">Gallery</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="faq/index.html">FAQ</a>
+                        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="lifer/index.html">NHC Lifer</a>
                     </div>
                     <div class="icon" onclick="mobile_navbar_link_hider()">
                         <i class="fa fa-bars"></i>
@@ -129,6 +134,7 @@ class NavigationManager {
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}rules/index.html">Server Rules</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}gallery/index.html">Gallery</a>
                         <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}faq/index.html">FAQ</a>
+                        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}lifer/index.html">NHC Lifer</a>
                     </div>
                     <div class="icon" onclick="mobile_navbar_link_hider()">
                         <i class="fa fa-bars"></i>
@@ -150,6 +156,7 @@ class NavigationManager {
                     <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}rules/index.html">Server Rules</a>
                     <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}gallery/index.html">Gallery</a>
                     <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}faq/index.html">FAQ</a>
+                    <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="${basePath}lifer/index.html">NHC Lifer</a>
                 </div>
                 <div class="icon" onclick="mobile_navbar_link_hider()">
                     <i class="fa fa-bars"></i>
